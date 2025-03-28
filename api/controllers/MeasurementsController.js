@@ -45,8 +45,9 @@ export async function createMeasurement(req, res) {
     const { id, t, h } = req.body;
 
     console.log("device id    : " + id + " temperature : " + t + " humidity    : " + h);	
- 
-     
+
+
+    
     // Validar que todos los campos requeridos están presentes
     if (!id || !t || !h)  {
         return res.status(400).json({ message: 'device_id, t y h son obligatorios',
@@ -91,9 +92,16 @@ export async function createMeasurement(req, res) {
         }
       });
 
+
+
+
      if (!DeviceFound)
      {
-        return res.status(422).json({ message: 'El device_id no es correcto.' });
+        return res.status(422).json(
+            { message: 'El device_id no es correcto.',
+            status: 0
+           
+     });
 
      }
         // Crear el nuevo dispositivo
@@ -102,7 +110,9 @@ export async function createMeasurement(req, res) {
         const insertedId = newMeasurement._id;
     
         //return { insertedId };
-        return res.status(201).json({ insertedId });
+        return res.status(201).json(
+            
+            { message: 'medicion creado con éxito.',  status: 1, id_inserted:insertedId });
     } catch (error) {
         console.error('Error al crear la medicion:', error);
         return res.status(500).json({ message: 'Ocurrió un error inesperado', error: error.message });
@@ -197,7 +207,7 @@ export async function getAllHtml(req,res)
 
         // Enviar el HTML de la respuesta
         res.send("<html>" +
-                 "<head><title>Sensores</title></head>" +
+                 "<head><title>Mediciones </title></head>" +
                  "<body>" +
                     "<table border=\"1\">" +
                        "<tr><th>Sensor id </th><th>temperatura </th><th>humedad </th></tr>" +
