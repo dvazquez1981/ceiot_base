@@ -1,4 +1,4 @@
-const render = function render(template, vars) {
+const render =(template, vars) => {
 /*
  * Canibalized from
  *    https://www.npmjs.com/package/sprightly
@@ -19,4 +19,5 @@ const render = function render(template, vars) {
        return line;
    }).join('\n');	
 }
-module.exports = render;
+
+export default render;

@@ -1,28 +1,33 @@
-const fs = require('fs');
+import fs from 'fs';
+import path from 'path';
+import {iotdb_1,backupDatabaseToSqlScript} from  './bd/iiot11_bd_1.js'
+import {iotdb_2,backupDatabaseToJson} from  './bd/iiot11_bd_2.js'
 
 const addAdminEndpoint = function (app, render){
   app.get('/admin/:command', function(req,res) {
     var msg="done";
     switch (req.params.command) {
        case "clear":
-         if (req.query.db == "mongo") {
+           if (req.query.db == "mongo") {
            msg = "clearing mongo";
            /* UNIMPLEMENTED */
-	 } else if (req.query.db == "psql") {
+	           } else if (req.query.db == "psql") {
            msg = "clearing psql";
-           /* UNIMPLEMENTED */
-	 } else {
-           msg = "unknown db " + req.query.db;
-         }
+               /* UNIMPLEMENTED */
+         	 } else {
+            msg = "unknown db " + req.query.db;
+            }
        break;
        case "save":
          if (req.query.db == "mongo") {
            msg = "saving mongo to " + req.query.file;
-           /* UNIMPLEMENTED */
-	 } else if (req.query.db == "psql") {
+           backupDatabaseToJson(req.query.file)
+           /*  done */
+	         } else if (req.query.db == "psql") {
            msg = "saving psql " + req.query.file;
-           /* UNIMPLEMENTED */
-	 } else {
+           backupDatabaseToSqlScript(req.query.file)
+           
+          } else {
            msg = "unknown db " + req.query.db;
          }
        break;
@@ -42,5 +47,4 @@ const addAdminEndpoint = function (app, render){
                 "</html>";
     res.send(render(template,{msg:msg}));
 })};
-
-module.exports = addAdminEndpoint;
+export default addAdminEndpoint;
