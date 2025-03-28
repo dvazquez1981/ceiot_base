@@ -9,7 +9,8 @@ import {
 */
 import {  
     getAll,
-    createMeasurement,
+    
+     createMeasurement,
      getOneHtml,
      getAllHtml,
     } from '../controllers/MeasurementsController.js';
@@ -22,7 +23,7 @@ const router = Router();
 /** Obtener mediciones*/
 router.get('/measurement', /*ensureToken, chequeoToken, chequeoGrupoUsuario('admin'), */ getAll);
 
-router.post('/measurement',  createMeasurement);
+router.post('/measurement', createMeasurement);
 
 router.get('/web/measurement/:id&:t&:h', getOneHtml);
 

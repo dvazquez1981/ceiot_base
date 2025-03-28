@@ -119,7 +119,7 @@ export const  iotdb_2=mongoose.connect( uri/*, { useNewUrlParser: true, useUnifi
     console.log('La conexion se ha realizado correctamente a MongoDB');
 
     restoreDataToJson()
-    //ms
+    //3 min
     setInterval(backupDatabaseToJson, 180000);
     
   })

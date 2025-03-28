@@ -136,7 +136,7 @@ export const iotdb_1 = new Sequelize({
 (async () => {
   try {
     await iotdb_1.authenticate();
-    //cada media hora backup
+    //3 min
     setInterval(backupDatabaseToSqlScript, 180000);
 
     console.log('La conexión se ha realizado correctamente en sql.');

@@ -42,14 +42,14 @@ export async function getAllByIdDevice(req, res) {
 /** Crear un nuevo measurement */
 /*validando los valores del body*/
 export async function createMeasurement(req, res) {
-    const { id, key, t, h } = req.body;
+    const { id, t, h } = req.body;
 
-    console.log("device id    : " + id+ " key         : " + key + " temperature : " + t + " humidity    : " + h);	
+    console.log("device id    : " + id + " temperature : " + t + " humidity    : " + h);	
  
      
     // Validar que todos los campos requeridos están presentes
     if (!id || !t || !h)  {
-        return res.status(400).json({ message: 'device_id, key, t y h son obligatorios',
+        return res.status(400).json({ message: 'device_id, t y h son obligatorios',
             status: 0 });
     }
 
@@ -78,7 +78,7 @@ export async function createMeasurement(req, res) {
    let humedad=Number(h)
 
   // Validar que h esté en un rango de humedad válido, por ejemplo, entre 0 y 100
-   if (0>humedad  || humedad > 100) {
+   if (0>=humedad  || humedad > 100) {
     return res.status(422).json({
       message: 'La humedad (h) debe estar entre 0 y 100%.',
       status: 0,
@@ -109,6 +109,9 @@ export async function createMeasurement(req, res) {
     }
 }
 
+
+
+
 /** Obtener por id */
 
 export async function getOneHtml(req,res)
@@ -121,9 +124,6 @@ export async function getOneHtml(req,res)
         return res.status(400).json({ message: 'device_id, t y h son obligatorios',
             status: 0 });
     }
-
-
-
 
     console.log("device id    : " + id + " temperature : " + t + " humidity    : " + h);	
  
