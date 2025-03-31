@@ -25,20 +25,17 @@
 #include <bmp280.h>
 #include "../config.h"
 
+
+
+
 /* HTTP constants that aren't configurable in menuconfig */
 #define WEB_PATH "/measurement"
 
 static const char *TAG = "temp_collector";
+static char *BODY;
+static char *REQUEST_POST;
 
-static char *BODY = "id="DEVICE_ID"&t=%0.2f&h=%0.2f";
 
-static char *REQUEST_POST = "POST "WEB_PATH" HTTP/1.0\r\n"
-    "Host: "API_IP_PORT"\r\n"
-    "User-Agent: "USER_AGENT"\r\n"
-    "Content-Type: application/x-www-form-urlencoded\r\n"
-    "Content-Length: %d\r\n"
-    "\r\n"
-    "%s";
 
 static void http_get_task(void *pvParameters)
 {
@@ -49,8 +46,8 @@ static void http_get_task(void *pvParameters)
     struct addrinfo *res;
     struct in_addr *addr;
     int s, r;
-    char body[64];
-    char recv_buf[64];
+    char body[128];
+    char recv_buf[128];
 
     char send_buf[256];
 
@@ -76,7 +73,7 @@ static void http_get_task(void *pvParameters)
             ESP_LOGI(TAG, "Pressure: %.2f Pa, Temperature: %.2f C", pressure, temperature);
 //            if (bme280p) {
                 ESP_LOGI(TAG,", Humidity: %.2f\n", humidity);
-		sprintf(body, BODY, temperature , humidity );
+		       sprintf(body, BODY, temperature , humidity );
                 sprintf(send_buf, REQUEST_POST, (int)strlen(body),body );
 //	    } else {
 //                sprintf(send_buf, REQUEST_POST, temperature , 0);
@@ -166,6 +163,37 @@ void app_main(void)
     ESP_ERROR_CHECK(i2cdev_init());
 
     ESP_ERROR_CHECK(example_connect());
+
+    bool bodyJSON=true;
+
+    // elijo el tipo de envio del body
+    if(bodyJSON)
+    {
+
+    BODY = "{\"id\":\""DEVICE_ID"\",\"t\":%0.2f,\"h\":%0.2f}";
+    REQUEST_POST = "POST "WEB_PATH" HTTP/1.0\r\n"
+    "Host: "API_IP_PORT"\r\n"
+    "User-Agent: "USER_AGENT"\r\n"
+    "Content-Type: application/json\r\n"
+    "Content-Length: %d\r\n"
+    "\r\n"
+    "%s";
+    }
+    else
+    {
+
+    BODY = "id="DEVICE_ID"&t=%0.2f&h=%0.2f";
+     REQUEST_POST = "POST "WEB_PATH" HTTP/1.0\r\n"
+    "Host: "API_IP_PORT"\r\n"
+    "User-Agent: "USER_AGENT"\r\n"
+    "Content-Type: application/x-www-form-urlencoded\r\n"
+    "Content-Length: %d\r\n"
+    "\r\n"
+    "%s";
+
+    }
+
+
 
     xTaskCreate(&http_get_task, "http_get_task", 4096, NULL, 5, NULL);
 }

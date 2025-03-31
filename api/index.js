@@ -12,10 +12,17 @@ import rutasMeasurements from './rutas/routesMeasurements.js'
 
 const app = express();
 
-app.use(bodyParser.urlencoded({extended:false}));
+//app.use(bodyParser.urlencoded({extended:false}));
 
 app.use(express.static('spa/static'));
-app.use(express.json())
+
+// Middleware para manejar application/x-www-form-urlencoded
+app.use(express.urlencoded({ extended: true }));
+
+// Middleware para manejar application/json
+app.use(express.json());
+
+
 
 //ruta
 app.use(rutasDevice);

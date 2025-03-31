@@ -23,7 +23,7 @@ export async function getAll(req, res) {
 export async function getAllByIdDevice(req, res) {
     const { id } = req.params;
 
-    console.log("device id    : " + req.body.id + " key         : " + req.body.key + " temperature : " + req.body.t + " humidity    : " + req.body.h);	
+    console.log("device id: " + req.body.id + " key: " + req.body.key + " temperature: " + req.body.t + " humidity: " + req.body.h);	
   
     
     try {
@@ -42,7 +42,10 @@ export async function getAllByIdDevice(req, res) {
 /** Crear un nuevo measurement */
 /*validando los valores del body*/
 export async function createMeasurement(req, res) {
+
+  // Si los datos vienen en formato JSON o vienen en formato URL-encoded es indistito.
     const { id, t, h } = req.body;
+
 
     console.log("device id    : " + id + " temperature : " + t + " humidity    : " + h);	
 
@@ -50,16 +53,19 @@ export async function createMeasurement(req, res) {
     
     // Validar que todos los campos requeridos están presentes
     if (!id || !t || !h)  {
+
+    console.log('device_id, t y h son obligatorios')
         return res.status(400).json({ message: 'device_id, t y h son obligatorios',
             status: 0 });
     }
 
-
+    console.log('llego hasta aca')
     try {
 
         
    //Validar que temperatura y humedad sean números, incluso si son strings que representan números
    if (Number.isNaN(Number(t)) || Number.isNaN(Number(h))) {
+    console.log('temperatura  y humedad  deben ser números.')
     return res.status(422).json({
       message: 'temperatura  y humedad  deben ser números.',
       status: 0,
@@ -69,6 +75,8 @@ export async function createMeasurement(req, res) {
     //-50 a 100 grados
     let temperatura=Number(t)
     if (temperatura < -50 || temperatura > 100) { 
+        console.log('La temperatura (t) debe estar entre -50 y 100 grados.')
+
         return res.status(422).json({
             message: 'La temperatura (t) debe estar entre -50 y 100 grados.',
             status: 0,
@@ -77,14 +85,16 @@ export async function createMeasurement(req, res) {
 
    //0 a 100 
    let humedad=Number(h)
-
+   console.log('llego hasta aca 1.2')
   // Validar que h esté en un rango de humedad válido, por ejemplo, entre 0 y 100
-   if (0>=humedad  || humedad > 100) {
+   if (humedad<=0  || humedad > 100) {
+    console.log('La humedad (h) debe estar entre 0 y 100%')
     return res.status(422).json({
       message: 'La humedad (h) debe estar entre 0 y 100%.',
       status: 0,
     });
   }
+     
 
     const DeviceFound = await Device.findOne({
         where: {
@@ -93,10 +103,11 @@ export async function createMeasurement(req, res) {
       });
 
 
+      
 
 
      if (!DeviceFound)
-     {
+     {    console.log('El device_id no es correcto.')
         return res.status(422).json(
             { message: 'El device_id no es correcto.',
             status: 0
