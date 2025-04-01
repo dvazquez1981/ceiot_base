@@ -21,12 +21,12 @@ export async function getAll(req, res) {
 
 /** Obtene por ID */
 export async function getAllByIdDevice(req, res) {
-    const { id } = req.params;
+    const { id } = req.params;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
 
     console.log("device id: " + req.body.id + " key: " + req.body.key + " temperature: " + req.body.t + " humidity: " + req.body.h);	
-  
-    
-    try {
+
+
+    try {                                                                                           
         const m = await Measurement.findOne({ id:id }); 
         if (m) {
             res.status(200).json(m);
@@ -50,16 +50,16 @@ export async function createMeasurement(req, res) {
     console.log("device id    : " + id + " temperature : " + t + " humidity    : " + h);	
 
 
-    
+ 
     // Validar que todos los campos requeridos están presentes
-    if (!id || !t || !h)  {
+    if (!id || isNaN(t) || isNaN(h))  {
 
     console.log('device_id, t y h son obligatorios')
         return res.status(400).json({ message: 'device_id, t y h son obligatorios',
             status: 0 });
     }
 
-    console.log('llego hasta aca')
+    
     try {
 
         
@@ -85,9 +85,9 @@ export async function createMeasurement(req, res) {
 
    //0 a 100 
    let humedad=Number(h)
-   console.log('llego hasta aca 1.2')
+
   // Validar que h esté en un rango de humedad válido, por ejemplo, entre 0 y 100
-   if (humedad<=0  || humedad > 100) {
+   if (humedad<0  || humedad > 100) {
     console.log('La humedad (h) debe estar entre 0 y 100%')
     return res.status(422).json({
       message: 'La humedad (h) debe estar entre 0 y 100%.',
