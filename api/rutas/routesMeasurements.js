@@ -1,3 +1,4 @@
+import {sanitizeMiddlewareInput,sanitizeMiddlewareOutput} from '../utils/sanitize.js'
 import {Router} from 'express'
 /*
 import {  
@@ -21,14 +22,13 @@ const router = Router();
 /** Controladores */
 
 /** Obtener mediciones*/
-router.get('/measurement', /*ensureToken, chequeoToken, chequeoGrupoUsuario('admin'), */ getAll);
+router.get('/measurement', /*ensureToken, chequeoToken, chequeoGrupoUsuario('admin'), */ getAll,sanitizeMiddlewareOutput);
 
-router.post('/measurement', createMeasurement);
+router.post('/measurement', sanitizeMiddlewareInput,createMeasurement,sanitizeMiddlewareOutput);
 
-router.get('/web/measurement/:id&:t&:h', getOneHtml);
+router.get('/web/measurement/:id/:t/:h',sanitizeMiddlewareInput, getOneHtml,sanitizeMiddlewareOutput);
 
-router.get('/web/measurement', getAllHtml);
-
+router.get('/web/measurement', sanitizeMiddlewareInput,getAllHtml,sanitizeMiddlewareOutput);
 
 /** Exporto */
 export default router;

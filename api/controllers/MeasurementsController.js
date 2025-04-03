@@ -3,7 +3,7 @@ import Device from '../models/Device.js'
 import  render from "../render.js";
 import mongoose from 'mongoose';
 
-const { ObjectId } = mongoose.Types;
+//const { ObjectId } = mongoose.Types;
 /** Obtener todos los MeasurementS */
 
 export async function getAll(req, res) {
@@ -47,15 +47,15 @@ export async function createMeasurement(req, res) {
     const { id, t, h } = req.body;
 
 
-    console.log("device id    : " + id + " temperature : " + t + " humidity    : " + h);	
+    console.log("device id    : " + id + " temperatura : " + t + " humedad    : " + h);	
 
 
  
     // Validar que todos los campos requeridos están presentes
     if (!id || isNaN(t) || isNaN(h))  {
 
-    console.log('device_id, t y h son obligatorios')
-        return res.status(400).json({ message: 'device_id, t y h son obligatorios',
+    console.log('device_id, t y h son obligatorios, t y h deben ser numeros')
+        return res.status(400).json({ message: 'device_id, t y h son obligatorios, t y h deben ser numeros ',
             status: 0 });
     }
 
@@ -203,15 +203,13 @@ export async function getAllHtml(req,res)
         // Crear el HTML para cada medida usando map
         var  measurementsRows = Measurements.map(function(m) {
             console.log(m); // Ver el dispositivo en la consola
-            return '<tr><td><a href="/web/measurement/'  + m.id + '&' + m.t + '&' + m.h + '">' + m.id + '</a></td>' +
+            return '<tr><td><a href="/web/measurement/'  + m.id + '/' + m.t + '/' + m.h + '">' + m.id + '</a></td>' +
             '<td>'  + m.t +'</td>' +
             '<td>' +  m.h + '</td></tr>';
-
-
-
-            return '<td>' + m.id + '</td> <a href="/web/measurement/' + m.id + '&' + m.t + '&' + m.h + '">' + m._id + '</a>' +
+            return '<td>' + m.id + '</td> <a href="/web/measurement/' + m.id + '/' + m.t + '/' + m.h + '">' + m._id + '</a>' +
     
             '<td>' + m.t + '</td>' +
+
             '<td>' + m.h + '</td></tr>';
      }).join('');
     // para combinar los elementos del array en un solo string

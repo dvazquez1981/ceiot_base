@@ -1,4 +1,5 @@
 import {Router} from 'express'
+import {sanitizeMiddlewareInput,sanitizeMiddlewareOutput} from '../utils/sanitize.js'
 
 /*
 import {  
@@ -25,21 +26,21 @@ const router = Router();
 /** Controladores */
 
 /** Obtener devices*/
-router.get('/device', /*ensureToken, chequeoToken, chequeoGrupoUsuario('admin'), */ getAll);
+router.get('/device', /*ensureToken, chequeoToken, chequeoGrupoUsuario('admin'), */ getAll,sanitizeMiddlewareOutput);
 
-router.get('/device/:id', /*ensureToken, chequeoToken, chequeoGrupoUsuario('admin'), */ getOne);
+router.get('/device/:id',sanitizeMiddlewareInput, /*ensureToken, chequeoToken, chequeoGrupoUsuario('admin'), */ getOne,sanitizeMiddlewareOutput);
 
-router.get('/web/device/:id', getOneHtml);
+router.get('/web/device/:id', sanitizeMiddlewareInput,getOneHtml,sanitizeMiddlewareOutput);
 
-router.get('/web/device', getAllHtml);
+router.get('/web/device', sanitizeMiddlewareInput,getAllHtml,sanitizeMiddlewareOutput,sanitizeMiddlewareOutput);
 
-router.get('/term/device/:id',getOneTerm);
+router.get('/term/device/:id',sanitizeMiddlewareInput,getOneTerm,sanitizeMiddlewareOutput);
 
-router.post('/device', crearDevice);
+router.post('/device',sanitizeMiddlewareInput, crearDevice,sanitizeMiddlewareOutput);
 
-router.delete('/device/:id',  deleteDevice);
+router.delete('/device/:id',sanitizeMiddlewareInput,deleteDevice,sanitizeMiddlewareOutput);
 
-router.patch('/device/:id', updateDevice);
+router.patch('/device/:id', sanitizeMiddlewareInput,updateDevice,sanitizeMiddlewareOutput);
 
 
 
