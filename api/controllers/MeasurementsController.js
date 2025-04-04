@@ -47,7 +47,7 @@ export async function createMeasurement(req, res) {
     const { id, t, h } = req.body;
 
 
-    console.log("device id    : " + id + " temperatura : " + t + " humedad    : " + h);	
+    console.log(" ingreso: device_id: " + id + " temp: " + t + " hum: " + h);	
 
 
  
@@ -129,9 +129,6 @@ export async function createMeasurement(req, res) {
         return res.status(500).json({ message: 'Ocurrió un error inesperado', error: error.message });
     }
 }
-
-
-
 
 /** Obtener por id */
 

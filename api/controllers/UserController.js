@@ -30,12 +30,12 @@ export async function getOne(req,res)
             }
         });
 
-        if( DeviceFound){
-            res.status(200).json(DeviceFound);
+        if( UserFound){
+            res.status(200).json(UserFound);
 
         }else{
             res.status(404).json({
-                message: 'No se encuentra el Device.'      
+                message: 'No se encuentra el user.'      
             })
         }
         
@@ -158,11 +158,14 @@ export async function updateUser(req,res){
                  }
 
                  // Si device no es null, actualizamos  en la base de datos
-                 await u.update({  user_id:user_id,
-                    name:name,
-                    key:key
+                 await u.update({  
+                    user_id:user_id,
+                    name:name || u.name ||  null,
+                    key:key|| u.key|| null
                  
                    });
+
+
                  // Si la actualización es exitosa, respondemos con éxito
                 res.status(200).json({
                 message: 'device actualizo correctamente.'

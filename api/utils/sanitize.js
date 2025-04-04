@@ -1,4 +1,3 @@
-import mysql from 'mysql2';
 import xss from 'xss';
 
 // Función para sanitizar entradas (SQLi + XSS)

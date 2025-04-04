@@ -7,7 +7,7 @@ import  addAdminEndpoint from "./admin.js";
 //rutas
 import rutasDevice from './rutas/routesDevice.js'
 import rutasMeasurements from './rutas/routesMeasurements.js'
-
+import rutasUsuario from './rutas/routesUsuario.js'
 // API Server
 
 const app = express();
@@ -27,6 +27,7 @@ app.use(express.json());
 //ruta
 app.use(rutasDevice);
 app.use(rutasMeasurements);
+app.use(rutasUsuario)
 
 //rutas admin
 addAdminEndpoint(app, render);
