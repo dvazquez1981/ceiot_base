@@ -73,7 +73,7 @@ export async function getOneHtml(req,res)
 
         if( DeviceFound){
          
-            console.log(DeviceFound);
+            //console.log(DeviceFound);
             res.send(render(template,{id: DeviceFound.device_id, key: DeviceFound.key, name: DeviceFound.name}));
 
 
@@ -151,7 +151,7 @@ export async function getOneTerm(req,res)
           
     if( DeviceFound){
          
-        console.log(DeviceFound);
+       // console.log(DeviceFound);
         res.send(render(template,{id: DeviceFound.device_id, key: DeviceFound.key, name: DeviceFound.name}));
 
           }else{

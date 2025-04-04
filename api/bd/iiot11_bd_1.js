@@ -122,6 +122,7 @@ export const iotdb_1 = new Sequelize({
   dialect: 'postgres',
   dialectModule: db.adapters.createPg(),
   timezone: 'America/Argentina/Buenos_Aires',
+  logging: false, 
   pool: {
     max: 20,
     min: 0,
