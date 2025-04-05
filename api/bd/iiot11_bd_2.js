@@ -48,7 +48,7 @@ export async function backupDatabaseToJson(file=FILE) {
 }
 }
 
-async function restoreDataToJson(file=FILE) {
+async function restoreDataFromJson(file=FILE) {
   try {
 
     var backupPath = path.join(BACKUP_DIR, file);
@@ -120,7 +120,7 @@ export const  iotdb_2=mongoose.connect( uri/*, { useNewUrlParser: true, useUnifi
   .then(() => {
     console.log('La conexion se ha realizado correctamente a MongoDB');
 
-    restoreDataToJson()
+    restoreDataFromJson()
     //3 min
     setInterval(backupDatabaseToJson, 180000);
     

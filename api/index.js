@@ -1,8 +1,11 @@
 import  express from 'express';
+import './utils/signals.js'; 
+
 import  bodyParser from "body-parser";
-import  iotdb_2 from "./bd/iiot11_bd_2.js"
+//import  iotdb_2 from "./bd/iiot11_bd_2.js"
 import  render from "./render.js"
 import  addAdminEndpoint from "./admin.js";
+
 
 //rutas
 import rutasDevice from './rutas/routesDevice.js'
