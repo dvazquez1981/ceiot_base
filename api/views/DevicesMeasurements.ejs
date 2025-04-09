@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="/css/styles.css">
+  <meta charset="UTF-8">
+  <title>Dispositivos</title>
+</head>
+<body>
+  <h1>Lista de Dispositivos</h1>
+  <ul>
+    <% devices.forEach(device => { %>
+      <li>
+        <a href="/views/measurement/device/<%= device.device_id %>">
+          <strong><%= device.name %></strong> | Clave: <%= device.key %>
+        </a>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
