@@ -39,7 +39,7 @@ router.get('/term/device/:id',sanitizeMiddlewareInput,getOneTerm,sanitizeMiddlew
 
 
 /** apis*/
-router.get('/device', /*ensureToken, chequeoToken, chequeoGrupoUsuario('admin'), */ getAllApi,sanitizeMiddlewareOutput);
+router.get('/device', /*ensureToken, chequeoToken, chequeoGrupoUsuario('admin'), */ getAllApi/*,sanitizeMiddlewareOutput*/);
 
 router.get('/device/:id',sanitizeMiddlewareInput, /*ensureToken, chequeoToken, chequeoGrupoUsuario('admin'), */ getOneApi,sanitizeMiddlewareOutput);
 
