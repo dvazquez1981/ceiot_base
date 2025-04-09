@@ -1,0 +1,6 @@
+*/build/*
+*/*.old
+*.swp
+sdkconfig
+node_modules
+build
