@@ -27,18 +27,18 @@ export async function getAll(req, res) {
 export async function createMeasurement(req, res) {
 
   // Si los datos vienen en formato JSON o vienen en formato URL-encoded es indistito.
-    const { id, t, h } = req.body;
+    const { id, t, h,p } = req.body;
 
 
-    console.log(" ingreso: device_id: " + id + " temp: " + t + " hum: " + h);	
+    console.log("ingreso: device_id: " + id + " temp: " + t + " hum: " + h+ " pres: " + p);	
 
 
  
     // Validar que todos los campos requeridos están presentes
-    if (!id || isNaN(t) || isNaN(h))  {
+    if (!id || isNaN(t) || isNaN(h)|| isNaN(p))  {
 
-    console.log('device_id, t y h son obligatorios, t y h deben ser numeros')
-        return res.status(400).json({ message: 'device_id, t y h son obligatorios, t y h deben ser numeros ',
+    console.log('device_id, t, h, p son obligatorios, t, h, p deben ser numeros')
+        return res.status(400).json({ message: 'device_id, t, h, p son obligatorios, t, h, p deben ser numeros ',
             status: 0 });
     }
 
@@ -47,10 +47,10 @@ export async function createMeasurement(req, res) {
 
         
    //Validar que temperatura y humedad sean números, incluso si son strings que representan números
-   if (Number.isNaN(Number(t)) || Number.isNaN(Number(h))) {
-    console.log('temperatura  y humedad  deben ser números.')
+   if (Number.isNaN(Number(t)) || Number.isNaN(Number(h))|| Number.isNaN(Number(p))) {
+    console.log('temperatura, humedad  y presion deben ser números.')
     return res.status(422).json({
-      message: 'temperatura  y humedad  deben ser números.',
+      message: 'temperatura, humedad  y presion deben ser números.',
       status: 0,
     });
     }
@@ -77,7 +77,16 @@ export async function createMeasurement(req, res) {
       status: 0,
     });
   }
-     
+    
+  let presion=Number(p)
+  // Validar que h esté en un rango de presion válido, por ejemplo, entre 30000 y 110000
+  if (presion<30000 || presion > 110000) {
+    console.log('La presion (p) debe estar entre 30000 y 110000')
+    return res.status(422).json({
+      message: 'La presion (p) debe estar entre 30000 y 110000',
+      status: 0,
+    });
+  }
 
     const DeviceFound = await Device.findOne({
         where: {
@@ -96,7 +105,7 @@ export async function createMeasurement(req, res) {
 
      }
         // Crear el nuevo dispositivo
-        const newMeasurement = new Measurement({ id, t, h });
+        const newMeasurement = new Measurement({ id, t, h, p});
         await newMeasurement.save();
         const insertedId = newMeasurement._id;
     
@@ -115,23 +124,24 @@ export async function createMeasurement(req, res) {
 export async function getOneHtml(req,res)
 {
     
-    var {id,t,h}  = req.params;
+    var {id,t,h,p}  = req.params;
     
     // Validar que todos los campos requeridos están presentes
-    if (!id || !t || !h)  {
-        return res.status(400).json({ message: 'device_id, t y h son obligatorios',
+    if (!id || !t || !h || !p)  {
+        return res.status(400).json({ message: 'device_id, t, h,p son obligatorios',
             status: 0 });
         
     }
 
-    console.log("device id    : " + id + " temperature : " + t + " humidity    : " + h);	
+    console.log("device id: " + id + " temp: " + t + " hum: " + h + "pres: " + p);	
  
                 var template = "<html>"+
                 "<head>Sensor id: <title>Sensor {{id}}</title></head>" +
                 "<body>" +
            "<h1>{{ id }}</h1>"+
            "temperatura: {{ t}}<br/>" +
-           "humedad: {{ h }}" +
+           "humedad: {{ h }}<br/>" +
+           "presion: {{ p }}" +
                 "</body>" +
            "</html>";
 
@@ -142,14 +152,15 @@ export async function getOneHtml(req,res)
 
         const m = await Measurement.findOne( {id: id, 
             t: t, 
-            h: h 
+            h: h , 
+            p: p 
         });
           
         
         if(m){
          
             console.log(m);
-            res.send(render(template,{id: m.id, t: m.t, h: m.h}));
+            res.send(render(template,{id: m.id, t: m.t, h: m.h, p: m.p}));
 
 
 
@@ -171,7 +182,6 @@ export async function getOneHtml(req,res)
 
 export async function getAllHtml(req,res)
 {
-
    
         // Obtener todos los dispositivos
         try {
@@ -181,14 +191,16 @@ export async function getAllHtml(req,res)
         // Crear el HTML para cada medida usando map
         var  measurementsRows = Measurements.map(function(m) {
             console.log(m); // Ver el dispositivo en la consola
-            return '<tr><td><a href="/web/measurement/'  + m.id + '/' + m.t + '/' + m.h + '">' + m.id + '</a></td>' +
+            return '<tr><td><a href="/web/measurement/'  + m.id + '/' + m.t + '/' + m.h + '/' + m.p +'">' + m.id + '</a></td>' +
             '<td>'  + m.t +'</td>' +
-            '<td>' +  m.h + '</td></tr>';
-            return '<td>' + m.id + '</td> <a href="/web/measurement/' + m.id + '/' + m.t + '/' + m.h + '">' + m._id + '</a>' +
+            '<td>'  + m.h +'</td>' +
+            '<td>' +  m.p + '</td></tr>';
+            return '<td>' + m.id + '</td> <a href="/web/measurement/' + m.id + '/' + m.t + '/' + m.h +  '/' + m.p +'">' + m._id + '</a>' +
     
             '<td>' + m.t + '</td>' +
+            '<td>' + m.h + '</td>' +
 
-            '<td>' + m.h + '</td></tr>';
+            '<td>' + m.p + '</td></tr>';
      }).join('');
     // para combinar los elementos del array en un solo string
 
@@ -197,7 +209,7 @@ export async function getAllHtml(req,res)
                  "<head><title>Mediciones </title></head>" +
                  "<body>" +
                     "<table border=\"1\">" +
-                       "<tr><th>Sensor id </th><th>temperatura </th><th>humedad </th></tr>" +
+                       "<tr><th>Sensor id </th><th>temperatura </th><th>humedad </th><th>presion </th></tr>" +
                        measurementsRows+ // Usamos el HTML generado dinámicamente
                     "</table>" +
                  "</body>" +

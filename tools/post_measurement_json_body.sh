@@ -3,12 +3,14 @@
 id="$1"
 t="$2"
 h="$3"
+p="$4"
 
 # Asegurar que los valores se pasan correctamente
 json=$(jq -n --arg id "$(printf '%s' "$id")" \
              --arg t "$(printf '%s' "$t")" \
              --arg h "$(printf '%s' "$h")" \
-      '{id: $id, t: $t, h: $h}')
+              --arg p "$(printf '%s' "$p")" \
+      '{id: $id, t: $t, h: $h, p: $p}')
 
 # Mostrar JSON antes de enviarlo
 echo "JSON generado: $json"

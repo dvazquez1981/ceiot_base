@@ -6,6 +6,7 @@ const MeasurementSchema = new mongoose.Schema({
   id: { type: String, required: true }, 
   t: { type: String, required: true },  
   h: { type: String, required: true },  
+  p: { type: String, required: true }, 
 }, { timestamps: false});  // Esto agrega automáticamente createdAt y updatedAt
 
 // Crear el modelo de Mongoose basado en el esquema

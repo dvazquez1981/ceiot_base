@@ -28,7 +28,7 @@ router.get('/measurement', /*ensureToken, chequeoToken, chequeoGrupoUsuario('adm
 
 router.post('/measurement', sanitizeMiddlewareInput,createMeasurement,sanitizeMiddlewareOutput);
 
-router.get('/web/measurement/:id/:t/:h',sanitizeMiddlewareInput, getOneHtml,sanitizeMiddlewareOutput);
+router.get('/web/measurement/:id/:t/:h/:p',sanitizeMiddlewareInput, getOneHtml,sanitizeMiddlewareOutput);
 
 router.get('/web/measurement', sanitizeMiddlewareInput,getAllHtml,sanitizeMiddlewareOutput);
 
