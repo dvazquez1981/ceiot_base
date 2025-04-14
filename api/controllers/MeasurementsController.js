@@ -268,7 +268,7 @@ export async function getAllByIdDevice(req,res)
     }
  }
 
- export async function getAllByIdDeviceView(req,res)
+ export async function getAllByIdDeviceWeb(req,res)
     {
      var {id}  = req.params;
             
@@ -302,9 +302,9 @@ export async function getAllByIdDevice(req,res)
              
             }
             else {
-            res.status(404).send({ message: 'No se encontraron mediciones.' });
+                return res.redirect('/views/DevicesMeasurements?msg=No+tiene+mediciones');
         }
     } catch (error) {
-        res.status(500).send({ error: error.message });
+        return res.redirect('/views/DevicesMeasurements?msg=algo+salio+mal');
     }
  }

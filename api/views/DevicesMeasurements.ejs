@@ -3,6 +3,10 @@
 <head>
   <link rel="stylesheet" href="/css/styles.css">
   <meta charset="UTF-8">
+  <% if (msg) { %>
+    <div class="alert-success"><%= msg %></div>
+  <% } %>
+
   <title>Dispositivos</title>
 </head>
 <body>

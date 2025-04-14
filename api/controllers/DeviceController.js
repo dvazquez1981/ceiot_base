@@ -51,14 +51,14 @@ export async function getAllWeb(req,res){
     }
 
 
-export async function getAllDevicesMeasurements(req, res) {
+export async function getAllDevicesMeasurementsWeb(req, res) {
 
 
     try {
         const dv= await Device.findAll();        
         if(dv){
 
-            res.render('DevicesMeasurements', { devices: dv });
+            res.render('DevicesMeasurements',  { devices: dv, msg: req.query.msg, error: req.query.error });
         }
      
   

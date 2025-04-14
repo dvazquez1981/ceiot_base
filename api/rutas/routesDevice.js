@@ -12,7 +12,7 @@ import {
 import {  
     getAllApi,
     getAllWeb,
-    getAllDevicesMeasurements,
+    getAllDevicesMeasurementsWeb,
     getOneApi,
     getAllHtml,
     getOneHtml,
@@ -62,7 +62,7 @@ router.patch('/html/device/:id', sanitizeMiddlewareInput,updateDeviceWeb,sanitiz
 
 /** vistas */
 
-router.get('/views/DevicesMeasurements',  getAllDevicesMeasurements);
+router.get('/views/DevicesMeasurements',  getAllDevicesMeasurementsWeb);
 
 router.get('/views/Devices',getAllWeb);
 

@@ -13,7 +13,7 @@ import {
     
      createMeasurement,
      getAllByIdDevice,
-     getAllByIdDeviceView,
+     getAllByIdDeviceWeb,
      getOneHtml,
      getAllHtml,
     } from '../controllers/MeasurementsController.js';
@@ -34,6 +34,6 @@ router.get('/web/measurement', sanitizeMiddlewareInput,getAllHtml,sanitizeMiddle
 
 router.get('/measurement/device/:id',sanitizeMiddlewareInput,getAllByIdDevice,sanitizeMiddlewareOutput);
 
-router.get('/views/measurement/device/:id',  getAllByIdDeviceView);
+router.get('/views/measurement/device/:id',  getAllByIdDeviceWeb);
 /** Exporto */
 export default router;
