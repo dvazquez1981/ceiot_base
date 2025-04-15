@@ -8,13 +8,18 @@ import mongoose from 'mongoose';
 
 export async function getAll(req, res) {
     try {
+
+        console.log('obtengo todas las mediciones')
         const Measurements = await Measurement.find(); 
         if (Measurements.length > 0) {
             res.status(200).json(Measurements);
         } else {
+
+        console.log('No se encontraron mediciones.')
             res.status(404).json({ message: 'No se encontraron mediciones.' });
         }
     } catch (error) {
+        console.error(error.message )
         res.status(500).json({ error: error.message });
     }
 }
@@ -108,11 +113,12 @@ export async function createMeasurement(req, res) {
         const newMeasurement = new Measurement({ id, t, h, p});
         await newMeasurement.save();
         const insertedId = newMeasurement._id;
-    
+        console.log('medicion creado con éxito id:'+insertedId )
         //return { insertedId };
         return res.status(201).json(
             
             { message: 'medicion creado con éxito.',  status: 1, id_inserted:insertedId });
+            
     } catch (error) {
         console.error('Error al crear la medicion:', error);
         return res.status(500).json({ message: 'Ocurrió un error inesperado', error: error.message });
@@ -125,16 +131,16 @@ export async function getOneHtml(req,res)
 {
     
     var {id,t,h,p}  = req.params;
-    
+    console.log("get: device_id: " + id + " temp: " + t + " hum: " + h+ " pres: " + p);	
     // Validar que todos los campos requeridos están presentes
     if (!id || !t || !h || !p)  {
+        console.log('device_id, t, h,p son obligatorios')
         return res.status(400).json({ message: 'device_id, t, h,p son obligatorios',
             status: 0 });
         
     }
 
-    console.log("device id: " + id + " temp: " + t + " hum: " + h + "pres: " + p);	
- 
+   
                 var template = "<html>"+
                 "<head>Sensor id: <title>Sensor {{id}}</title></head>" +
                 "<body>" +
@@ -159,19 +165,22 @@ export async function getOneHtml(req,res)
         
         if(m){
          
-            console.log(m);
+            console.log('se obtuvo la medicion')
             res.send(render(template,{id: m.id, t: m.t, h: m.h, p: m.p}));
 
 
 
 
         }else{
+            console.log('no se obtuvo la medicion')
             res.status(404).json({
                 message: 'No se encuentra la medicion.'      
             })
         }
         
     } catch (error) {
+
+        console.error('Algo salio mal',error)
         res.status(500).json({
             message:'Algo salio mal',
             data:{error}
@@ -185,12 +194,14 @@ export async function getAllHtml(req,res)
    
         // Obtener todos los dispositivos
         try {
+            console.log('obtengo todas las mediciones')
             const Measurements = await Measurement.find(); 
             if (Measurements.length > 0) {
               
         // Crear el HTML para cada medida usando map
         var  measurementsRows = Measurements.map(function(m) {
-            console.log(m); // Ver el dispositivo en la consola
+        
+           // // Ver el dispositivo en la consola
             return '<tr><td><a href="/web/measurement/'  + m.id + '/' + m.t + '/' + m.h + '/' + m.p +'">' + m.id + '</a></td>' +
             '<td>'  + m.t +'</td>' +
             '<td>'  + m.h +'</td>' +
@@ -222,9 +233,11 @@ export async function getAllHtml(req,res)
 
 
             } else {
+                console.log('No se encontraron mediciones.')
                 res.status(404).json({ message: 'No se encontraron mediciones.' });
             }
         } catch (error) {
+            console.log(error.message )
             res.status(500).json({ error: error.message });
         }
 
@@ -234,7 +247,7 @@ export async function getAllHtml(req,res)
 export async function getAllByIdDevice(req,res)
     {
      var {id}  = req.params;
-            
+     console.log('obtengo todas las mediciones del device_id: '+id)
         try {
     
             const DeviceFound = await Device.findOne({
@@ -245,7 +258,7 @@ export async function getAllByIdDevice(req,res)
     
             if(!DeviceFound){
               
-                console.log("device id: " + id +  " no  encontrado ")
+                console.log("device id: " + id +  " no encontrado ")
                 return res.status(404).json({
                     message: 'No se encuentra el Device.'      
                    
@@ -257,20 +270,24 @@ export async function getAllByIdDevice(req,res)
 
             const m = await Measurement.find( {id: id });
             if (m.length > 0) {
-
+                console.log('Se encontraron mediciones.' )
                 res.status(200).json(m);
             }
             else {
+                console.log('No se encontraron mediciones.' )
             res.status(404).json({ message: 'No se encontraron mediciones.' });
         }
     } catch (error) {
         res.status(500).json({ error: error.message });
+        console.log( error.message)
+    
     }
  }
 
  export async function getAllByIdDeviceWeb(req,res)
     {
      var {id}  = req.params;
+     console.log('obtengo todas las mediciones del device_id: '+id)
             
         try {
     
@@ -282,7 +299,7 @@ export async function getAllByIdDevice(req,res)
     
             if(!DeviceFound){
               
-                console.log("device id: " + id +  " no  encontrado ")
+                console.log("device id: " + id +  " no encontrado ")
                 return res.status(404).send({
                     message: 'No se encuentra el Device.'      
                    
@@ -295,16 +312,18 @@ export async function getAllByIdDevice(req,res)
             const m = await Measurement.find( {id: id });
             if (m.length > 0) {
 
-          
+                console.log('Se encontraron mediciones.' )  
 
                     res.render('Measurements', { measurements: m });
                 
              
             }
             else {
+                console.log('no se encontraron mediciones.') 
                 return res.redirect('/views/DevicesMeasurements?msg=No+tiene+mediciones');
         }
     } catch (error) {
+        console.error(error);
         return res.redirect('/views/DevicesMeasurements?msg=algo+salio+mal');
     }
  }

@@ -8,6 +8,14 @@ import  addAdminEndpoint from "./admin.js";
 
 import methodOverride from 'method-override';
 
+//logger
+import morgan from 'morgan'
+import logger from './utils/logger.js'; // Importación del logger
+
+
+
+
+
 
 //rutas
 import rutasDevice from './rutas/routesDevice.js'
@@ -40,6 +48,22 @@ app.use(rutasUsuario)
 
 app.set('view engine', 'ejs');
 app.set('views', './views');
+
+
+// Middleware para manejar errores
+app.use((err, req, res, next) => {
+    req.logger.error({
+        message: err.message,
+        stack: err.stack,
+        method: req.method,
+    });
+    res.status(500).send('Algo anduvo mal!');
+});
+
+app.use(morgan('combined', {
+    stream: { write: (message) => logger.info(message.trim()) }
+}));
+
 
 
 //rutas admin

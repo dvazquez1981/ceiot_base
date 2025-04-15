@@ -1,10 +1,10 @@
 CREATE TABLE devices (device_id text, name text, key text);
-INSERT INTO devices (device_id, name, key) VALUES ('03', 'Fake Device 3', 'Fake key 03');
+INSERT INTO devices (device_id, name, key) VALUES ('id_03', 'name_03', 'Fake Key 03');
 INSERT INTO devices (device_id, name, key) VALUES ('00', 'Fake Device 00', '123456');
 INSERT INTO devices (device_id, name, key) VALUES ('id_04', 'name_04', 'key_04');
 INSERT INTO devices (device_id, name, key) VALUES ('1', 'Fake Device  1', 'Fake Key 1');
 INSERT INTO devices (device_id, name, key) VALUES ('02', 'Fake Device 02', 'Fake key 02');
-INSERT INTO devices (device_id, name, key) VALUES ('id_03', 'name_03', 'Fake Key 03');
+INSERT INTO devices (device_id, name, key) VALUES ('03', 'Fake Device 3', 'Fake 03 key');
 CREATE TABLE users (user_id text, name text, key text);
 INSERT INTO users (user_id, name, key) VALUES ('1', 'Ana', 'admin123');
 INSERT INTO users (user_id, name, key) VALUES ('2', 'Beto', 'user123');

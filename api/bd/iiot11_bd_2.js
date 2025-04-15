@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import fs from 'fs';
 import path from 'path';
 
-mongoose.set('debug', false); // 🚫 Desactiva los logs de consultas
+mongoose.set('debug', false); //  Desactiva los logs de consultas
 
 const BACKUP_DIR = "./backup"; // Directorio de backups
 const FILE = 'backup_db_2.json';
