@@ -1,28 +1,10 @@
 import Device from '../models/Device.js'
 import  render from "../render.js";
-/** Obtener todos los Devices
- * import {  
-    getAllApi,
-    getAllWeb,
-    getAllDevicesMeasurements,
-    getOneApi,
-    getAllHtml,
-    getOneHtml,
-    getOneTerm,
-    crearDeviceApi,
-    crearDeviceWeb,
-    deleteDeviceApi,
-    deleteDeviceWeb,
-    updateDeviceApi,
-    updateDeviceWeb
- * 
- * 
- * 
-*/
+
 export async function getAllApi(req,res){
 
     try {
-        console.log('obtengo todas los dispositivos ');
+        console.log('Obtengo todas los dispositivos ');
         const dv= await Device.findAll();        
         if(dv){
 
@@ -40,7 +22,7 @@ export async function getAllApi(req,res){
 export async function getAllWeb(req,res){
 
     try {
-        console.log('obtengo todas los dispotiivos ');
+        console.log('Obtengo todos los dispotivos ');
         const dv= await Device.findAll();        
         if(dv){
 
@@ -77,7 +59,7 @@ export async function getOneApi(req,res)
 {
     
     var {id}  = req.params;
-    console.log("get device id: " + id);
+    console.log("Get device id: " + id);
         
     try {
 
@@ -132,14 +114,14 @@ export async function getOneHtml(req,res)
 
         if( DeviceFound){
          
-            console.log("se encontró");
+            console.log("Se encontró");
             res.send(render(template,{id: DeviceFound.device_id, key: DeviceFound.key, name: DeviceFound.name}));
 
 
 
 
         }else{
-            console.log("no se encontró");
+            console.log("No se encontró");
             res.status(404).json({
                 message: 'No se encuentra el Device.'      
             })
@@ -193,7 +175,7 @@ export async function getOneTerm(req,res)
 
     
     var {id}  = req.params;
-    console.log("get term device id: " + id);
+    console.log("Get term device id: " + id);
 
     try {
 
@@ -237,13 +219,13 @@ export async function crearDeviceApi(req, res)
  {
     const {id ,n, k} = req.body;
 
-    console.log("device id:" + id + " name:" +n + " key:" + k );
+    console.log("Device id:" + id + " name:" +n + " key:" + k );
    
     // Validar que todos los campos requeridos están presentes
     if (!(id && n && k)){
-        console.log('id, name, key son obligatorios');
+        console.log('Id, name, key son obligatorios');
         return res.status(400).json({
-            message: 'id, name, key son obligatorios',
+            message: 'Id, name, key son obligatorios',
             status: 0,
         });
     }
@@ -292,7 +274,7 @@ export async function crearDeviceWeb(req, res)
  {
     const {id ,n, k} = req.body;
 
-    console.log("device id:" + id + " name:" +n + " key:" + k );
+    console.log("Device id:" + id + " name:" +n + " key:" + k );
    
     // Validar que todos los campos requeridos están presentes
     if (!(id && n && k)){
@@ -309,7 +291,7 @@ export async function crearDeviceWeb(req, res)
           });
 
         if (existingDevice) {
-            console.log('el Device ya existe. Elige un device_id distinto.');
+            console.log('El Device ya existe. Elige un device_id distinto.');
             return res.redirect('/views/devices?msg=ya+existe');
         }
 
@@ -332,7 +314,7 @@ export async function deleteDeviceApi(req, res)
 {
 
 const {id}= req.params;
-console.log("device id: " + id + " para borrar");
+console.log("Device id: " + id + " para borrar");
  try {
 
   await Device.destroy({
@@ -342,12 +324,12 @@ console.log("device id: " + id + " para borrar");
         .then(function (deletedRecord) {
             if(deletedRecord > 0)
             {
-                console.log("device id: " + id +  " se borro correctamente");
+                console.log("Device id: " + id +  " se borro correctamente");
                 res.status(200).json({message: "Se borro correctamente"});          
             }
             else
-            {   console.log("device id: " + id +  " no existe registo");
-                res.status(404).json({message: " no existe registo"})
+            {   console.log("Device id: " + id +  " no existe registo");
+                res.status(404).json({message: " No existe registo"})
             }
         })
 
@@ -366,7 +348,7 @@ export async function deleteDeviceWeb(req, res)
 
 const {id}= req.params;
 
-console.log("device id: " + id + " para borrar");
+console.log("Device id: " + id + " para borrar");
 
  try {
 
@@ -377,12 +359,12 @@ console.log("device id: " + id + " para borrar");
         .then(function (deletedRecord) {
             if(deletedRecord > 0)
             {
-            console.log("device id: " + id +  " se borro correctamente");
+            console.log("Device id: " + id +  " se borro correctamente");
             return res.redirect('/views/devices?msg=se+borro+correctamente');        
             }
             else
             {
-             console.log("device id: " + id +  " no existe registo"); 
+             console.log("Device id: " + id +  " no existe registo"); 
             return res.redirect('/views/devices?msg=no+existe+registro');
             }
         })
@@ -402,7 +384,7 @@ export async function updateDeviceApi(req,res){
     var {id}  = req.params;
     const {n,k}= req.body;
 
-    console.log("device id: " + id + " name: " +n + " key: " + k );
+    console.log("Device id: " + id + " name: " +n + " key: " + k );
     try {
 
            await Device.findOne({
@@ -418,9 +400,9 @@ export async function updateDeviceApi(req,res){
 
                // Si dv es null, se responde con un error 404
                 if (!dv) {
-                    console.log("device id: " + id + " no encontrado" );
+                    console.log("Device id: " + id + " no encontrado" );
                 return res.status(404).json({
-                    message: 'device no encontrado.'
+                    message: 'Device no encontrado.'
                      });
                  }
 
@@ -433,9 +415,9 @@ export async function updateDeviceApi(req,res){
                  
                    });
                  // Si la actualización es exitosa, respondemos con éxito
-                 console.log("device id: " + id + " se actualizo correctamente" );
+                 console.log("Device id: " + id + " se actualizo correctamente" );
                 res.status(200).json({
-                message: 'device actualizo correctamente.'
+                message: 'Device actualizo correctamente.'
                 });
           });
         
@@ -457,7 +439,7 @@ export async function updateDeviceWeb(req,res){
     var {id}  = req.params;
     const {n,k}= req.body;
 
-    console.log("device id: " + id + " name: " +n + " key: " + k );
+    console.log("Device id: " + id + " name: " +n + " key: " + k );
     try {
 
            await Device.findOne({
@@ -473,10 +455,9 @@ export async function updateDeviceWeb(req,res){
 
                // Si dv es null, se responde con un error 404
                 if (!dv) {
-                    console.log("device id: " + id + " no encontrado" );
+                    console.log("Device id: " + id + " no encontrado" );
                     return res.redirect('/views/devices?msg=no+existe+registro');
                  }
-
 
 
                  // Si device no es null, actualizamos  en la base de datos
@@ -485,9 +466,9 @@ export async function updateDeviceWeb(req,res){
                     key:k || dv.key|| null
                  
                    });
-                   console.log("device id: " + id + " se actualizo correctamente" );
+                   console.log("Device id: " + id + " se actualizo correctamente" );
                  // Si la actualización es exitosa, respondemos con éxito
-                 return res.redirect('/views/devices?msg=se+actualizco+correctamente');
+                 return res.redirect('/views/devices?msg=se+actualizo+correctamente');
           });
         
     } catch (error) {

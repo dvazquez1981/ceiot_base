@@ -6,10 +6,10 @@ import mongoose from 'mongoose';
 //const { ObjectId } = mongoose.Types;
 /** Obtener todos los MeasurementS */
 
-export async function getAll(req, res) {
+export async function getAllApi(req, res) {
     try {
 
-        console.log('obtengo todas las mediciones')
+        console.log('Obtengo todas las mediciones')
         const Measurements = await Measurement.find(); 
         if (Measurements.length > 0) {
             res.status(200).json(Measurements);
@@ -29,21 +29,21 @@ export async function getAll(req, res) {
 
 /** Crear un nuevo measurement */
 /*validando los valores del body*/
-export async function createMeasurement(req, res) {
+export async function createMeasurementApi(req, res) {
 
   // Si los datos vienen en formato JSON o vienen en formato URL-encoded es indistito.
     const { id, t, h,p } = req.body;
 
 
-    console.log("ingreso: device_id: " + id + " temp: " + t + " hum: " + h+ " pres: " + p);	
+    console.log("Ingreso: device_id: " + id + " temp: " + t + " hum: " + h+ " pres: " + p);	
 
 
  
     // Validar que todos los campos requeridos están presentes
     if (!id || isNaN(t) || isNaN(h)|| isNaN(p))  {
 
-    console.log('device_id, t, h, p son obligatorios, t, h, p deben ser numeros')
-        return res.status(400).json({ message: 'device_id, t, h, p son obligatorios, t, h, p deben ser numeros ',
+    console.log('Device_id, t, h, p son obligatorios, t, h, p deben ser numeros')
+        return res.status(400).json({ message: 'Device_id, t, h, p son obligatorios, t, h, p deben ser numeros ',
             status: 0 });
     }
 
@@ -53,9 +53,9 @@ export async function createMeasurement(req, res) {
         
    //Validar que temperatura y humedad sean números, incluso si son strings que representan números
    if (Number.isNaN(Number(t)) || Number.isNaN(Number(h))|| Number.isNaN(Number(p))) {
-    console.log('temperatura, humedad  y presion deben ser números.')
+    console.log('Temperatura, humedad  y presion deben ser números.')
     return res.status(422).json({
-      message: 'temperatura, humedad  y presion deben ser números.',
+      message: 'Temperatura, humedad  y presion deben ser números.',
       status: 0,
     });
     }
@@ -113,11 +113,11 @@ export async function createMeasurement(req, res) {
         const newMeasurement = new Measurement({ id, t, h, p});
         await newMeasurement.save();
         const insertedId = newMeasurement._id;
-        console.log('medicion creado con éxito id:'+insertedId )
+        console.log('Medicion creado con éxito id:'+insertedId )
         //return { insertedId };
         return res.status(201).json(
             
-            { message: 'medicion creado con éxito.',  status: 1, id_inserted:insertedId });
+            { message: 'Medicion creado con éxito.',  status: 1, id_inserted:insertedId });
             
     } catch (error) {
         console.error('Error al crear la medicion:', error);
@@ -131,11 +131,11 @@ export async function getOneHtml(req,res)
 {
     
     var {id,t,h,p}  = req.params;
-    console.log("get: device_id: " + id + " temp: " + t + " hum: " + h+ " pres: " + p);	
+    console.log("Get: device_id: " + id + " temp: " + t + " hum: " + h+ " pres: " + p);	
     // Validar que todos los campos requeridos están presentes
     if (!id || !t || !h || !p)  {
-        console.log('device_id, t, h,p son obligatorios')
-        return res.status(400).json({ message: 'device_id, t, h,p son obligatorios',
+        console.log('Device_id, t, h,p son obligatorios')
+        return res.status(400).json({ message: 'Device_id, t, h,p son obligatorios',
             status: 0 });
         
     }
@@ -165,14 +165,14 @@ export async function getOneHtml(req,res)
         
         if(m){
          
-            console.log('se obtuvo la medicion')
+            console.log('Se obtuvo la medicion')
             res.send(render(template,{id: m.id, t: m.t, h: m.h, p: m.p}));
 
 
 
 
         }else{
-            console.log('no se obtuvo la medicion')
+            console.log('No se obtuvo la medicion')
             res.status(404).json({
                 message: 'No se encuentra la medicion.'      
             })
@@ -194,7 +194,7 @@ export async function getAllHtml(req,res)
    
         // Obtener todos los dispositivos
         try {
-            console.log('obtengo todas las mediciones')
+            console.log('Obtengo todas las mediciones')
             const Measurements = await Measurement.find(); 
             if (Measurements.length > 0) {
               
@@ -244,10 +244,10 @@ export async function getAllHtml(req,res)
 
     }
 
-export async function getAllByIdDevice(req,res)
+export async function getAllByIdDeviceApi(req,res)
     {
      var {id}  = req.params;
-     console.log('obtengo todas las mediciones del device_id: '+id)
+     console.log('Obtengo todas las mediciones del device_id: '+id)
         try {
     
             const DeviceFound = await Device.findOne({
@@ -258,7 +258,7 @@ export async function getAllByIdDevice(req,res)
     
             if(!DeviceFound){
               
-                console.log("device id: " + id +  " no encontrado ")
+                console.log("Device id: " + id +  " no encontrado ")
                 return res.status(404).json({
                     message: 'No se encuentra el Device.'      
                    
@@ -266,7 +266,7 @@ export async function getAllByIdDevice(req,res)
              
             }
 
-            console.log("device id: " + id + " encontrado ")
+            console.log("Device id: " + id + " encontrado ")
 
             const m = await Measurement.find( {id: id });
             if (m.length > 0) {
@@ -287,7 +287,7 @@ export async function getAllByIdDevice(req,res)
  export async function getAllByIdDeviceWeb(req,res)
     {
      var {id}  = req.params;
-     console.log('obtengo todas las mediciones del device_id: '+id)
+     console.log('Obtengo todas las mediciones del device_id: '+id)
             
         try {
     
@@ -299,7 +299,7 @@ export async function getAllByIdDevice(req,res)
     
             if(!DeviceFound){
               
-                console.log("device id: " + id +  " no encontrado ")
+                console.log("Device id: " + id +  " no encontrado ")
                 return res.status(404).send({
                     message: 'No se encuentra el Device.'      
                    
@@ -307,7 +307,7 @@ export async function getAllByIdDevice(req,res)
              
             }
 
-            console.log("device id: " + id + " encontrado ")
+            console.log("Device id: " + id + " encontrado ")
 
             const m = await Measurement.find( {id: id });
             if (m.length > 0) {
@@ -319,7 +319,7 @@ export async function getAllByIdDevice(req,res)
              
             }
             else {
-                console.log('no se encontraron mediciones.') 
+                console.log('No se encontraron mediciones.') 
                 return res.redirect('/views/DevicesMeasurements?msg=No+tiene+mediciones');
         }
     } catch (error) {

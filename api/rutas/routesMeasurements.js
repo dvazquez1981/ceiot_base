@@ -9,10 +9,10 @@ import {
 
 */
 import {  
-    getAll,
+     getAllApi,
     
-     createMeasurement,
-     getAllByIdDevice,
+     createMeasurementApi,
+     getAllByIdDeviceApi,
      getAllByIdDeviceWeb,
      getOneHtml,
      getAllHtml,
@@ -21,19 +21,21 @@ import {
 /** Rutas */
 const router = Router();
 
-/** Controladores */
-
-/** Obtener mediciones*/
-router.get('/measurement', /*ensureToken, chequeoToken, chequeoGrupoUsuario('admin'), */ getAll/*,sanitizeMiddlewareOutput*/);
-
-router.post('/measurement', sanitizeMiddlewareInput,createMeasurement,sanitizeMiddlewareOutput);
+/*anteriores*/
 
 router.get('/web/measurement/:id/:t/:h/:p',sanitizeMiddlewareInput, getOneHtml,sanitizeMiddlewareOutput);
 
 router.get('/web/measurement', sanitizeMiddlewareInput,getAllHtml,sanitizeMiddlewareOutput);
 
-router.get('/measurement/device/:id',sanitizeMiddlewareInput,getAllByIdDevice,sanitizeMiddlewareOutput);
 
+/** api*/
+router.get('/measurement', /*ensureToken, chequeoToken, chequeoGrupoUsuario('admin'), */ getAllApi/*,sanitizeMiddlewareOutput*/);
+
+router.post('/measurement', sanitizeMiddlewareInput,createMeasurementApi,sanitizeMiddlewareOutput);
+
+router.get('/measurement/device/:id',sanitizeMiddlewareInput,getAllByIdDeviceApi,sanitizeMiddlewareOutput);
+
+/*views*/
 router.get('/views/measurement/device/:id',  getAllByIdDeviceWeb);
 /** Exporto */
 export default router;
