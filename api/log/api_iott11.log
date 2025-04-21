@@ -92,3 +92,82 @@
 [2025-04-21 11:26:18] [32MINFO[39M: SIGINT guardando los backups...
 [2025-04-21 11:26:18] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
 [2025-04-21 11:26:18] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-21 13:41:49] [32MINFO[39M: El servidor está inicializado en el puerto: 8080
+[2025-04-21 13:41:50] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-21 13:41:50] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-21 13:41:50] [32MINFO[39M: ::ffff:127.0.0.1 - - [21/Apr/2025:16:41:50 +0000] "GET /js/materialize.min.js HTTP/1.1" 404 160 "http://localhost:8080/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-21 13:41:51] [32MINFO[39M: ::ffff:127.0.0.1 - - [21/Apr/2025:16:41:51 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-21 13:41:51] [32MINFO[39M: Obtengo todas los dispositivos 
+[2025-04-21 13:41:51] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-21 13:42:06] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-21 13:42:06] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-21 13:42:06] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-21 13:45:00] [32MINFO[39M: El servidor está inicializado en el puerto: 8080
+[2025-04-21 13:45:00] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-21 13:45:00] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-21 13:45:01] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-21 13:45:09] [32MINFO[39M: Obtengo todas los dispositivos 
+[2025-04-21 13:45:14] [32MINFO[39M: Obtengo todas las mediciones
+[2025-04-21 13:45:25] [32MINFO[39M: Get: device_id: 00 temp: 17 hum: 77 pres: 100000
+[2025-04-21 13:45:25] [32MINFO[39M: Se obtuvo la medicion
+[2025-04-21 13:45:45] [32MINFO[39M: Obtengo todos los dispotivos 
+[2025-04-21 13:46:08] [32MINFO[39M: Device id: 03 name:  key: Fake 3 key
+[2025-04-21 13:46:08] [32MINFO[39M: Device id: 03 se actualizo correctamente
+[2025-04-21 13:46:08] [32MINFO[39M: Obtengo todos los dispotivos 
+[2025-04-21 13:48:00] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-21 13:48:00] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-21 13:48:24] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-21 13:48:24] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-21 13:48:24] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-21 16:20:26] [32MINFO[39M: El servidor está inicializado en el puerto: 8080
+[2025-04-21 16:20:26] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-21 16:20:26] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-21 16:20:27] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-21 16:23:26] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-21 16:23:26] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-21 16:24:26] [32MINFO[39M: Device id:04 name:name 04 key:key 04
+[2025-04-21 16:24:26] [32MINFO[39M: Device creado con éxito.
+[2025-04-21 16:24:32] [32MINFO[39M: Device id:04 name:name 04 key:key 04
+[2025-04-21 16:24:32] [32MINFO[39M: el Device ya existe. Elige un device_id distinto.
+[2025-04-21 16:25:56] [32MINFO[39M: Device id: 04 para borrar
+[2025-04-21 16:25:56] [32MINFO[39M: Device id: 04 se borro correctamente
+[2025-04-21 16:25:59] [32MINFO[39M: Device id: 04 para borrar
+[2025-04-21 16:25:59] [32MINFO[39M: Device id: 04 no existe registo
+[2025-04-21 16:26:26] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-21 16:26:26] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-21 16:27:25] [32MINFO[39M: Device id: 04 name: nombre 04 key: undefined
+[2025-04-21 16:27:25] [32MINFO[39M: Device id: 04 no encontrado
+[2025-04-21 16:27:30] [32MINFO[39M: Device id:04 name:name 04 key:key 04
+[2025-04-21 16:27:30] [32MINFO[39M: Device creado con éxito.
+[2025-04-21 16:27:32] [32MINFO[39M: Device id: 04 name: nombre 04 key: undefined
+[2025-04-21 16:27:32] [32MINFO[39M: Device id: 04 se actualizo correctamente
+[2025-04-21 16:29:26] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-21 16:29:26] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-21 16:31:20] [32MINFO[39M: Device id:01 name:undefined key:undefined
+[2025-04-21 16:31:20] [32MINFO[39M: Id, name, key son obligatorios
+[2025-04-21 16:31:53] [32MINFO[39M: Ingreso: device_id: 01 temp: 30 hum: 1010 pres: 20
+[2025-04-21 16:31:53] [32MINFO[39M: La humedad (h) debe estar entre 0 y 100%
+[2025-04-21 16:32:01] [32MINFO[39M: Ingreso: device_id: 01 temp: 30 hum: 40 pres: 20
+[2025-04-21 16:32:01] [32MINFO[39M: La presion (p) debe estar entre 30000 y 110000
+[2025-04-21 16:32:26] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-21 16:32:26] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-21 16:32:36] [32MINFO[39M: Ingreso: device_id: 01 temp: 30 hum: 40 pres: 1010
+[2025-04-21 16:32:36] [32MINFO[39M: La presion (p) debe estar entre 30000 y 110000
+[2025-04-21 16:32:46] [32MINFO[39M: Ingreso: device_id: 01 temp: 30 hum: 40 pres: 1010000
+[2025-04-21 16:32:46] [32MINFO[39M: La presion (p) debe estar entre 30000 y 110000
+[2025-04-21 16:32:53] [32MINFO[39M: Ingreso: device_id: 01 temp: 30 hum: 40 pres: 101000
+[2025-04-21 16:32:53] [32MINFO[39M: El device_id no es correcto.
+[2025-04-21 16:33:23] [32MINFO[39M: Device id:01 name:name 01 key:key 01
+[2025-04-21 16:33:23] [32MINFO[39M: Device creado con éxito.
+[2025-04-21 16:33:28] [32MINFO[39M: Ingreso: device_id: 01 temp: 30 hum: 40 pres: 101000
+[2025-04-21 16:33:28] [32MINFO[39M: Medicion creado con éxito id:68069d886500319d83c638aa
+[2025-04-21 16:33:51] [32MINFO[39M: Obtengo todas los dispositivos 
+[2025-04-21 16:34:31] [32MINFO[39M: Obtengo todas las mediciones
+[2025-04-21 16:35:26] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-21 16:35:26] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-21 16:36:37] [32MINFO[39M: Obtengo todas las mediciones del device_id: 01
+[2025-04-21 16:36:37] [32MINFO[39M: Device id: 01 encontrado 
+[2025-04-21 16:36:37] [32MINFO[39M: Se encontraron mediciones.
+[2025-04-21 16:37:00] [32MINFO[39M: Obtengo todas las mediciones del device_id: 1
+[2025-04-21 16:37:00] [32MINFO[39M: Device id: 1 encontrado 
+[2025-04-21 16:37:00] [32MINFO[39M: Se encontraron mediciones.

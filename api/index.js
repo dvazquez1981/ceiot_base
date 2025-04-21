@@ -13,10 +13,6 @@ import morgan from 'morgan'
 import logger from './utils/logger.js'; // Importación del logger
 
 
-
-
-
-
 //rutas
 import rutasDevice from './rutas/routesDevice.js'
 import rutasMeasurements from './rutas/routesMeasurements.js'
@@ -51,7 +47,7 @@ app.set('views', './views');
 
 
 // Middleware para manejar errores
-app.use((err, req, res, next) => {
+/*app.use((err, req, res, next) => {
     req.logger.error({
         message: err.message,
         stack: err.stack,
@@ -63,7 +59,7 @@ app.use((err, req, res, next) => {
 app.use(morgan('combined', {
     stream: { write: (message) => logger.info(message.trim()) }
 }));
-
+*/
 
 
 //rutas admin
