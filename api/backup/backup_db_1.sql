@@ -10,3 +10,4 @@ INSERT INTO devices (device_id, name, key) VALUES ('01', 'name 01', 'key 01');
 CREATE TABLE users (user_id text, name text, key text);
 INSERT INTO users (user_id, name, key) VALUES ('1', 'Ana', 'admin123');
 INSERT INTO users (user_id, name, key) VALUES ('2', 'Beto', 'user123');
+INSERT INTO users (user_id, name, key) VALUES ('3', 'sucutrule', 'admin123');

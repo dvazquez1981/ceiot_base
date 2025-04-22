@@ -66,14 +66,17 @@ app.use(morgan('combined', {
 addAdminEndpoint(app, render);
 
 
-const PORT = 8080;
+
+app.set('port', 8080);
 
 async function main(){
 
-    app.listen(PORT, () => {
-     console.log("El servidor está inicializado en el puerto: " + PORT);
-    });
-    }
+    app.listen(app.get('port'), () => {
+        console.log("El api está inicializado en el puerto: " + app.get('port'));
+        });
+        
+
+}
     
     
 main()

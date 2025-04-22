@@ -4,14 +4,16 @@ import User from '../models/User.js'
 export async function getAll(req,res){
 
     try {
+        console.log('Obtengo todas los usuarios ');
         const u= await  User.findAll();        
         if(u){
-
+          
             res.status(200).json(u);
         }
      
   
       } catch (error) {
+        console.log(error.message );
         res.status(500).json({ error: error.message });
       }
     }
@@ -23,7 +25,7 @@ export async function getOne(req,res)
     var {user_id}  = req.params;
         
     try {
-
+        console.log('Obtengo el usuario: '+user_id);
         const UserFound = await  User.findOne({
             where: {
                 user_id:user_id
@@ -31,9 +33,11 @@ export async function getOne(req,res)
         });
 
         if( UserFound){
+            
             res.status(200).json(UserFound);
 
         }else{
+            console.log('No se encuentra el user.');
             res.status(404).json({
                 message: 'No se encuentra el user.'      
             })
@@ -153,7 +157,7 @@ export async function updateUser(req,res){
                // Si u es null, se responde con un error 404
                 if (!u) {
                 return res.status(404).json({
-                    message: 'device no encontrado.'
+                    message: 'user no encontrado.'
                      });
                  }
 
@@ -168,7 +172,7 @@ export async function updateUser(req,res){
 
                  // Si la actualización es exitosa, respondemos con éxito
                 res.status(200).json({
-                message: 'device actualizo correctamente.'
+                message: 'user actualizo correctamente.'
                 });
           });
         
