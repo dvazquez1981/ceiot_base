@@ -362,3 +362,63 @@
 [2025-04-22 17:01:20] [32MINFO[39M: El api está inicializado en el puerto: 8080
 [2025-04-22 17:01:20] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
 [2025-04-22 17:01:27] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 10:24:43] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 10:24:43] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 10:24:43] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 10:24:44] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 10:25:58] [32MINFO[39M: Obtengo todas los dispositivos 
+[2025-04-23 10:26:00] [32MINFO[39M: Obtengo todas los dispositivos 
+[2025-04-23 10:26:04] [32MINFO[39M: Obtener todos los dispositivos 
+[2025-04-23 10:26:06] [32MINFO[39M: get device id: id_03
+[2025-04-23 10:26:06] [32MINFO[39M: Se encontró
+[2025-04-23 10:26:15] [32MINFO[39M: Obtengo todas las mediciones
+[2025-04-23 10:26:18] [32MINFO[39M: Get: device_id: 1 temp: 3 hum: 4 pres: 30000
+[2025-04-23 10:26:18] [32MINFO[39M: Se obtuvo la medicion
+[2025-04-23 10:26:21] [32MINFO[39M: Get: device_id: 1 temp: 24.84 hum: 0 pres: 101019.42
+[2025-04-23 10:26:21] [32MINFO[39M: Se obtuvo la medicion
+[2025-04-23 10:26:33] [32MINFO[39M: Obtengo todos los dispotivos 
+[2025-04-23 10:27:02] [32MINFO[39M: Device id: 00 name:  key: Fake Key 00
+[2025-04-23 10:27:02] [32MINFO[39M: Device id: 00 se actualizo correctamente
+[2025-04-23 10:27:02] [32MINFO[39M: Obtengo todos los dispotivos 
+[2025-04-23 10:27:37] [32MINFO[39M: Obtengo todods los dispositivos 
+[2025-04-23 10:27:42] [32MINFO[39M: Obtengo todas las mediciones del device_id: 02
+[2025-04-23 10:27:42] [32MINFO[39M: Device id: 02 encontrado 
+[2025-04-23 10:27:42] [32MINFO[39M: No se encontraron mediciones.
+[2025-04-23 10:27:42] [32MINFO[39M: Obtengo todods los dispositivos 
+[2025-04-23 10:27:43] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 10:27:43] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 10:27:46] [32MINFO[39M: Obtengo todas las mediciones del device_id: 01
+[2025-04-23 10:27:46] [32MINFO[39M: Device id: 01 encontrado 
+[2025-04-23 10:27:46] [32MINFO[39M: Se encontraron mediciones.
+[2025-04-23 10:27:52] [32MINFO[39M: Obtengo todods los dispositivos 
+[2025-04-23 10:27:55] [32MINFO[39M: Obtengo todas las mediciones del device_id: 00
+[2025-04-23 10:27:55] [32MINFO[39M: Device id: 00 encontrado 
+[2025-04-23 10:27:55] [32MINFO[39M: Se encontraron mediciones.
+[2025-04-23 10:27:56] [32MINFO[39M: Obtengo todods los dispositivos 
+[2025-04-23 10:28:13] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 10:28:13] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 10:28:13] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 10:47:06] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 10:47:06] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 10:47:07] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 10:47:11] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 10:47:56] [32MINFO[39M: Obtengo todas los dispositivos 
+[2025-04-23 10:48:01] [32MINFO[39M: Obtener todos los dispositivos 
+[2025-04-23 10:48:05] [32MINFO[39M: get device id: 00
+[2025-04-23 10:48:05] [32MINFO[39M: Se encontró
+[2025-04-23 10:48:11] [32MINFO[39M: Obtengo todas los dispositivos 
+[2025-04-23 10:48:15] [32MINFO[39M: Obtengo todas los dispositivos 
+[2025-04-23 10:48:19] [32MINFO[39M: get device id: 00
+[2025-04-23 10:48:19] [32MINFO[39M: Se encontró
+[2025-04-23 10:50:07] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 10:50:07] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 10:53:07] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 10:53:07] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 10:56:07] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 10:56:07] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 10:59:07] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 10:59:07] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 11:02:07] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 11:02:07] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 11:05:07] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 11:05:07] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql

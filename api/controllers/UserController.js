@@ -58,6 +58,8 @@ export async function crearUser(req, res)
    
     // Validar que todos los campos requeridos están presentes
     if (!(user_id && name && key)){
+
+        console.log('user_id, name, key son obligatorios');
         return res.status(400).json({
             message: 'user_id, name, key son obligatorios',
             status: 0,
@@ -73,6 +75,7 @@ export async function crearUser(req, res)
           });
 
         if (existingUser) {
+            console.log('el User ya existe. Elige un User_id distinto.');
             return res.status(409).json({
                 message: 'el User ya existe. Elige un User_id distinto.',
                 status: 0,
@@ -85,7 +88,7 @@ export async function crearUser(req, res)
             name: name,
             key:key
         });
-
+        console.log('user creado con éxito.');
         return res.status(201).json({
             message: 'user creado con éxito.',
             status: 1,
@@ -118,15 +121,18 @@ const {user_id}= req.params;
         .then(function (deletedRecord) {
             if(deletedRecord > 0)
             {
+                console.log("Se borro correctamente");
                 res.status(200).json({message: "Se borro correctamente"});          
             }
             else
-            {
+            {   console.log("no existe registo");
                 res.status(404).json({message: "no existe registo"})
             }
         })
 
 } catch (error) {
+
+    console.log('Hubo un error');
     res.status(500).json({
         message:'Hubo un error',
         data:{error}
@@ -156,6 +162,8 @@ export async function updateUser(req,res){
 
                // Si u es null, se responde con un error 404
                 if (!u) {
+
+                    console.log('user no encontrado.');
                 return res.status(404).json({
                     message: 'user no encontrado.'
                      });
@@ -169,7 +177,7 @@ export async function updateUser(req,res){
                  
                    });
 
-
+                   console.log('user actualizo correctamente.');
                  // Si la actualización es exitosa, respondemos con éxito
                 res.status(200).json({
                 message: 'user actualizo correctamente.'
