@@ -422,3 +422,726 @@
 [2025-04-23 11:02:07] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
 [2025-04-23 11:05:07] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
 [2025-04-23 11:05:07] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 11:08:07] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 11:08:07] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 11:11:07] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 11:11:07] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 11:43:45] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 11:43:45] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 11:43:45] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 11:43:47] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 11:44:58] [32MINFO[39M: Obtengo todas los usuarios 
+[2025-04-23 11:45:09] [32MINFO[39M: user actualizo correctamente.
+[2025-04-23 11:46:47] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 11:46:47] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 11:49:45] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 11:49:45] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 12:15:39] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 12:15:40] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 12:16:01] [31MERROR[39M: Error al conectar a MongoDB: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+[2025-04-23 12:17:21] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:15:17:21 +0000] "GET /js/materialize.min.js HTTP/1.1" 404 160 "http://localhost:8080/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 12:17:21] [32MINFO[39M: Obtengo todas los dispositivos 
+[2025-04-23 12:17:30] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 12:17:59] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 12:17:59] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 12:18:29] [31MERROR[39M: Error al conectar a MongoDB: MongooseServerSelectionError: connection <monitor> to 127.0.0.1:27017 closed
+[2025-04-23 12:18:44] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 12:18:46] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 12:18:47] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 12:19:06] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:15:19:06 +0000] "GET /js/materialize.min.js HTTP/1.1" 404 160 "http://localhost:8080/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 12:19:07] [32MINFO[39M: Obtengo todas los dispositivos 
+[2025-04-23 12:19:16] [31MERROR[39M: Error al conectar a MongoDB: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+[2025-04-23 12:19:27] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 12:20:28] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 12:20:28] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 12:20:31] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 12:20:44] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 12:20:46] [32MINFO[39M: get device id: 00
+[2025-04-23 12:20:46] [32MINFO[39M: Se encontró
+[2025-04-23 12:21:06] [32MINFO[39M: Obtengo todas los dispositivos 
+[2025-04-23 12:21:17] [32MINFO[39M: Get device id: 1
+[2025-04-23 12:21:17] [32MINFO[39M: Se encontro
+[2025-04-23 12:21:29] [32MINFO[39M: Obtengo todas los usuarios 
+[2025-04-23 12:23:28] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 12:23:32] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 12:26:28] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 12:26:32] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 12:29:28] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 12:29:32] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 12:32:28] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 12:32:32] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 12:35:28] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 12:35:32] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 12:38:28] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 12:38:32] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 12:41:28] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 12:41:32] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 12:44:28] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 12:44:32] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 12:47:28] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 12:47:32] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 12:50:28] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 12:50:32] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 12:53:28] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 12:53:32] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 12:56:28] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 12:56:32] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 12:59:28] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 12:59:32] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:02:28] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:02:32] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:05:28] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:05:32] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:07:22] [32MINFO[39M: El User ya existe. Elige un User_id distinto.
+[2025-04-23 13:07:38] [32MINFO[39M: User actualizo correctamente.
+[2025-04-23 13:07:50] [32MINFO[39M: Obtengo todas los usuarios 
+[2025-04-23 13:08:28] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:08:32] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:11:28] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:11:32] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:12:29] [32MINFO[39M: Obtengo todas las mediciones del device_id: 1
+[2025-04-23 13:12:29] [32MINFO[39M: Device id: 1 encontrado 
+[2025-04-23 13:12:29] [32MINFO[39M: Se encontraron mediciones.
+[2025-04-23 13:12:37] [32MINFO[39M: Obtengo todas los dispositivos 
+[2025-04-23 13:12:43] [32MINFO[39M: Get device id: 1
+[2025-04-23 13:12:43] [32MINFO[39M: Se encontro
+[2025-04-23 13:12:56] [32MINFO[39M: Obtengo todas los usuarios 
+[2025-04-23 13:13:02] [32MINFO[39M: Obtengo todas los usuarios 
+[2025-04-23 13:14:28] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:14:32] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:16:06] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 13:16:06] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:16:06] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:18:35] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 13:18:36] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 13:18:36] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 13:18:37] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 13:18:49] [32MINFO[39M: Obtengo todas los usuarios 
+[2025-04-23 13:18:59] [32MINFO[39M: User creado con éxito.
+[2025-04-23 13:19:06] [32MINFO[39M: Obtengo todas los usuarios 
+[2025-04-23 13:19:11] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 13:19:11] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:19:11] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:23:08] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 13:23:08] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 13:23:09] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 13:23:10] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 13:23:28] [32MINFO[39M: User no encontrado.
+[2025-04-23 13:23:39] [32MINFO[39M: User creado con éxito.
+[2025-04-23 13:24:00] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 13:24:00] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:24:00] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:24:02] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 13:24:02] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 13:24:03] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 13:24:04] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 13:25:57] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 13:25:57] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:25:57] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:26:26] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 13:26:26] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 13:26:26] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 13:26:27] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 13:26:33] [32MINFO[39M: User no encontrado.
+[2025-04-23 13:26:37] [32MINFO[39M: User creado con éxito.
+[2025-04-23 13:26:44] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 13:26:44] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:26:44] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:27:53] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 13:27:53] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 13:27:53] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 13:27:54] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 13:28:17] [32MINFO[39M: User creado con éxito.
+[2025-04-23 13:28:24] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 13:28:25] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:28:25] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:28:27] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 13:28:27] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 13:28:27] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 13:28:28] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 13:31:27] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:31:27] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:32:14] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 13:32:14] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:32:14] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:33:49] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 13:33:49] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 13:33:49] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 13:33:50] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 13:36:45] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 13:36:45] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:36:45] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:36:47] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 13:36:47] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 13:36:47] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 13:36:48] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 13:37:16] [32MINFO[39M: Obtengo todas los usuarios 
+[2025-04-23 13:38:09] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 13:38:09] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:38:09] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:38:43] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 13:38:43] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 13:38:43] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 13:38:44] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 13:39:03] [32MINFO[39M: Obtengo todas los usuarios 
+[2025-04-23 13:39:06] [32MINFO[39M: Obtengo todas los usuarios 
+[2025-04-23 13:40:16] [32MINFO[39M: Obtengo todas los usuarios 
+[2025-04-23 13:41:43] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:41:43] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:42:16] [32MINFO[39M: Obtengo todas los usuarios 
+[2025-04-23 13:43:40] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 13:43:40] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:43:40] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:43:44] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 13:43:44] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 13:43:44] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 13:43:45] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 13:44:00] [32MINFO[39M: Obtengo todas los usuarios 
+[2025-04-23 13:44:01] [32MINFO[39M: Obtengo todas los usuarios 
+[2025-04-23 13:45:58] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 13:45:58] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:45:59] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:46:02] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 13:46:02] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 13:46:02] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 13:46:03] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 13:47:25] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 13:47:25] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:47:25] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:47:28] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 13:47:28] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 13:47:28] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 13:47:29] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 13:49:35] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 13:49:35] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:49:35] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:49:38] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 13:49:38] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 13:49:38] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 13:49:39] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 13:50:28] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 13:50:28] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:50:28] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:50:32] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 13:50:32] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 13:50:32] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 13:50:33] [32MINFO[39M: llega
+[2025-04-23 13:50:34] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 13:50:40] [32MINFO[39M: llega
+[2025-04-23 13:50:52] [32MINFO[39M: Obtengo el usuario: 1
+[2025-04-23 13:50:57] [32MINFO[39M: llega
+[2025-04-23 13:50:58] [32MINFO[39M: llega
+[2025-04-23 13:50:59] [32MINFO[39M: llega
+[2025-04-23 13:51:01] [32MINFO[39M: llega
+[2025-04-23 13:51:02] [32MINFO[39M: llega
+[2025-04-23 13:51:39] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 13:51:39] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:51:39] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:51:42] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 13:51:43] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 13:51:43] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 13:51:44] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 13:52:50] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 13:52:50] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:52:50] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:52:52] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 13:52:52] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 13:52:52] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 13:52:53] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 13:52:59] [32MINFO[39M: next is not defined
+[2025-04-23 13:53:32] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 13:53:32] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:53:33] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:55:49] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 13:55:49] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 13:55:49] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 13:55:50] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 13:55:52] [32MINFO[39M: ::1 - - [23/Apr/2025:16:55:52 +0000] "GET /usuario HTTP/1.1" 404 146 "-" "PostmanRuntime/7.43.3"
+[2025-04-23 13:56:36] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 13:56:36] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:56:37] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 13:57:59] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 13:58:00] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 13:58:00] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 13:58:01] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 13:58:04] [32MINFO[39M: Obtengo todas los usuarios 
+[2025-04-23 13:58:04] [32MINFO[39M: ::1 - - [23/Apr/2025:16:58:04 +0000] "GET /usuario HTTP/1.1" 200 172 "-" "PostmanRuntime/7.43.3"
+[2025-04-23 13:59:48] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 13:59:48] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 13:59:48] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 14:00:42] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:00:42] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:00:42] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:00:43] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:00:51] [32MINFO[39M: Obtengo todas los usuarios 
+[2025-04-23 14:02:42] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 14:02:42] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 14:02:42] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 14:07:00] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:07:00] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:07:00] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:07:02] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:07:09] [32MINFO[39M: Obtengo todas los usuarios 
+[2025-04-23 14:08:03] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:08:03] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:08:03] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:08:07] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:08:07] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:08:07] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:08:09] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:08:25] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:08:26] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:08:26] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:08:34] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:08:34] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:08:34] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:08:35] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:08:38] [32MINFO[39M: Obtengo todas los usuarios 
+[2025-04-23 14:09:16] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:09:16] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:09:16] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:09:17] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:09:35] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:09:35] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:09:35] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:09:36] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:12:40] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:12:40] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:12:40] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:12:41] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:12:45] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:12:46] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:12:46] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:12:47] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:13:38] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:13:38] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:13:39] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:13:41] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:13:41] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:13:42] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:13:42] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:13:56] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:13:56] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:13:56] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:13:57] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:14:04] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:14:04] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:14:04] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:14:06] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:14:20] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:14:20] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:14:20] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:14:21] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:14:34] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:14:34] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:14:34] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:14:35] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:14:54] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:14:54] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:14:54] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:14:55] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:15:04] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:15:04] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:15:04] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:15:11] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:15:12] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:15:12] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:15:13] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:15:35] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:15:36] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:15:36] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:15:37] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:15:52] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:15:52] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:15:52] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:16:00] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:16:01] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:16:01] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:16:02] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:16:05] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:16:06] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:16:06] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:16:07] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:16:17] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:16:17] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:16:17] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:16:18] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:16:25] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:16:25] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:16:25] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:16:26] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:16:34] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:16:34] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:16:34] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:16:35] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:16:44] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:16:45] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:16:45] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:16:46] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:16:50] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:16:51] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:16:51] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:16:52] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:17:21] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:17:21] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:17:21] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:17:22] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:17:28] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:17:28] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:17:28] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:17:29] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:17:50] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:17:50] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:17:50] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:17:51] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:18:21] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:18:21] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:18:21] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:18:22] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:18:39] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:18:39] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:18:39] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:18:40] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:19:42] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:19:43] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:19:43] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:19:44] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:20:21] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:20:21] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:20:21] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:20:22] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:20:27] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:20:27] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:20:27] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:20:30] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:20:30] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:20:30] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:20:31] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:21:05] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:21:05] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:21:05] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:21:06] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:21:20] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:21:20] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:21:21] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:21:22] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:21:28] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:21:29] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:21:29] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:21:30] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:21:48] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:21:48] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:21:48] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:21:50] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:23:05] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:17:23:05 +0000] "GET /js/materialize.min.js HTTP/1.1" 404 160 "http://localhost:8080/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 14:23:06] [32MINFO[39M: Obtengo todas los dispositivos 
+[2025-04-23 14:23:09] [32MINFO[39M: Obtener todos los dispositivos 
+[2025-04-23 14:23:15] [32MINFO[39M: Obtengo todas las mediciones
+[2025-04-23 14:23:16] [31MERROR[39M: Cannot set property parent of [object Object] which has only a getter
+[2025-04-23 14:23:16] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:17:23:16 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/measurement" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 14:23:21] [32MINFO[39M: Obtengo todas las mediciones
+[2025-04-23 14:23:21] [31MERROR[39M: Cannot set property parent of [object Object] which has only a getter
+[2025-04-23 14:23:21] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:17:23:21 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/measurement" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 14:24:08] [32MINFO[39M: Obtengo todas las mediciones
+[2025-04-23 14:24:08] [31MERROR[39M: Cannot set property parent of [object Object] which has only a getter
+[2025-04-23 14:24:08] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:17:24:08 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/measurement" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 14:24:15] [32MINFO[39M: Obtengo todas las mediciones
+[2025-04-23 14:24:15] [32MINFO[39M: Cannot set property parent of [object Object] which has only a getter
+[2025-04-23 14:24:15] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:17:24:15 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/web/measurement" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 14:24:25] [32MINFO[39M: Obtener todos los dispositivos 
+[2025-04-23 14:24:27] [32MINFO[39M: get device id: id_04
+[2025-04-23 14:24:27] [32MINFO[39M: Algo salio mal TypeError: Assignment to constant variable.
+[2025-04-23 14:24:27] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:17:24:27 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/web/device/id_04" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 14:24:48] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 14:24:50] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:24:50] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:24:50] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:24:52] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:26:26] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:26:27] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:26:27] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:26:28] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:26:52] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:26:52] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:26:52] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:26:53] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:27:05] [32MINFO[39M: get device id: id_04
+[2025-04-23 14:27:05] [32MINFO[39M: Algo salio mal TypeError: Assignment to constant variable.
+[2025-04-23 14:27:05] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:17:27:05 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/web/device/id_04" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 14:27:37] [32MINFO[39M: Obtengo todas las mediciones
+[2025-04-23 14:27:37] [32MINFO[39M: Cannot set property parent of [object Object] which has only a getter
+[2025-04-23 14:27:37] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:17:27:37 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/web/measurement" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 14:27:53] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:27:53] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:27:53] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:27:54] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:28:06] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:28:07] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:28:07] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:28:08] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:28:12] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:28:12] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:28:12] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:28:13] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:28:19] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:28:20] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:28:20] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:28:21] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:28:27] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:28:27] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:28:27] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:28:28] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:28:34] [32MINFO[39M: Obtengo todas las mediciones
+[2025-04-23 14:28:34] [32MINFO[39M: Cannot set property parent of [object Object] which has only a getter
+[2025-04-23 14:28:34] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:17:28:34 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/web/measurement" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 14:28:45] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:17:28:45 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/web/measurement" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 14:28:45] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:17:28:45 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/measurement" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 14:28:48] [32MINFO[39M: Obtengo todas las mediciones
+[2025-04-23 14:28:48] [31MERROR[39M: Cannot set property parent of [object Object] which has only a getter
+[2025-04-23 14:28:48] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:17:28:48 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/measurement" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 14:28:50] [32MINFO[39M: Obtengo todas las mediciones
+[2025-04-23 14:28:50] [31MERROR[39M: Cannot set property parent of [object Object] which has only a getter
+[2025-04-23 14:28:50] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:17:28:50 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/measurement" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 14:29:08] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:29:08] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:29:08] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:29:09] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:29:15] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:29:15] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:29:15] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:29:16] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:29:16] [32MINFO[39M: Obtengo todas las mediciones
+[2025-04-23 14:29:16] [32MINFO[39M: llego
+[2025-04-23 14:29:16] [31MERROR[39M: Cannot set property parent of [object Object] which has only a getter
+[2025-04-23 14:29:16] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:17:29:16 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/measurement" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 14:29:33] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:29:33] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:29:33] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:29:39] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:29:39] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:29:39] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:29:40] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:29:45] [32MINFO[39M: Obtengo todas las mediciones
+[2025-04-23 14:29:45] [31MERROR[39M: Cannot set property parent of [object Object] which has only a getter
+[2025-04-23 14:29:45] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:17:29:45 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/measurement" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 14:29:48] [32MINFO[39M: Obtengo todas las mediciones
+[2025-04-23 14:29:48] [31MERROR[39M: Cannot set property parent of [object Object] which has only a getter
+[2025-04-23 14:29:48] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:17:29:48 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/measurement" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 14:30:30] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:30:31] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:30:31] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:30:35] [32MINFO[39M: Obtengo todas las mediciones
+[2025-04-23 14:30:37] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:30:37] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:17:30:37 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/measurement" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 14:30:50] [32MINFO[39M: get device id: 04
+[2025-04-23 14:30:50] [32MINFO[39M: Algo salio mal TypeError: Assignment to constant variable.
+[2025-04-23 14:30:50] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:17:30:50 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/web/device/04" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 14:31:36] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:31:36] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:31:37] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:31:38] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:31:50] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:31:51] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:31:51] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:31:52] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:32:03] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:32:03] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:32:03] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:32:04] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:32:12] [32MINFO[39M: get device id: 01
+[2025-04-23 14:32:12] [32MINFO[39M: Algo salio mal TypeError: Assignment to constant variable.
+[2025-04-23 14:32:12] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:17:32:12 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/web/device/01" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 14:32:18] [32MINFO[39M: Obtengo todas las mediciones
+[2025-04-23 14:32:18] [32MINFO[39M: Cannot set property parent of [object Object] which has only a getter
+[2025-04-23 14:32:18] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:17:32:18 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/web/measurement" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 14:33:10] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:33:10] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:33:10] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:33:11] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:33:18] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:33:18] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:33:18] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:33:19] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:33:22] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:33:23] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:33:23] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:33:24] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:33:27] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:33:27] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:33:27] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:33:30] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:33:31] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:33:31] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:33:33] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:33:33] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:33:34] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:33:35] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:33:58] [32MINFO[39M: Obtengo todods los dispositivos 
+[2025-04-23 14:34:00] [32MINFO[39M: Obtengo todas las mediciones del device_id: id_04
+[2025-04-23 14:34:00] [32MINFO[39M: Device id: id_04 encontrado 
+[2025-04-23 14:34:00] [31MERROR[39M: ReferenceError: m is not defined
+[2025-04-23 14:34:00] [32MINFO[39M: Obtengo todods los dispositivos 
+[2025-04-23 14:34:06] [32MINFO[39M: Obtengo todas las mediciones del device_id: 02
+[2025-04-23 14:34:06] [32MINFO[39M: Device id: 02 encontrado 
+[2025-04-23 14:34:06] [31MERROR[39M: ReferenceError: m is not defined
+[2025-04-23 14:34:06] [32MINFO[39M: Obtengo todods los dispositivos 
+[2025-04-23 14:34:13] [32MINFO[39M: Obtengo todos los dispotivos 
+[2025-04-23 14:34:42] [32MINFO[39M: Obtengo todas las mediciones
+[2025-04-23 14:34:43] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:17:34:43 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/measurement" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 14:36:33] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 14:36:35] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:36:35] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:36:35] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:36:37] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:37:22] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:37:22] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:37:22] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:37:27] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:37:27] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:37:27] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:37:28] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:37:34] [32MINFO[39M: Obtengo todods los dispositivos 
+[2025-04-23 14:37:35] [32MINFO[39M: Obtengo todas las mediciones del device_id: 01
+[2025-04-23 14:37:35] [32MINFO[39M: Device id: 01 encontrado 
+[2025-04-23 14:37:35] [31MERROR[39M: ReferenceError: m is not defined
+[2025-04-23 14:37:35] [32MINFO[39M: Obtengo todods los dispositivos 
+[2025-04-23 14:38:32] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:38:32] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:38:33] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:38:34] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:38:47] [32MINFO[39M: Obtengo todods los dispositivos 
+[2025-04-23 14:38:49] [32MINFO[39M: Obtengo todas las mediciones del device_id: 01
+[2025-04-23 14:38:49] [32MINFO[39M: Device id: 01 encontrado 
+[2025-04-23 14:38:49] [32MINFO[39M: Se encontraron mediciones.
+[2025-04-23 14:39:05] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:39:05] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:39:05] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:39:07] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:39:09] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:39:10] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:39:10] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:39:11] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:39:17] [32MINFO[39M: Obtengo todas las mediciones del device_id: 01
+[2025-04-23 14:39:18] [32MINFO[39M: Device id: 01 encontrado 
+[2025-04-23 14:39:18] [32MINFO[39M: Se encontraron mediciones.
+[2025-04-23 14:39:20] [32MINFO[39M: Obtengo todods los dispositivos 
+[2025-04-23 14:39:34] [32MINFO[39M: Obtengo todas las mediciones del device_id: 04
+[2025-04-23 14:39:34] [32MINFO[39M: Device id: 04 encontrado 
+[2025-04-23 14:39:34] [32MINFO[39M: No se encontraron mediciones.
+[2025-04-23 14:39:35] [32MINFO[39M: Obtengo todods los dispositivos 
+[2025-04-23 14:40:23] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:40:23] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:40:23] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:40:24] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:40:55] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:40:55] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:40:55] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:40:56] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:41:08] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:41:09] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:41:09] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:41:10] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:41:18] [32MINFO[39M: Obtengo todas las mediciones
+[2025-04-23 14:41:18] [32MINFO[39M: Cannot set property parent of [object Object] which has only a getter
+[2025-04-23 14:41:18] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:17:41:18 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/web/measurement" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 14:41:37] [32MINFO[39M: Obtengo todas las mediciones
+[2025-04-23 14:42:22] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:42:22] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:42:22] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:42:24] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:42:30] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:42:30] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:42:30] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:42:31] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:42:45] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:42:46] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:42:46] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:42:47] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:42:56] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:42:56] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:42:56] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:42:57] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:43:05] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:43:06] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:43:06] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:43:07] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:43:19] [32MINFO[39M: Obtengo todas las mediciones
+[2025-04-23 14:43:19] [32MINFO[39M: Se encontraron mediciones.
+[2025-04-23 14:43:20] [32MINFO[39M: Get: device_id: 01 temp: 19 hum: 77 pres: 100000
+[2025-04-23 14:43:20] [31MERROR[39M: Algo salio mal ReferenceError: measurements is not defined
+[2025-04-23 14:43:21] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:17:43:21 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/web/measurement/01/19/77/100000" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 14:43:44] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:43:44] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:43:44] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:43:45] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:44:09] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:44:09] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:44:09] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:44:10] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:44:15] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:44:15] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:44:15] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:44:16] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:44:32] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:44:32] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:44:32] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:44:33] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:44:42] [32MINFO[39M: Get: device_id: 01 temp: 19 hum: 77 pres: 100000
+[2025-04-23 14:44:42] [32MINFO[39M: Se obtuvo la medicion
+[2025-04-23 14:45:15] [32MINFO[39M: Get: device_id: 00 temp: 18 hum: 78 pres: 100000
+[2025-04-23 14:45:15] [32MINFO[39M: Se obtuvo la medicion
+[2025-04-23 14:45:22] [32MINFO[39M: ::ffff:127.0.0.1 - - [23/Apr/2025:17:45:22 +0000] "GET /views/ HTTP/1.1" 404 145 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-23 14:45:25] [32MINFO[39M: Obtengo todods los dispositivos 
+[2025-04-23 14:45:27] [32MINFO[39M: Obtengo todas las mediciones del device_id: 02
+[2025-04-23 14:45:27] [32MINFO[39M: Device id: 02 encontrado 
+[2025-04-23 14:45:27] [32MINFO[39M: No se encontraron mediciones.
+[2025-04-23 14:45:27] [32MINFO[39M: Obtengo todods los dispositivos 
+[2025-04-23 14:45:31] [32MINFO[39M: Obtengo todos los dispotivos 
+[2025-04-23 14:45:39] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 14:45:39] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 14:45:39] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 14:45:39] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 14:45:39] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 14:45:39] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 14:45:54] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:45:54] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:45:54] [31MERROR[39M: Error al parsear el JSON: SyntaxError: Unexpected end of JSON input
+[2025-04-23 14:45:54] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:46:07] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 14:46:07] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 14:46:08] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 14:46:08] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 14:46:08] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 14:46:08] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 14:46:08] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 14:46:20] [32MINFO[39M: El api está inicializado en el puerto: 8080
+[2025-04-23 14:46:21] [32MINFO[39M: La conexion se ha realizado correctamente a MongoDB
+[2025-04-23 14:46:21] [32MINFO[39M: La conexión se ha realizado correctamente en sql.
+[2025-04-23 14:46:22] [32MINFO[39M: Restauración de datos completada de Mongo.
+[2025-04-23 14:46:53] [32MINFO[39M: Device id:01 name:name 01 key:key 01
+[2025-04-23 14:46:53] [32MINFO[39M: El Device ya existe. Elige un device_id distinto.
+[2025-04-23 14:47:00] [32MINFO[39M: Device id: 04 name: nombre 04 key: undefined
+[2025-04-23 14:47:00] [32MINFO[39M: Device id: 04 se actualizo correctamente
+[2025-04-23 14:47:03] [32MINFO[39M: Obtengo todas los dispositivos 
+[2025-04-23 14:47:07] [32MINFO[39M: Get device id: 1
+[2025-04-23 14:47:07] [32MINFO[39M: Se encontro
+[2025-04-23 14:47:12] [32MINFO[39M: Ingreso: device_id: 01 temp: 30 hum: 40 pres: 101000
+[2025-04-23 14:47:12] [32MINFO[39M: Medicion creado con éxito id:680927a04e3693713050fdcc
+[2025-04-23 14:47:17] [32MINFO[39M: Obtengo todas las mediciones
+[2025-04-23 14:47:20] [32MINFO[39M: Obtengo todas las mediciones del device_id: 1
+[2025-04-23 14:47:20] [32MINFO[39M: Device id: 1 encontrado 
+[2025-04-23 14:47:20] [32MINFO[39M: Se encontraron mediciones.
+[2025-04-23 14:47:24] [32MINFO[39M: Obtengo todas los usuarios 
+[2025-04-23 14:47:28] [32MINFO[39M: Obtengo el usuario: 1
+[2025-04-23 14:47:39] [32MINFO[39M: Obtengo todas los usuarios 
+[2025-04-23 14:47:44] [32MINFO[39M: Obtengo el usuario: 1
+[2025-04-23 14:47:54] [32MINFO[39M: Se borro correctamente
+[2025-04-23 14:48:00] [32MINFO[39M: User no encontrado.
+[2025-04-23 14:48:02] [32MINFO[39M: User no encontrado.
+[2025-04-23 14:48:07] [32MINFO[39M: User creado con éxito.
+[2025-04-23 14:48:13] [32MINFO[39M: User actualizo correctamente.
+[2025-04-23 14:49:21] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 14:49:21] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-23 14:51:45] [32MINFO[39M: SIGINT guardando los backups...
+[2025-04-23 14:51:45] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-23 14:51:45] [32MINFO[39M: Estado de la base de datos guardado en: backup/backup_db_2.json

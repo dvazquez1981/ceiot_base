@@ -46,21 +46,6 @@ app.set('view engine', 'ejs');
 app.set('views', './views');
 
 
-// Middleware para manejar errores
-/*app.use((err, req, res, next) => {
-    req.logger.error({
-        message: err.message,
-        stack: err.stack,
-        method: req.method,
-    });
-    res.status(500).send('Algo anduvo mal!');
-});
-
-app.use(morgan('combined', {
-    stream: { write: (message) => logger.info(message.trim()) }
-}));
-*/
-
 
 //rutas admin
 addAdminEndpoint(app, render);

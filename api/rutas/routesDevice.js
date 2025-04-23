@@ -1,5 +1,5 @@
 import {Router} from 'express'
-import {sanitizeMiddlewareInput,sanitizeMiddlewareOutput} from '../utils/sanitize.js'
+import {sanitizeMiddlewareInput} from '../utils/sanitize.js'
 
 /*
 import {  
@@ -31,33 +31,33 @@ const router = Router();
 /** rutas */
 
 /** anteriores */
-router.get('/web/device/:id', sanitizeMiddlewareInput,getOneHtml,sanitizeMiddlewareOutput);
+router.get('/web/device/:id', sanitizeMiddlewareInput,getOneHtml);
 
-router.get('/web/device', sanitizeMiddlewareInput,getAllHtml,sanitizeMiddlewareOutput,sanitizeMiddlewareOutput);
+router.get('/web/device', sanitizeMiddlewareInput,getAllHtml);
 
-router.get('/term/device/:id',sanitizeMiddlewareInput,getOneTerm,sanitizeMiddlewareOutput);
+router.get('/term/device/:id',sanitizeMiddlewareInput,getOneTerm);
 
 
 /** apis*/
 router.get('/device', /*ensureToken, chequeoToken, chequeoGrupoUsuario('admin'), */ getAllApi/*,sanitizeMiddlewareOutput*/);
 
-router.get('/device/:id',sanitizeMiddlewareInput, /*ensureToken, chequeoToken, chequeoGrupoUsuario('admin'), */ getOneApi,sanitizeMiddlewareOutput);
+router.get('/device/:id',sanitizeMiddlewareInput, /*ensureToken, chequeoToken, chequeoGrupoUsuario('admin'), */ getOneApi);
 
-router.post('/device',sanitizeMiddlewareInput, crearDeviceApi,sanitizeMiddlewareOutput);
+router.post('/device',sanitizeMiddlewareInput, crearDeviceApi)
 
-router.delete('/device/:id',sanitizeMiddlewareInput,deleteDeviceApi,sanitizeMiddlewareOutput);
+router.delete('/device/:id',sanitizeMiddlewareInput,deleteDeviceApi);
 
-router.patch('/device/:id', sanitizeMiddlewareInput,updateDeviceApi,sanitizeMiddlewareOutput);
+router.patch('/device/:id', sanitizeMiddlewareInput,updateDeviceApi);
 
 
 
 /** html*/
 
-router.post('/html/device',sanitizeMiddlewareInput, crearDeviceWeb,sanitizeMiddlewareOutput);
+router.post('/html/device',sanitizeMiddlewareInput, crearDeviceWeb);
 
-router.delete('/html/device/:id',sanitizeMiddlewareInput,deleteDeviceWeb,sanitizeMiddlewareOutput);
+router.delete('/html/device/:id',sanitizeMiddlewareInput,deleteDeviceWeb);
 
-router.patch('/html/device/:id', sanitizeMiddlewareInput,updateDeviceWeb,sanitizeMiddlewareOutput);
+router.patch('/html/device/:id', sanitizeMiddlewareInput,updateDeviceWeb);
 
 
 /** vistas */

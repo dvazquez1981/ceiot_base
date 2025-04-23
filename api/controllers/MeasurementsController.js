@@ -1,7 +1,8 @@
 import Measurement from '../models/Measurements.js';
 import Device from '../models/Device.js'
 import  render from "../render.js";
-import mongoose from 'mongoose';
+import {sanitize} from '../utils/sanitize.js'
+
 
 //const { ObjectId } = mongoose.Types;
 /** Obtener todos los MeasurementS */
@@ -10,9 +11,13 @@ export async function getAllApi(req, res) {
     try {
 
         console.log('Obtengo todas las mediciones')
-        const Measurements = await Measurement.find(); 
-        if (Measurements.length > 0) {
-            res.status(200).json(Measurements);
+        const measurements = await Measurement.find(); 
+       
+        if (measurements.length > 0) {
+            const sanitizedMeasurements = measurements.map(m => sanitize(JSON.parse(JSON.stringify(m))))
+
+ 
+            res.status(200).json(sanitizedMeasurements);
         } else {
 
         console.log('No se encontraron mediciones.')
@@ -164,9 +169,10 @@ export async function getOneHtml(req,res)
           
         
         if(m){
-         
+
+            const sanitizedM=  sanitize(JSON.parse(JSON.stringify(m)))
             console.log('Se obtuvo la medicion')
-            res.send(render(template,{id: m.id, t: m.t, h: m.h, p: m.p}));
+            res.send(render(template,{id: sanitizedM.id, t: sanitizedM.t, h: sanitizedM.h, p: sanitizedM.p}));
 
 
 
@@ -198,9 +204,15 @@ export async function getAllHtml(req,res)
             const Measurements = await Measurement.find(); 
             if (Measurements.length > 0) {
               
-        // Crear el HTML para cada medida usando map
-        var  measurementsRows = Measurements.map(function(m) {
-        
+             
+                    const sanitizedMeasurements = Measurements.map(m => sanitize(JSON.parse(JSON.stringify(m))))
+    
+                    console.log('Se encontraron mediciones.' )  
+    
+              
+                // Crear el HTML para cada medida usando map
+        var  measurementsRows = sanitizedMeasurements.map(function(m) {
+           
            // // Ver el dispositivo en la consola
             return '<tr><td><a href="/web/measurement/'  + m.id + '/' + m.t + '/' + m.h + '/' + m.p +'">' + m.id + '</a></td>' +
             '<td>'  + m.t +'</td>' +
@@ -268,10 +280,13 @@ export async function getAllByIdDeviceApi(req,res)
 
             console.log("Device id: " + id + " encontrado ")
 
-            const m = await Measurement.find( {id: id });
-            if (m.length > 0) {
-                console.log('Se encontraron mediciones.' )
-                res.status(200).json(m);
+            const me = await Measurement.find( {id: id });
+            if (me.length > 0) {
+                const sanitizedMeasurements = me.map(m => sanitize(JSON.parse(JSON.stringify(m))))
+
+                console.log('Se encontraron mediciones.' )  
+
+                res.status(200).json( sanitizedMeasurements );
             }
             else {
                 console.log('No se encontraron mediciones.' )
@@ -309,12 +324,13 @@ export async function getAllByIdDeviceApi(req,res)
 
             console.log("Device id: " + id + " encontrado ")
 
-            const m = await Measurement.find( {id: id });
-            if (m.length > 0) {
+            const me = await Measurement.find( {id: id });
+            if (me.length > 0) {
+                const sanitizedMeasurements = me.map(m => sanitize(JSON.parse(JSON.stringify(m))))
 
                 console.log('Se encontraron mediciones.' )  
 
-                    res.render('Measurements', { measurements: m });
+                    res.render('Measurements', { measurements:sanitizedMeasurements });
                 
              
             }

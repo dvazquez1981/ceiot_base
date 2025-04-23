@@ -1,5 +1,6 @@
 import Device from '../models/Device.js'
 import  render from "../render.js";
+import {sanitize} from '../utils/sanitize.js'
 
 export async function getAllApi(req,res){
 
@@ -8,7 +9,7 @@ export async function getAllApi(req,res){
         const dv= await Device.findAll();        
         if(dv){
 
-            res.status(200).json(dv);
+            res.status(200).json(sanitize(dv));
         }
      
   
@@ -26,7 +27,7 @@ export async function getAllWeb(req,res){
         const dv= await Device.findAll();        
         if(dv){
 
-            res.render('Devices', { devices: dv, msg: req.query.msg, error: req.query.error });
+            res.render('Devices', { devices: sanitize(dv), msg: req.query.msg, error: req.query.error });
         }
      
   
@@ -39,12 +40,12 @@ export async function getAllWeb(req,res){
 
 export async function getAllDevicesMeasurementsWeb(req, res) {
 
-    console.log("Obtengo todods los dispositivos ");
+    console.log("Obtengo todos los dispositivos ");
     try {
         const dv= await Device.findAll();        
         if(dv){
 
-            res.render('DevicesMeasurements',  { devices: dv, msg: req.query.msg, error: req.query.error });
+            res.render('DevicesMeasurements',  { devices: sanitize(dv), msg: req.query.msg, error: req.query.error });
         }
      
   
@@ -71,7 +72,7 @@ export async function getOneApi(req,res)
 
         if( DeviceFound){
             console.log("Se encontro");
-            res.status(200).json(DeviceFound);
+            res.status(200).json(sanitize(DeviceFound));
 
         }else{
             onsole.log("No se encontro");
@@ -113,7 +114,7 @@ export async function getOneHtml(req,res)
         });
 
         if( DeviceFound){
-         
+            DeviceFound=sanitize(DeviceFound)
             console.log("Se encontró");
             res.send(render(template,{id: DeviceFound.device_id, key: DeviceFound.key, name: DeviceFound.name}));
 
@@ -139,10 +140,11 @@ export async function getOneHtml(req,res)
 export async function getAllHtml(req,res){
 
     try {
-        console.log("Obtener todos los dispositivos ");
+        console.log("Obtengo todos los dispositivos ");
         // Obtener todos los dispositivos
         var devices = await Device.findAll();
-        
+        devices=sanitize(devices)
+           
         // Crear el HTML para cada dispositivo usando map
         var deviceRows = devices.map(function(device) {
            // console.log(device); // Ver el dispositivo en la consola
@@ -194,6 +196,7 @@ export async function getOneTerm(req,res)
            "       key  " + blue  + "  {{ key }}" + reset +"\n";
           
     if( DeviceFound){
+        DeviceFound=sanitize(DeviceFound)
         console.log("se encontró");
         res.send(render(template,{id: DeviceFound.device_id, key: DeviceFound.key, name: DeviceFound.name}));
 
@@ -240,9 +243,9 @@ export async function crearDeviceApi(req, res)
 
         if (existingDevice) {
 
-            console.log('el Device ya existe. Elige un device_id distinto.');
+            console.log('El Device ya existe. Elige un device_id distinto.');
             return res.status(409).json({
-                message: 'el Device ya existe. Elige un device_id distinto.',
+                message: 'El Device ya existe. Elige un device_id distinto.',
                 status: 0,
             });
         }
@@ -257,7 +260,7 @@ export async function crearDeviceApi(req, res)
         return res.status(201).json({
             message: 'Device creado con éxito.',
             status: 1,
-            data: newDevice
+            data:sanitize(newDevice)
         });
     } catch (error) {
         console.error('Error al crear el device:', error);
@@ -278,7 +281,7 @@ export async function crearDeviceWeb(req, res)
    
     // Validar que todos los campos requeridos están presentes
     if (!(id && n && k)){
-        console.log('id, name, key son obligatorios');
+        console.log('Id, name, key son obligatorios');
        return res.redirect('/views/devices?msg=faltan+campos+requeridos');
     }
 

@@ -3,6 +3,7 @@ import { newDb } from 'pg-mem';
 import fs from 'fs';
 import path from 'path';
 
+
 const BACKUP_DIR = "./backup"; // Directorio de backups
 const FILE = 'backup_db_1.sql';
 

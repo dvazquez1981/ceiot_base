@@ -1,5 +1,5 @@
 import {Router} from 'express'
-import {sanitizeMiddlewareInput,sanitizeMiddlewareOutput} from '../utils/sanitize.js'
+import {sanitizeMiddlewareInput} from '../utils/sanitize.js'
 
 /*
 import {  
@@ -23,14 +23,14 @@ const router = Router();
 /** Controladores */
 
 /** Obtener devices*/
-router.get('/usuario', /*ensureToken, chequeoToken, chequeoGrupoUsuario('admin'), */ getAll,sanitizeMiddlewareOutput);
+router.get('/usuario', /*ensureToken, chequeoToken, chequeoGrupoUsuario('admin'), */ getAll);
 
-router.get('/usuario/:user_id',sanitizeMiddlewareInput, /*ensureToken, chequeoToken, chequeoGrupoUsuario('admin'), */ getOne,sanitizeMiddlewareOutput);
+router.get('/usuario/:user_id',sanitizeMiddlewareInput, /*ensureToken, chequeoToken, chequeoGrupoUsuario('admin'), */ getOne);
 
-router.post('/usuario',sanitizeMiddlewareInput, crearUser,sanitizeMiddlewareOutput);
+router.post('/usuario',sanitizeMiddlewareInput, crearUser);
 
-router.delete('/usuario/:user_id',sanitizeMiddlewareInput,deleteUser,sanitizeMiddlewareOutput);
+router.delete('/usuario/:user_id',sanitizeMiddlewareInput,deleteUser);
 
-router.patch('/usuario/:user_id', sanitizeMiddlewareInput,updateUser,sanitizeMiddlewareOutput);
+router.patch('/usuario/:user_id', sanitizeMiddlewareInput,updateUser);
 
 export default router;

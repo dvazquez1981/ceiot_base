@@ -1,16 +1,19 @@
 import User from '../models/User.js'
+import {sanitize} from '../utils/sanitize.js'
 
 /** Obtener todos los Devices*/
-export async function getAll(req,res){
+export async function getAll(req,res,next){
 
     try {
+        
         console.log('Obtengo todas los usuarios ');
         const u= await  User.findAll();        
         if(u){
           
-            res.status(200).json(u);
+            res.status(200).json(sanitize(u));
         }
-     
+
+      
   
       } catch (error) {
         console.log(error.message );
@@ -34,7 +37,7 @@ export async function getOne(req,res)
 
         if( UserFound){
             
-            res.status(200).json(UserFound);
+            res.status(200).json(sanitize(UserFound));
 
         }else{
             console.log('No se encuentra el user.');
@@ -59,9 +62,9 @@ export async function crearUser(req, res)
     // Validar que todos los campos requeridos están presentes
     if (!(user_id && name && key)){
 
-        console.log('user_id, name, key son obligatorios');
+        console.log('User_id, name, key son obligatorios');
         return res.status(400).json({
-            message: 'user_id, name, key son obligatorios',
+            message: 'User_id, name, key son obligatorios',
             status: 0,
         });
     }
@@ -75,9 +78,9 @@ export async function crearUser(req, res)
           });
 
         if (existingUser) {
-            console.log('el User ya existe. Elige un User_id distinto.');
+            console.log('El User ya existe. Elige un User_id distinto.');
             return res.status(409).json({
-                message: 'el User ya existe. Elige un User_id distinto.',
+                message: 'El User ya existe. Elige un User_id distinto.',
                 status: 0,
             });
         }
@@ -88,11 +91,11 @@ export async function crearUser(req, res)
             name: name,
             key:key
         });
-        console.log('user creado con éxito.');
+        console.log('User creado con éxito.');
         return res.status(201).json({
-            message: 'user creado con éxito.',
+            message: 'User creado con éxito.',
             status: 1,
-            data: newUser
+            data: sanitize(newUser)
         });
     } catch (error) {
         console.error('Error al crear el User:', error);
@@ -125,7 +128,7 @@ const {user_id}= req.params;
                 res.status(200).json({message: "Se borro correctamente"});          
             }
             else
-            {   console.log("no existe registo");
+            {   console.log("No existe registo");
                 res.status(404).json({message: "no existe registo"})
             }
         })
@@ -163,9 +166,9 @@ export async function updateUser(req,res){
                // Si u es null, se responde con un error 404
                 if (!u) {
 
-                    console.log('user no encontrado.');
+                    console.log('User no encontrado.');
                 return res.status(404).json({
-                    message: 'user no encontrado.'
+                    message: 'User no encontrado.'
                      });
                  }
 
@@ -177,10 +180,10 @@ export async function updateUser(req,res){
                  
                    });
 
-                   console.log('user actualizo correctamente.');
+                   console.log('User actualizo correctamente.');
                  // Si la actualización es exitosa, respondemos con éxito
                 res.status(200).json({
-                message: 'user actualizo correctamente.'
+                message: 'User actualizo correctamente.'
                 });
           });
         

@@ -10,4 +10,4 @@ INSERT INTO devices (device_id, name, key) VALUES ('00', 'Fake Device 00', 'Fake
 CREATE TABLE users (user_id text, name text, key text);
 INSERT INTO users (user_id, name, key) VALUES ('1', 'Ana', 'admin123');
 INSERT INTO users (user_id, name, key) VALUES ('2', 'Beto', 'user123');
-INSERT INTO users (user_id, name, key) VALUES ('3', 'sucutrule', 'admin123');
+INSERT INTO users (user_id, name, key) VALUES ('3', 'Hola&ltscript&gtalert(hack)&lt/script&gt', 'admin123');
