@@ -20,9 +20,7 @@ import {
 /** Rutas */
 const router = Router();
 
-/** Controladores */
 
-/** Obtener devices*/
 router.get('/usuario', /*ensureToken, chequeoToken, chequeoGrupoUsuario('admin'), */ getAll);
 
 router.get('/usuario/:user_id',sanitizeMiddlewareInput, /*ensureToken, chequeoToken, chequeoGrupoUsuario('admin'), */ getOne);

@@ -114,9 +114,9 @@ export async function getOneHtml(req,res)
         });
 
         if( DeviceFound){
-            DeviceFound=sanitize(DeviceFound)
+            const deviceSanitized=sanitize(DeviceFound)
             console.log("Se encontró");
-            res.send(render(template,{id: DeviceFound.device_id, key: DeviceFound.key, name: DeviceFound.name}));
+            res.send(render(template,{id: deviceSanitized.device_id, key: deviceSanitized.key, name: deviceSanitized.name}));
 
 
 
