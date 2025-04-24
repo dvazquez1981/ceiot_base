@@ -9,7 +9,7 @@ const timestampFormat = () =>
     moment().tz('America/Argentina/Buenos_Aires').format('YYYY-MM-DD HH:mm:ss');
 
 const consoleFormat = winston.format.printf(({ level, message, timestamp }) => {
-    return `[${timestamp}] ${level.toUpperCase()}: ${message}`;
+    return `[${timestamp}] : ${message}`;
 });
 
 // Configuración del logger
