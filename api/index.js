@@ -1,16 +1,17 @@
+//logger
+import morgan from 'morgan'
+import logger from './utils/logger.js'; // Importación del logger
+
 import  express from 'express';
 import './utils/signals.js'; 
 
 import  bodyParser from "body-parser";
-//import  iotdb_2 from "./bd/iiot11_bd_2.js"
 import  render from "./render.js"
 import  addAdminEndpoint from "./admin.js";
 
 import methodOverride from 'method-override';
 
-//logger
-import morgan from 'morgan'
-import logger from './utils/logger.js'; // Importación del logger
+
 
 
 //rutas

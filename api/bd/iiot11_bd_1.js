@@ -9,7 +9,7 @@ const FILE = 'backup_db_1.sql';
 
 export let db
 
-async function restoreDatabaseSqlScript(file=FILE)
+async function restoreDatabaseFromSqlScript(file=FILE)
 {
 
 var backupPath = path.join(BACKUP_DIR, file);  
@@ -116,8 +116,8 @@ export async function backupDatabaseToSqlScript(file=FILE) {
   }
 }
 
-restoreDatabaseSqlScript()
 
+restoreDatabaseFromSqlScript()
 // Configurar Sequelize con `pg-mem`
 export const iotdb_1 = new Sequelize({
   dialect: 'postgres',

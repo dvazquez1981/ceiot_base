@@ -1,0 +1,24 @@
+[2025-04-24 17:39:23] : El api está inicializado en el puerto: 8080
+[2025-04-24 17:39:23] : La conexion se ha realizado correctamente a MongoDB
+[2025-04-24 17:39:23] : La conexión se ha realizado correctamente en sql.
+[2025-04-24 17:39:26] : Restauración de datos completada de Mongo.
+[2025-04-24 17:42:23] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-24 17:42:23] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-24 17:43:06] : SIGINT guardando los backups...
+[2025-04-24 17:43:06] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-24 17:43:06] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-24 17:45:44] : El api está inicializado en el puerto: 8080
+[2025-04-24 17:45:44] : La conexion se ha realizado correctamente a MongoDB
+[2025-04-24 17:45:44] : La conexión se ha realizado correctamente en sql.
+[2025-04-24 17:45:45] : Restauración de datos completada de Mongo.
+[2025-04-24 17:45:51] : SIGINT guardando los backups...
+[2025-04-24 17:45:51] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-24 17:45:51] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-24 17:50:44] : Restauración de datos completada en sql
+[2025-04-24 17:50:44] : El api está inicializado en el puerto: 8080
+[2025-04-24 17:50:44] : La conexion se ha realizado correctamente a MongoDB
+[2025-04-24 17:50:44] : La conexión se ha realizado correctamente en sql.
+[2025-04-24 17:50:46] : Restauración de datos completada de Mongo.
+[2025-04-24 17:51:11] : SIGINT guardando los backups...
+[2025-04-24 17:51:11] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-24 17:51:11] : Estado de la base de datos guardado en: backup/backup_db_2.json
