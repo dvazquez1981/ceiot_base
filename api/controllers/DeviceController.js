@@ -196,12 +196,12 @@ export async function getOneTerm(req,res)
            "       key  " + blue  + "  {{ key }}" + reset +"\n";
           
     if( DeviceFound){
-        DeviceFound=sanitize(DeviceFound)
-        console.log("se encontró");
-        res.send(render(template,{id: DeviceFound.device_id, key: DeviceFound.key, name: DeviceFound.name}));
+        var deviceSanitized=sanitize(DeviceFound)
+        console.log("Se encontró");
+        res.send(render(template,{id: deviceSanitized.device_id, key: deviceSanitized.key, name: deviceSanitized.name}));
 
           }else{
-            console.log("no se encontró");
+            console.log("No se encontró");
     res.status(404).json({
         message: 'No se encuentra el Device.'      
     })
