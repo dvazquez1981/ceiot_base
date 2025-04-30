@@ -496,3 +496,961 @@
 [2025-04-25 11:10:42] : SIGINT guardando los backups...
 [2025-04-25 11:10:42] : Estado de la base de datos guardado en: backup/backup_db_1.sql
 [2025-04-25 11:10:42] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 13:43:08] : Restauración de datos completada en sql
+[2025-04-25 13:43:08] : El api está inicializado en el puerto: 8080
+[2025-04-25 13:43:08] : La conexion se ha realizado correctamente a MongoDB
+[2025-04-25 13:43:08] : La conexión se ha realizado correctamente en sql.
+[2025-04-25 13:43:09] : Restauración de datos completada de Mongo.
+[2025-04-25 13:44:31] : Ingreso: device_id: 1 temp: 25.67 hum: 0 pres: 69311.86
+[2025-04-25 13:44:31] : Medicion creado con éxito id:680bbbef213626ab08e347c5
+[2025-04-25 13:44:43] : Ingreso: device_id: 1 temp: 25.87 hum: 0 pres: 100090.5
+[2025-04-25 13:44:43] : Medicion creado con éxito id:680bbbfb213626ab08e347c7
+[2025-04-25 13:44:54] : Ingreso: device_id: 1 temp: 25.89 hum: 0 pres: 100091.58
+[2025-04-25 13:44:54] : Medicion creado con éxito id:680bbc06213626ab08e347c9
+[2025-04-25 13:45:05] : Ingreso: device_id: 1 temp: 25.88 hum: 0 pres: 100091.56
+[2025-04-25 13:45:05] : Medicion creado con éxito id:680bbc11213626ab08e347cb
+[2025-04-25 13:45:16] : Ingreso: device_id: 1 temp: 25.88 hum: 0 pres: 100092.67
+[2025-04-25 13:45:16] : Medicion creado con éxito id:680bbc1c213626ab08e347cd
+[2025-04-25 13:45:27] : Ingreso: device_id: 1 temp: 25.89 hum: 0 pres: 100092
+[2025-04-25 13:45:27] : Medicion creado con éxito id:680bbc27213626ab08e347cf
+[2025-04-25 13:45:38] : Ingreso: device_id: 1 temp: 25.92 hum: 0 pres: 100097.48
+[2025-04-25 13:45:38] : Medicion creado con éxito id:680bbc32213626ab08e347d1
+[2025-04-25 13:45:49] : Ingreso: device_id: 1 temp: 25.92 hum: 0 pres: 100094.65
+[2025-04-25 13:45:49] : Medicion creado con éxito id:680bbc3d213626ab08e347d3
+[2025-04-25 13:46:00] : Ingreso: device_id: 1 temp: 25.93 hum: 0 pres: 100095.64
+[2025-04-25 13:46:00] : Medicion creado con éxito id:680bbc48213626ab08e347d5
+[2025-04-25 13:46:08] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 13:46:08] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 13:46:12] : Ingreso: device_id: 1 temp: 25.93 hum: 0 pres: 100093.6
+[2025-04-25 13:46:12] : Medicion creado con éxito id:680bbc54213626ab08e347d7
+[2025-04-25 13:46:23] : Ingreso: device_id: 1 temp: 25.87 hum: 0 pres: 100089.82
+[2025-04-25 13:46:23] : Medicion creado con éxito id:680bbc5f213626ab08e347d9
+[2025-04-25 13:46:34] : Ingreso: device_id: 1 temp: 25.89 hum: 0 pres: 100088.47
+[2025-04-25 13:46:34] : Medicion creado con éxito id:680bbc6a213626ab08e347db
+[2025-04-25 13:46:45] : Ingreso: device_id: 1 temp: 25.9 hum: 0 pres: 100086.45
+[2025-04-25 13:46:45] : Medicion creado con éxito id:680bbc75213626ab08e347dd
+[2025-04-25 13:46:56] : Ingreso: device_id: 1 temp: 25.87 hum: 0 pres: 100087.36
+[2025-04-25 13:46:56] : Medicion creado con éxito id:680bbc80213626ab08e347df
+[2025-04-25 13:47:07] : Ingreso: device_id: 1 temp: 25.83 hum: 0 pres: 100087.99
+[2025-04-25 13:47:07] : Medicion creado con éxito id:680bbc8b213626ab08e347e1
+[2025-04-25 13:49:08] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 13:49:08] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 13:50:34] : Obtengo todas las mediciones
+[2025-04-25 13:50:34] : Se encontraron mediciones.
+[2025-04-25 13:50:50] : Obtengo todas los dispositivos 
+[2025-04-25 13:50:51] : Obtengo todas los dispositivos 
+[2025-04-25 13:51:54] : Ingreso: device_id: 1 temp: 25.67 hum: 0 pres: 69311.86
+[2025-04-25 13:51:54] : Medicion creado con éxito id:680bbdaa213626ab08e347e4
+[2025-04-25 13:52:05] : Ingreso: device_id: 1 temp: 25.85 hum: 0 pres: 100081.59
+[2025-04-25 13:52:05] : Medicion creado con éxito id:680bbdb5213626ab08e347e6
+[2025-04-25 13:52:08] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 13:52:08] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 13:52:16] : Ingreso: device_id: 1 temp: 25.84 hum: 0 pres: 100079.52
+[2025-04-25 13:52:16] : Medicion creado con éxito id:680bbdc0213626ab08e347e8
+[2025-04-25 13:52:27] : Ingreso: device_id: 1 temp: 25.84 hum: 0 pres: 100082.93
+[2025-04-25 13:52:27] : Medicion creado con éxito id:680bbdcb213626ab08e347ea
+[2025-04-25 13:52:30] : Obtengo todos los dispositivos 
+[2025-04-25 13:52:32] : Obtengo todas las mediciones del device_id: 02
+[2025-04-25 13:52:32] : Device id: 02 encontrado 
+[2025-04-25 13:52:32] : No se encontraron mediciones.
+[2025-04-25 13:52:33] : Obtengo todos los dispositivos 
+[2025-04-25 13:52:34] : Obtengo todas las mediciones del device_id: 01
+[2025-04-25 13:52:35] : Device id: 01 encontrado 
+[2025-04-25 13:52:35] : Se encontraron mediciones.
+[2025-04-25 13:52:37] : Obtengo todas las mediciones del device_id: 00
+[2025-04-25 13:52:37] : Device id: 00 encontrado 
+[2025-04-25 13:52:37] : Se encontraron mediciones.
+[2025-04-25 13:52:39] : Ingreso: device_id: 1 temp: 25.84 hum: 0 pres: 100079.42
+[2025-04-25 13:52:39] : Medicion creado con éxito id:680bbdd7213626ab08e347ef
+[2025-04-25 13:52:40] : Obtengo todas las mediciones del device_id: 1
+[2025-04-25 13:52:40] : Device id: 1 encontrado 
+[2025-04-25 13:52:40] : Se encontraron mediciones.
+[2025-04-25 13:52:50] : Ingreso: device_id: 1 temp: 25.84 hum: 0 pres: 100081.46
+[2025-04-25 13:52:50] : Medicion creado con éxito id:680bbde2213626ab08e347f2
+[2025-04-25 13:53:01] : Ingreso: device_id: 1 temp: 25.84 hum: 0 pres: 100080.2
+[2025-04-25 13:53:01] : Medicion creado con éxito id:680bbded213626ab08e347f4
+[2025-04-25 13:53:12] : Ingreso: device_id: 1 temp: 25.8 hum: 0 pres: 100077.17
+[2025-04-25 13:53:12] : Medicion creado con éxito id:680bbdf8213626ab08e347f6
+[2025-04-25 13:53:21] : SIGINT guardando los backups...
+[2025-04-25 13:53:21] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 13:53:21] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 13:53:54] : Restauración de datos completada en sql
+[2025-04-25 13:53:55] : El api está inicializado en el puerto: 8080
+[2025-04-25 13:53:55] : La conexion se ha realizado correctamente a MongoDB
+[2025-04-25 13:53:55] : La conexión se ha realizado correctamente en sql.
+[2025-04-25 13:53:56] : Restauración de datos completada de Mongo.
+[2025-04-25 13:53:58] : Obtengo todas los dispositivos 
+[2025-04-25 13:55:19] : Obtengo todas los dispositivos 
+[2025-04-25 13:56:55] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 13:56:55] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 13:59:55] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 13:59:55] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 14:02:55] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 14:02:55] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 14:05:55] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 14:05:55] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 14:08:55] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 14:08:55] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 14:11:55] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 14:11:55] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 14:14:55] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 14:14:55] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 14:17:55] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 14:17:55] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 14:20:55] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 14:20:55] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 14:23:55] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 14:23:55] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 14:26:55] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 14:26:55] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 14:29:55] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 14:29:55] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 14:32:55] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 14:32:55] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 14:35:55] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 14:35:55] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 14:37:37] : Obtengo todas los dispositivos 
+[2025-04-25 14:37:47] : SIGINT guardando los backups...
+[2025-04-25 14:37:47] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 14:37:47] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 14:37:48] : Restauración de datos completada en sql
+[2025-04-25 14:37:49] : El api está inicializado en el puerto: 8080
+[2025-04-25 14:37:49] : La conexion se ha realizado correctamente a MongoDB
+[2025-04-25 14:37:49] : La conexión se ha realizado correctamente en sql.
+[2025-04-25 14:37:50] : Restauración de datos completada de Mongo.
+[2025-04-25 14:40:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 14:40:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 14:43:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 14:43:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 14:46:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 14:46:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 14:49:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 14:49:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 14:52:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 14:52:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 14:55:19] : Get: device_id: 1 temp: 25.83 hum: 0 pres: 100087.99
+[2025-04-25 14:55:19] : Se obtuvo la medicion
+[2025-04-25 14:55:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 14:55:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 14:58:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 14:58:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 15:01:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 15:01:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 15:04:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 15:04:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 15:07:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 15:07:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 15:10:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 15:10:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 15:13:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 15:13:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 15:16:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 15:16:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 15:19:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 15:19:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 15:22:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 15:22:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 15:25:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 15:25:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 15:28:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 15:28:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 15:31:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 15:31:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 15:34:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 15:34:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 15:37:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 15:37:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 15:40:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 15:40:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 15:43:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 15:43:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 15:46:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 15:46:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 15:49:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 15:49:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 15:52:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 15:52:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 15:55:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 15:55:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 15:58:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 15:58:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 16:01:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 16:01:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 16:04:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 16:04:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 16:07:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 16:07:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 16:10:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 16:10:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 16:13:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 16:13:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 16:16:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 16:16:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 16:19:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 16:19:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 16:22:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 16:22:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 16:25:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 16:25:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 16:27:19] : Get: device_id: 1 temp: 25.87 hum: 0 pres: 100087.36
+[2025-04-25 16:27:19] : Se obtuvo la medicion
+[2025-04-25 16:28:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 16:28:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 16:31:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 16:31:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 16:34:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 16:34:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 16:37:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 16:37:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 16:38:48] : Obtengo todas los dispositivos 
+[2025-04-25 16:40:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 16:40:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 16:43:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 16:43:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 16:44:08] : Obtengo todas las mediciones
+[2025-04-25 16:44:08] : Se encontraron mediciones.
+[2025-04-25 16:44:44] : Get: device_id: 00 temp: 18 hum: 78 pres: 100000
+[2025-04-25 16:44:44] : Se obtuvo la medicion
+[2025-04-25 16:44:46] : Get: device_id: 00 temp: 17 hum: 77 pres: 100000
+[2025-04-25 16:44:46] : Se obtuvo la medicion
+[2025-04-25 16:44:49] : Get: device_id: 1 temp: 25.19 hum: 0 pres: 100327.91
+[2025-04-25 16:44:49] : Se obtuvo la medicion
+[2025-04-25 16:46:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 16:46:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 16:49:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 16:49:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 16:49:56] : Get term device id: 00
+[2025-04-25 16:49:56] : Se encontró
+[2025-04-25 16:50:05] : Get term device id: 01
+[2025-04-25 16:50:05] : Se encontró
+[2025-04-25 16:52:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 16:52:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 16:55:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 16:55:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 16:57:53] : El User ya existe. Elige un User_id distinto.
+[2025-04-25 16:58:04] : User creado con éxito.
+[2025-04-25 16:58:43] : El User ya existe. Elige un User_id distinto.
+[2025-04-25 16:58:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 16:58:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 16:58:52] : User creado con éxito.
+[2025-04-25 17:01:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 17:01:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 17:04:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 17:04:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 17:07:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 17:07:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 17:10:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 17:10:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 17:13:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 17:13:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 17:16:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 17:16:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 17:19:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 17:19:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 17:22:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 17:22:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 17:25:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 17:25:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 17:28:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 17:28:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 17:31:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 17:31:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 17:34:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 17:34:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 17:37:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 17:37:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 17:40:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 17:40:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 17:43:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 17:43:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 17:46:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 17:46:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 17:47:16] : Ingreso: device_id: 1 temp: 25.67 hum: 0 pres: 69311.86
+[2025-04-25 17:47:16] : Medicion creado con éxito id:680bf4d483ba9461429e8179
+[2025-04-25 17:47:28] : Ingreso: device_id: 1 temp: 25.33 hum: 0 pres: 99884.77
+[2025-04-25 17:47:28] : Medicion creado con éxito id:680bf4e083ba9461429e817b
+[2025-04-25 17:47:39] : Ingreso: device_id: 1 temp: 25.29 hum: 0 pres: 99880.48
+[2025-04-25 17:47:39] : Medicion creado con éxito id:680bf4eb83ba9461429e817d
+[2025-04-25 17:47:50] : Ingreso: device_id: 1 temp: 25.31 hum: 0 pres: 99883.5
+[2025-04-25 17:47:50] : Medicion creado con éxito id:680bf4f683ba9461429e817f
+[2025-04-25 17:48:01] : Ingreso: device_id: 1 temp: 25.31 hum: 0 pres: 99881.34
+[2025-04-25 17:48:01] : Medicion creado con éxito id:680bf50183ba9461429e8181
+[2025-04-25 17:48:12] : Ingreso: device_id: 1 temp: 25.3 hum: 0 pres: 99885.27
+[2025-04-25 17:48:12] : Medicion creado con éxito id:680bf50c83ba9461429e8183
+[2025-04-25 17:48:23] : Ingreso: device_id: 1 temp: 25.25 hum: 0 pres: 99884.07
+[2025-04-25 17:48:23] : Medicion creado con éxito id:680bf51783ba9461429e8185
+[2025-04-25 17:48:34] : Ingreso: device_id: 1 temp: 25.21 hum: 0 pres: 99883.34
+[2025-04-25 17:48:34] : Medicion creado con éxito id:680bf52283ba9461429e8187
+[2025-04-25 17:48:45] : Ingreso: device_id: 1 temp: 25.19 hum: 0 pres: 99884.79
+[2025-04-25 17:48:45] : Medicion creado con éxito id:680bf52d83ba9461429e8189
+[2025-04-25 17:48:56] : Ingreso: device_id: 1 temp: 25.17 hum: 0 pres: 99884.5
+[2025-04-25 17:48:57] : Medicion creado con éxito id:680bf53983ba9461429e818b
+[2025-04-25 17:49:08] : Ingreso: device_id: 1 temp: 25.12 hum: 0 pres: 99883.88
+[2025-04-25 17:49:08] : Medicion creado con éxito id:680bf54483ba9461429e818d
+[2025-04-25 17:49:19] : Ingreso: device_id: 1 temp: 25.09 hum: 0 pres: 99878.38
+[2025-04-25 17:49:19] : Medicion creado con éxito id:680bf54f83ba9461429e818f
+[2025-04-25 17:49:30] : Ingreso: device_id: 1 temp: 25.04 hum: 0 pres: 99883.64
+[2025-04-25 17:49:30] : Medicion creado con éxito id:680bf55a83ba9461429e8191
+[2025-04-25 17:49:41] : Ingreso: device_id: 1 temp: 24.98 hum: 0 pres: 99887.9
+[2025-04-25 17:49:41] : Medicion creado con éxito id:680bf56583ba9461429e8193
+[2025-04-25 17:49:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 17:49:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 17:49:52] : Ingreso: device_id: 1 temp: 24.94 hum: 0 pres: 99884.71
+[2025-04-25 17:49:52] : Medicion creado con éxito id:680bf57083ba9461429e8195
+[2025-04-25 17:50:03] : Ingreso: device_id: 1 temp: 24.94 hum: 0 pres: 99883.35
+[2025-04-25 17:50:03] : Medicion creado con éxito id:680bf57b83ba9461429e8197
+[2025-04-25 17:50:14] : Ingreso: device_id: 1 temp: 24.94 hum: 0 pres: 99885.77
+[2025-04-25 17:50:14] : Medicion creado con éxito id:680bf58683ba9461429e8199
+[2025-04-25 17:50:25] : Ingreso: device_id: 1 temp: 24.96 hum: 0 pres: 99884.59
+[2025-04-25 17:50:25] : Medicion creado con éxito id:680bf59183ba9461429e819b
+[2025-04-25 17:50:36] : Ingreso: device_id: 1 temp: 24.96 hum: 0 pres: 99882.13
+[2025-04-25 17:50:36] : Medicion creado con éxito id:680bf59c83ba9461429e819d
+[2025-04-25 17:50:48] : Ingreso: device_id: 1 temp: 24.95 hum: 0 pres: 99881.59
+[2025-04-25 17:50:48] : Medicion creado con éxito id:680bf5a883ba9461429e819f
+[2025-04-25 17:50:59] : Ingreso: device_id: 1 temp: 24.93 hum: 0 pres: 99882.36
+[2025-04-25 17:50:59] : Medicion creado con éxito id:680bf5b383ba9461429e81a1
+[2025-04-25 17:51:10] : Ingreso: device_id: 1 temp: 24.94 hum: 0 pres: 99884.16
+[2025-04-25 17:51:10] : Medicion creado con éxito id:680bf5be83ba9461429e81a3
+[2025-04-25 17:51:21] : Ingreso: device_id: 1 temp: 24.96 hum: 0 pres: 99879.83
+[2025-04-25 17:51:21] : Medicion creado con éxito id:680bf5c983ba9461429e81a5
+[2025-04-25 17:51:32] : Ingreso: device_id: 1 temp: 24.94 hum: 0 pres: 99880.89
+[2025-04-25 17:51:32] : Medicion creado con éxito id:680bf5d483ba9461429e81a7
+[2025-04-25 17:51:43] : Ingreso: device_id: 1 temp: 24.95 hum: 0 pres: 99876.28
+[2025-04-25 17:51:43] : Medicion creado con éxito id:680bf5df83ba9461429e81a9
+[2025-04-25 17:51:54] : Ingreso: device_id: 1 temp: 25.01 hum: 0 pres: 99873.11
+[2025-04-25 17:51:54] : Medicion creado con éxito id:680bf5ea83ba9461429e81ab
+[2025-04-25 17:52:05] : Ingreso: device_id: 1 temp: 25.03 hum: 0 pres: 99878.58
+[2025-04-25 17:52:05] : Medicion creado con éxito id:680bf5f583ba9461429e81ad
+[2025-04-25 17:52:16] : Ingreso: device_id: 1 temp: 25.05 hum: 0 pres: 99877.91
+[2025-04-25 17:52:16] : Medicion creado con éxito id:680bf60083ba9461429e81af
+[2025-04-25 17:52:27] : Ingreso: device_id: 1 temp: 25 hum: 0 pres: 99878.68
+[2025-04-25 17:52:27] : Medicion creado con éxito id:680bf60b83ba9461429e81b1
+[2025-04-25 17:52:39] : Ingreso: device_id: 1 temp: 24.93 hum: 0 pres: 99877.77
+[2025-04-25 17:52:39] : Medicion creado con éxito id:680bf61783ba9461429e81b3
+[2025-04-25 17:52:49] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 17:52:49] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 17:52:50] : Ingreso: device_id: 1 temp: 24.9 hum: 0 pres: 99881.1
+[2025-04-25 17:52:50] : Medicion creado con éxito id:680bf62283ba9461429e81b5
+[2025-04-25 17:53:01] : Ingreso: device_id: 1 temp: 24.84 hum: 0 pres: 99881.97
+[2025-04-25 17:53:01] : Medicion creado con éxito id:680bf62d83ba9461429e81b7
+[2025-04-25 17:53:12] : Ingreso: device_id: 1 temp: 24.79 hum: 0 pres: 99881.33
+[2025-04-25 17:53:12] : Medicion creado con éxito id:680bf63883ba9461429e81b9
+[2025-04-25 17:53:23] : Ingreso: device_id: 1 temp: 24.74 hum: 0 pres: 99881.41
+[2025-04-25 17:53:23] : Medicion creado con éxito id:680bf64383ba9461429e81bb
+[2025-04-25 17:53:34] : Ingreso: device_id: 1 temp: 24.73 hum: 0 pres: 99878.8
+[2025-04-25 17:53:34] : Medicion creado con éxito id:680bf64e83ba9461429e81bd
+[2025-04-25 17:53:45] : Ingreso: device_id: 1 temp: 24.77 hum: 0 pres: 99879.53
+[2025-04-25 17:53:45] : Medicion creado con éxito id:680bf65983ba9461429e81bf
+[2025-04-25 17:53:56] : Ingreso: device_id: 1 temp: 24.8 hum: 0 pres: 99879.3
+[2025-04-25 17:53:56] : Medicion creado con éxito id:680bf66483ba9461429e81c1
+[2025-04-25 17:54:07] : Ingreso: device_id: 1 temp: 24.82 hum: 0 pres: 99881.52
+[2025-04-25 17:54:07] : Medicion creado con éxito id:680bf66f83ba9461429e81c3
+[2025-04-25 17:54:19] : Ingreso: device_id: 1 temp: 24.8 hum: 0 pres: 99884.22
+[2025-04-25 17:54:19] : Medicion creado con éxito id:680bf67b83ba9461429e81c5
+[2025-04-25 17:54:30] : Ingreso: device_id: 1 temp: 24.83 hum: 0 pres: 99885.88
+[2025-04-25 17:54:30] : Medicion creado con éxito id:680bf68683ba9461429e81c7
+[2025-04-25 17:54:41] : Ingreso: device_id: 1 temp: 24.84 hum: 0 pres: 99880.72
+[2025-04-25 17:54:41] : Medicion creado con éxito id:680bf69183ba9461429e81c9
+[2025-04-25 17:54:52] : Ingreso: device_id: 1 temp: 24.87 hum: 0 pres: 99883.62
+[2025-04-25 17:54:52] : Medicion creado con éxito id:680bf69c83ba9461429e81cb
+[2025-04-25 17:55:03] : Ingreso: device_id: 1 temp: 24.84 hum: 0 pres: 99883.86
+[2025-04-25 17:55:03] : Medicion creado con éxito id:680bf6a783ba9461429e81cd
+[2025-04-25 17:55:14] : Ingreso: device_id: 1 temp: 24.87 hum: 0 pres: 99882.01
+[2025-04-25 17:55:14] : Medicion creado con éxito id:680bf6b283ba9461429e81cf
+[2025-04-25 17:55:21] : SIGINT guardando los backups...
+[2025-04-25 17:55:21] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 17:55:21] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 18:00:24] : Restauración de datos completada en sql
+[2025-04-25 18:00:25] : El api está inicializado en el puerto: 8080
+[2025-04-25 18:00:25] : La conexion se ha realizado correctamente a MongoDB
+[2025-04-25 18:00:25] : La conexión se ha realizado correctamente en sql.
+[2025-04-25 18:00:27] : Restauración de datos completada de Mongo.
+[2025-04-25 18:00:28] : Ingreso: device_id: 1 temp: 24.73 hum: 0 pres: 99868.45
+[2025-04-25 18:00:28] : Medicion creado con éxito id:680bf7ecba02c0f9120aca69
+[2025-04-25 18:00:40] : Ingreso: device_id: 1 temp: 24.69 hum: 0 pres: 99866.64
+[2025-04-25 18:00:40] : Medicion creado con éxito id:680bf7f8ba02c0f9120aca6b
+[2025-04-25 18:00:51] : Ingreso: device_id: 1 temp: 24.68 hum: 0 pres: 99870.67
+[2025-04-25 18:00:51] : Medicion creado con éxito id:680bf803ba02c0f9120aca6d
+[2025-04-25 18:01:02] : Ingreso: device_id: 1 temp: 24.68 hum: 0 pres: 99868.79
+[2025-04-25 18:01:02] : Medicion creado con éxito id:680bf80eba02c0f9120aca6f
+[2025-04-25 18:01:13] : Ingreso: device_id: 1 temp: 24.68 hum: 0 pres: 99871.25
+[2025-04-25 18:01:13] : Medicion creado con éxito id:680bf819ba02c0f9120aca71
+[2025-04-25 18:01:24] : Ingreso: device_id: 1 temp: 24.67 hum: 0 pres: 99867.15
+[2025-04-25 18:01:24] : Medicion creado con éxito id:680bf824ba02c0f9120aca73
+[2025-04-25 18:01:35] : Ingreso: device_id: 1 temp: 24.71 hum: 0 pres: 99868.83
+[2025-04-25 18:01:35] : Medicion creado con éxito id:680bf82fba02c0f9120aca75
+[2025-04-25 18:01:46] : Ingreso: device_id: 1 temp: 24.76 hum: 0 pres: 99866.19
+[2025-04-25 18:01:46] : Medicion creado con éxito id:680bf83aba02c0f9120aca77
+[2025-04-25 18:01:57] : Ingreso: device_id: 1 temp: 24.75 hum: 0 pres: 99864.02
+[2025-04-25 18:01:57] : Medicion creado con éxito id:680bf845ba02c0f9120aca79
+[2025-04-25 18:02:08] : Ingreso: device_id: 1 temp: 24.74 hum: 0 pres: 99859.66
+[2025-04-25 18:02:08] : Medicion creado con éxito id:680bf850ba02c0f9120aca7b
+[2025-04-25 18:02:19] : Ingreso: device_id: 1 temp: 24.74 hum: 0 pres: 99865.48
+[2025-04-25 18:02:20] : Medicion creado con éxito id:680bf85cba02c0f9120aca7d
+[2025-04-25 18:02:31] : Ingreso: device_id: 1 temp: 24.73 hum: 0 pres: 99864.37
+[2025-04-25 18:02:31] : Medicion creado con éxito id:680bf867ba02c0f9120aca7f
+[2025-04-25 18:02:42] : Ingreso: device_id: 1 temp: 24.73 hum: 0 pres: 99861.81
+[2025-04-25 18:02:42] : Medicion creado con éxito id:680bf872ba02c0f9120aca81
+[2025-04-25 18:02:53] : Ingreso: device_id: 1 temp: 24.73 hum: 0 pres: 99856.38
+[2025-04-25 18:02:53] : Medicion creado con éxito id:680bf87dba02c0f9120aca83
+[2025-04-25 18:03:04] : Ingreso: device_id: 1 temp: 24.76 hum: 0 pres: 99857.09
+[2025-04-25 18:03:04] : Medicion creado con éxito id:680bf888ba02c0f9120aca85
+[2025-04-25 18:03:15] : Ingreso: device_id: 1 temp: 24.76 hum: 0 pres: 99860.75
+[2025-04-25 18:03:15] : Medicion creado con éxito id:680bf893ba02c0f9120aca87
+[2025-04-25 18:03:25] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 18:03:25] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 18:03:26] : Ingreso: device_id: 1 temp: 24.72 hum: 0 pres: 99865.19
+[2025-04-25 18:03:26] : Medicion creado con éxito id:680bf89eba02c0f9120aca89
+[2025-04-25 18:03:37] : Ingreso: device_id: 1 temp: 24.73 hum: 0 pres: 99864.79
+[2025-04-25 18:03:37] : Medicion creado con éxito id:680bf8a9ba02c0f9120aca8b
+[2025-04-25 18:03:48] : Ingreso: device_id: 1 temp: 24.71 hum: 0 pres: 99862.45
+[2025-04-25 18:03:48] : Medicion creado con éxito id:680bf8b4ba02c0f9120aca8d
+[2025-04-25 18:03:59] : Ingreso: device_id: 1 temp: 24.7 hum: 0 pres: 99862.3
+[2025-04-25 18:03:59] : Medicion creado con éxito id:680bf8bfba02c0f9120aca8f
+[2025-04-25 18:04:10] : Ingreso: device_id: 1 temp: 24.72 hum: 0 pres: 99855.52
+[2025-04-25 18:04:11] : Medicion creado con éxito id:680bf8cbba02c0f9120aca91
+[2025-04-25 18:04:22] : Ingreso: device_id: 1 temp: 24.74 hum: 0 pres: 99866.16
+[2025-04-25 18:04:22] : Medicion creado con éxito id:680bf8d6ba02c0f9120aca93
+[2025-04-25 18:04:33] : Ingreso: device_id: 1 temp: 24.76 hum: 0 pres: 99862.94
+[2025-04-25 18:04:33] : Medicion creado con éxito id:680bf8e1ba02c0f9120aca95
+[2025-04-25 18:04:44] : Ingreso: device_id: 1 temp: 24.76 hum: 0 pres: 99862.79
+[2025-04-25 18:04:44] : Medicion creado con éxito id:680bf8ecba02c0f9120aca97
+[2025-04-25 18:04:55] : Ingreso: device_id: 1 temp: 24.74 hum: 0 pres: 99858.15
+[2025-04-25 18:04:55] : Medicion creado con éxito id:680bf8f7ba02c0f9120aca99
+[2025-04-25 18:05:06] : Ingreso: device_id: 1 temp: 24.71 hum: 0 pres: 99859.99
+[2025-04-25 18:05:06] : Medicion creado con éxito id:680bf902ba02c0f9120aca9b
+[2025-04-25 18:05:17] : Ingreso: device_id: 1 temp: 24.7 hum: 0 pres: 99861.08
+[2025-04-25 18:05:17] : Medicion creado con éxito id:680bf90dba02c0f9120aca9d
+[2025-04-25 18:05:28] : Ingreso: device_id: 1 temp: 24.69 hum: 0 pres: 99859.17
+[2025-04-25 18:05:28] : Medicion creado con éxito id:680bf918ba02c0f9120aca9f
+[2025-04-25 18:05:39] : Ingreso: device_id: 1 temp: 24.64 hum: 0 pres: 99862.62
+[2025-04-25 18:05:39] : Medicion creado con éxito id:680bf923ba02c0f9120acaa1
+[2025-04-25 18:05:51] : Ingreso: device_id: 1 temp: 24.65 hum: 0 pres: 99866.17
+[2025-04-25 18:05:51] : Medicion creado con éxito id:680bf92fba02c0f9120acaa3
+[2025-04-25 18:06:02] : Ingreso: device_id: 1 temp: 24.63 hum: 0 pres: 99860.83
+[2025-04-25 18:06:02] : Medicion creado con éxito id:680bf93aba02c0f9120acaa5
+[2025-04-25 18:06:13] : Ingreso: device_id: 1 temp: 24.61 hum: 0 pres: 99858.48
+[2025-04-25 18:06:13] : Medicion creado con éxito id:680bf945ba02c0f9120acaa7
+[2025-04-25 18:06:24] : Ingreso: device_id: 1 temp: 24.59 hum: 0 pres: 99863.03
+[2025-04-25 18:06:24] : Medicion creado con éxito id:680bf950ba02c0f9120acaa9
+[2025-04-25 18:06:25] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 18:06:25] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 18:06:35] : Ingreso: device_id: 1 temp: 24.58 hum: 0 pres: 99863.3
+[2025-04-25 18:06:35] : Medicion creado con éxito id:680bf95bba02c0f9120acaab
+[2025-04-25 18:06:46] : Ingreso: device_id: 1 temp: 24.57 hum: 0 pres: 99865.87
+[2025-04-25 18:06:46] : Medicion creado con éxito id:680bf966ba02c0f9120acaad
+[2025-04-25 18:06:57] : Ingreso: device_id: 1 temp: 24.55 hum: 0 pres: 99865.44
+[2025-04-25 18:06:57] : Medicion creado con éxito id:680bf971ba02c0f9120acaaf
+[2025-04-25 18:07:08] : Ingreso: device_id: 1 temp: 24.54 hum: 0 pres: 99864.31
+[2025-04-25 18:07:08] : Medicion creado con éxito id:680bf97cba02c0f9120acab1
+[2025-04-25 18:07:19] : Ingreso: device_id: 1 temp: 24.53 hum: 0 pres: 99864.58
+[2025-04-25 18:07:19] : Medicion creado con éxito id:680bf987ba02c0f9120acab3
+[2025-04-25 18:07:30] : Ingreso: device_id: 1 temp: 24.56 hum: 0 pres: 99863.52
+[2025-04-25 18:07:30] : Medicion creado con éxito id:680bf992ba02c0f9120acab5
+[2025-04-25 18:07:42] : Ingreso: device_id: 1 temp: 24.56 hum: 0 pres: 99865.85
+[2025-04-25 18:07:42] : Medicion creado con éxito id:680bf99eba02c0f9120acab7
+[2025-04-25 18:07:53] : Ingreso: device_id: 1 temp: 24.54 hum: 0 pres: 99863.11
+[2025-04-25 18:07:53] : Medicion creado con éxito id:680bf9a9ba02c0f9120acab9
+[2025-04-25 18:08:04] : Ingreso: device_id: 1 temp: 24.55 hum: 0 pres: 99867.47
+[2025-04-25 18:08:04] : Medicion creado con éxito id:680bf9b4ba02c0f9120acabb
+[2025-04-25 18:08:15] : Ingreso: device_id: 1 temp: 24.61 hum: 0 pres: 99868.12
+[2025-04-25 18:08:15] : Medicion creado con éxito id:680bf9bfba02c0f9120acabd
+[2025-04-25 18:08:26] : Ingreso: device_id: 1 temp: 24.63 hum: 0 pres: 99865.84
+[2025-04-25 18:08:26] : Medicion creado con éxito id:680bf9caba02c0f9120acabf
+[2025-04-25 18:08:37] : Ingreso: device_id: 1 temp: 24.65 hum: 0 pres: 99866.17
+[2025-04-25 18:08:37] : Medicion creado con éxito id:680bf9d5ba02c0f9120acac1
+[2025-04-25 18:08:48] : Ingreso: device_id: 1 temp: 24.66 hum: 0 pres: 99866.58
+[2025-04-25 18:08:48] : Medicion creado con éxito id:680bf9e0ba02c0f9120acac3
+[2025-04-25 18:08:59] : Ingreso: device_id: 1 temp: 24.67 hum: 0 pres: 99867.41
+[2025-04-25 18:08:59] : Medicion creado con éxito id:680bf9ebba02c0f9120acac5
+[2025-04-25 18:09:10] : Ingreso: device_id: 1 temp: 24.71 hum: 0 pres: 99869.25
+[2025-04-25 18:09:10] : Medicion creado con éxito id:680bf9f6ba02c0f9120acac7
+[2025-04-25 18:09:21] : Ingreso: device_id: 1 temp: 24.71 hum: 0 pres: 99872.23
+[2025-04-25 18:09:21] : Medicion creado con éxito id:680bfa01ba02c0f9120acac9
+[2025-04-25 18:09:25] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 18:09:25] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 18:09:33] : Ingreso: device_id: 1 temp: 24.71 hum: 0 pres: 99864.75
+[2025-04-25 18:09:33] : Medicion creado con éxito id:680bfa0dba02c0f9120acacb
+[2025-04-25 18:09:44] : Ingreso: device_id: 1 temp: 24.7 hum: 0 pres: 99867.73
+[2025-04-25 18:09:44] : Medicion creado con éxito id:680bfa18ba02c0f9120acacd
+[2025-04-25 18:09:55] : Ingreso: device_id: 1 temp: 24.68 hum: 0 pres: 99868.53
+[2025-04-25 18:09:55] : Medicion creado con éxito id:680bfa23ba02c0f9120acacf
+[2025-04-25 18:10:06] : Ingreso: device_id: 1 temp: 24.7 hum: 0 pres: 99867.19
+[2025-04-25 18:10:06] : Medicion creado con éxito id:680bfa2eba02c0f9120acad1
+[2025-04-25 18:10:17] : Ingreso: device_id: 1 temp: 24.7 hum: 0 pres: 99866.51
+[2025-04-25 18:10:17] : Medicion creado con éxito id:680bfa39ba02c0f9120acad3
+[2025-04-25 18:10:23] : Obtengo todas los dispositivos 
+[2025-04-25 18:10:28] : Ingreso: device_id: 1 temp: 24.72 hum: 0 pres: 99874.96
+[2025-04-25 18:10:28] : Medicion creado con éxito id:680bfa44ba02c0f9120acad5
+[2025-04-25 18:10:30] : Obtengo todas las mediciones
+[2025-04-25 18:10:30] : Se encontraron mediciones.
+[2025-04-25 18:10:39] : Ingreso: device_id: 1 temp: 24.76 hum: 0 pres: 99870.27
+[2025-04-25 18:10:39] : Medicion creado con éxito id:680bfa4fba02c0f9120acad8
+[2025-04-25 18:10:40] : Obtengo todos los dispotivos 
+[2025-04-25 18:10:48] : Obtengo todos los dispositivos 
+[2025-04-25 18:10:50] : Ingreso: device_id: 1 temp: 24.78 hum: 0 pres: 99867.88
+[2025-04-25 18:10:50] : Medicion creado con éxito id:680bfa5aba02c0f9120acada
+[2025-04-25 18:11:01] : Ingreso: device_id: 1 temp: 24.83 hum: 0 pres: 99870.25
+[2025-04-25 18:11:01] : Medicion creado con éxito id:680bfa65ba02c0f9120acadc
+[2025-04-25 18:11:12] : Ingreso: device_id: 1 temp: 24.87 hum: 0 pres: 99871.81
+[2025-04-25 18:11:13] : Medicion creado con éxito id:680bfa71ba02c0f9120acade
+[2025-04-25 18:11:22] : Obtengo todas las mediciones
+[2025-04-25 18:11:22] : Se encontraron mediciones.
+[2025-04-25 18:11:24] : Ingreso: device_id: 1 temp: 24.83 hum: 0 pres: 99870.41
+[2025-04-25 18:11:24] : Medicion creado con éxito id:680bfa7cba02c0f9120acae1
+[2025-04-25 18:11:35] : Ingreso: device_id: 1 temp: 24.83 hum: 0 pres: 99869.98
+[2025-04-25 18:11:35] : Medicion creado con éxito id:680bfa87ba02c0f9120acae3
+[2025-04-25 18:11:46] : Ingreso: device_id: 1 temp: 24.87 hum: 0 pres: 99866.8
+[2025-04-25 18:11:46] : Medicion creado con éxito id:680bfa92ba02c0f9120acae5
+[2025-04-25 18:11:57] : Ingreso: device_id: 1 temp: 24.85 hum: 0 pres: 99870.7
+[2025-04-25 18:11:57] : Medicion creado con éxito id:680bfa9dba02c0f9120acae7
+[2025-04-25 18:12:08] : Ingreso: device_id: 1 temp: 24.81 hum: 0 pres: 99865.05
+[2025-04-25 18:12:08] : Medicion creado con éxito id:680bfaa8ba02c0f9120acae9
+[2025-04-25 18:12:19] : Ingreso: device_id: 1 temp: 24.79 hum: 0 pres: 99871.97
+[2025-04-25 18:12:19] : Medicion creado con éxito id:680bfab3ba02c0f9120acaeb
+[2025-04-25 18:12:25] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 18:12:25] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 18:12:30] : Ingreso: device_id: 1 temp: 24.75 hum: 0 pres: 99870.66
+[2025-04-25 18:12:30] : Medicion creado con éxito id:680bfabeba02c0f9120acaed
+[2025-04-25 18:12:41] : Ingreso: device_id: 1 temp: 24.69 hum: 0 pres: 99870.43
+[2025-04-25 18:12:41] : Medicion creado con éxito id:680bfac9ba02c0f9120acaef
+[2025-04-25 18:12:52] : Ingreso: device_id: 1 temp: 24.66 hum: 0 pres: 99875.02
+[2025-04-25 18:12:52] : Medicion creado con éxito id:680bfad4ba02c0f9120acaf1
+[2025-04-25 18:13:03] : Ingreso: device_id: 1 temp: 24.71 hum: 0 pres: 99874.84
+[2025-04-25 18:13:04] : Medicion creado con éxito id:680bfae0ba02c0f9120acaf3
+[2025-04-25 18:13:15] : Ingreso: device_id: 1 temp: 24.72 hum: 0 pres: 99874.28
+[2025-04-25 18:13:15] : Medicion creado con éxito id:680bfaebba02c0f9120acaf5
+[2025-04-25 18:13:26] : Ingreso: device_id: 1 temp: 24.69 hum: 0 pres: 99872.47
+[2025-04-25 18:13:26] : Medicion creado con éxito id:680bfaf6ba02c0f9120acaf7
+[2025-04-25 18:13:37] : Ingreso: device_id: 1 temp: 24.7 hum: 0 pres: 99872.78
+[2025-04-25 18:13:37] : Medicion creado con éxito id:680bfb01ba02c0f9120acaf9
+[2025-04-25 18:13:48] : Ingreso: device_id: 1 temp: 24.7 hum: 0 pres: 99874.52
+[2025-04-25 18:13:48] : Medicion creado con éxito id:680bfb0cba02c0f9120acafb
+[2025-04-25 18:13:59] : Ingreso: device_id: 1 temp: 24.73 hum: 0 pres: 99872.14
+[2025-04-25 18:13:59] : Medicion creado con éxito id:680bfb17ba02c0f9120acafd
+[2025-04-25 18:14:10] : Ingreso: device_id: 1 temp: 24.74 hum: 0 pres: 99874.88
+[2025-04-25 18:14:10] : Medicion creado con éxito id:680bfb22ba02c0f9120acaff
+[2025-04-25 18:14:21] : Ingreso: device_id: 1 temp: 24.71 hum: 0 pres: 99876.98
+[2025-04-25 18:14:21] : Medicion creado con éxito id:680bfb2dba02c0f9120acb01
+[2025-04-25 18:14:32] : Ingreso: device_id: 1 temp: 24.67 hum: 0 pres: 99871.23
+[2025-04-25 18:14:32] : Medicion creado con éxito id:680bfb38ba02c0f9120acb03
+[2025-04-25 18:14:43] : Ingreso: device_id: 1 temp: 24.66 hum: 0 pres: 99870.79
+[2025-04-25 18:14:43] : Medicion creado con éxito id:680bfb43ba02c0f9120acb05
+[2025-04-25 18:14:54] : Ingreso: device_id: 1 temp: 24.66 hum: 0 pres: 99875.28
+[2025-04-25 18:14:54] : Medicion creado con éxito id:680bfb4eba02c0f9120acb07
+[2025-04-25 18:15:06] : Ingreso: device_id: 1 temp: 24.71 hum: 0 pres: 99872.12
+[2025-04-25 18:15:06] : Medicion creado con éxito id:680bfb5aba02c0f9120acb09
+[2025-04-25 18:15:17] : Ingreso: device_id: 1 temp: 24.73 hum: 0 pres: 99876.89
+[2025-04-25 18:15:17] : Medicion creado con éxito id:680bfb65ba02c0f9120acb0b
+[2025-04-25 18:15:25] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 18:15:25] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 18:15:28] : Ingreso: device_id: 1 temp: 24.72 hum: 0 pres: 99875.38
+[2025-04-25 18:15:28] : Medicion creado con éxito id:680bfb70ba02c0f9120acb0d
+[2025-04-25 18:15:39] : Ingreso: device_id: 1 temp: 24.68 hum: 0 pres: 99869.05
+[2025-04-25 18:15:39] : Medicion creado con éxito id:680bfb7bba02c0f9120acb0f
+[2025-04-25 18:15:50] : Ingreso: device_id: 1 temp: 24.63 hum: 0 pres: 99869.81
+[2025-04-25 18:15:50] : Medicion creado con éxito id:680bfb86ba02c0f9120acb11
+[2025-04-25 18:16:01] : Ingreso: device_id: 1 temp: 24.6 hum: 0 pres: 99873.02
+[2025-04-25 18:16:01] : Medicion creado con éxito id:680bfb91ba02c0f9120acb13
+[2025-04-25 18:16:12] : Ingreso: device_id: 1 temp: 24.64 hum: 0 pres: 99875.11
+[2025-04-25 18:16:12] : Medicion creado con éxito id:680bfb9cba02c0f9120acb15
+[2025-04-25 18:16:23] : Ingreso: device_id: 1 temp: 24.67 hum: 0 pres: 99874.89
+[2025-04-25 18:16:23] : Medicion creado con éxito id:680bfba7ba02c0f9120acb17
+[2025-04-25 18:16:34] : Ingreso: device_id: 1 temp: 24.68 hum: 0 pres: 99876.27
+[2025-04-25 18:16:34] : Medicion creado con éxito id:680bfbb2ba02c0f9120acb19
+[2025-04-25 18:16:45] : Ingreso: device_id: 1 temp: 24.71 hum: 0 pres: 99875.36
+[2025-04-25 18:16:45] : Medicion creado con éxito id:680bfbbdba02c0f9120acb1b
+[2025-04-25 18:16:57] : Ingreso: device_id: 1 temp: 24.68 hum: 0 pres: 99874.22
+[2025-04-25 18:16:57] : Medicion creado con éxito id:680bfbc9ba02c0f9120acb1d
+[2025-04-25 18:17:08] : Ingreso: device_id: 1 temp: 24.62 hum: 0 pres: 99872.52
+[2025-04-25 18:17:08] : Medicion creado con éxito id:680bfbd4ba02c0f9120acb1f
+[2025-04-25 18:17:19] : Ingreso: device_id: 1 temp: 24.6 hum: 0 pres: 99869.42
+[2025-04-25 18:17:19] : Medicion creado con éxito id:680bfbdfba02c0f9120acb21
+[2025-04-25 18:17:30] : Ingreso: device_id: 1 temp: 24.61 hum: 0 pres: 99871.52
+[2025-04-25 18:17:30] : Medicion creado con éxito id:680bfbeaba02c0f9120acb23
+[2025-04-25 18:17:41] : Ingreso: device_id: 1 temp: 24.58 hum: 0 pres: 99868.87
+[2025-04-25 18:17:41] : Medicion creado con éxito id:680bfbf5ba02c0f9120acb25
+[2025-04-25 18:17:52] : Ingreso: device_id: 1 temp: 24.59 hum: 0 pres: 99867.11
+[2025-04-25 18:17:52] : Medicion creado con éxito id:680bfc00ba02c0f9120acb27
+[2025-04-25 18:18:03] : Ingreso: device_id: 1 temp: 24.55 hum: 0 pres: 99870.45
+[2025-04-25 18:18:03] : Medicion creado con éxito id:680bfc0bba02c0f9120acb29
+[2025-04-25 18:18:14] : Ingreso: device_id: 1 temp: 24.55 hum: 0 pres: 99868.41
+[2025-04-25 18:18:14] : Medicion creado con éxito id:680bfc16ba02c0f9120acb2b
+[2025-04-25 18:18:25] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 18:18:25] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 18:18:25] : Ingreso: device_id: 1 temp: 24.54 hum: 0 pres: 99869.48
+[2025-04-25 18:18:25] : Medicion creado con éxito id:680bfc21ba02c0f9120acb2d
+[2025-04-25 18:18:36] : Ingreso: device_id: 1 temp: 24.49 hum: 0 pres: 99870.48
+[2025-04-25 18:18:36] : Medicion creado con éxito id:680bfc2cba02c0f9120acb2f
+[2025-04-25 18:18:48] : Ingreso: device_id: 1 temp: 24.44 hum: 0 pres: 99870.13
+[2025-04-25 18:18:48] : Medicion creado con éxito id:680bfc38ba02c0f9120acb31
+[2025-04-25 18:18:59] : Ingreso: device_id: 1 temp: 24.43 hum: 0 pres: 99872.16
+[2025-04-25 18:18:59] : Medicion creado con éxito id:680bfc43ba02c0f9120acb33
+[2025-04-25 18:19:10] : Ingreso: device_id: 1 temp: 24.4 hum: 0 pres: 99875.22
+[2025-04-25 18:19:10] : Medicion creado con éxito id:680bfc4eba02c0f9120acb35
+[2025-04-25 18:19:21] : Ingreso: device_id: 1 temp: 24.4 hum: 0 pres: 99872.64
+[2025-04-25 18:19:21] : Medicion creado con éxito id:680bfc59ba02c0f9120acb37
+[2025-04-25 18:19:32] : Ingreso: device_id: 1 temp: 24.4 hum: 0 pres: 99872.38
+[2025-04-25 18:19:32] : Medicion creado con éxito id:680bfc64ba02c0f9120acb39
+[2025-04-25 18:19:43] : Ingreso: device_id: 1 temp: 24.44 hum: 0 pres: 99875.83
+[2025-04-25 18:19:43] : Medicion creado con éxito id:680bfc6fba02c0f9120acb3b
+[2025-04-25 18:19:54] : Ingreso: device_id: 1 temp: 24.43 hum: 0 pres: 99872.57
+[2025-04-25 18:19:54] : Medicion creado con éxito id:680bfc7aba02c0f9120acb3d
+[2025-04-25 18:20:05] : Ingreso: device_id: 1 temp: 24.46 hum: 0 pres: 99874.65
+[2025-04-25 18:20:05] : Medicion creado con éxito id:680bfc85ba02c0f9120acb3f
+[2025-04-25 18:20:16] : Ingreso: device_id: 1 temp: 24.48 hum: 0 pres: 99875.89
+[2025-04-25 18:20:16] : Medicion creado con éxito id:680bfc90ba02c0f9120acb41
+[2025-04-25 18:20:27] : Ingreso: device_id: 1 temp: 24.47 hum: 0 pres: 99871.53
+[2025-04-25 18:20:27] : Medicion creado con éxito id:680bfc9bba02c0f9120acb43
+[2025-04-25 18:20:38] : Ingreso: device_id: 1 temp: 24.48 hum: 0 pres: 99878.19
+[2025-04-25 18:20:38] : Medicion creado con éxito id:680bfca6ba02c0f9120acb45
+[2025-04-25 18:20:50] : Ingreso: device_id: 1 temp: 24.48 hum: 0 pres: 99874.95
+[2025-04-25 18:20:50] : Medicion creado con éxito id:680bfcb2ba02c0f9120acb47
+[2025-04-25 18:21:01] : Ingreso: device_id: 1 temp: 24.45 hum: 0 pres: 99875.17
+[2025-04-25 18:21:01] : Medicion creado con éxito id:680bfcbdba02c0f9120acb49
+[2025-04-25 18:21:12] : Ingreso: device_id: 1 temp: 24.44 hum: 0 pres: 99874.73
+[2025-04-25 18:21:12] : Medicion creado con éxito id:680bfcc8ba02c0f9120acb4b
+[2025-04-25 18:21:23] : Ingreso: device_id: 1 temp: 24.45 hum: 0 pres: 99878.02
+[2025-04-25 18:21:23] : Medicion creado con éxito id:680bfcd3ba02c0f9120acb4d
+[2025-04-25 18:21:25] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 18:21:25] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 18:21:34] : Ingreso: device_id: 1 temp: 24.45 hum: 0 pres: 99877.47
+[2025-04-25 18:21:34] : Medicion creado con éxito id:680bfcdeba02c0f9120acb4f
+[2025-04-25 18:21:45] : Ingreso: device_id: 1 temp: 24.46 hum: 0 pres: 99880.88
+[2025-04-25 18:21:45] : Medicion creado con éxito id:680bfce9ba02c0f9120acb51
+[2025-04-25 18:21:56] : Ingreso: device_id: 1 temp: 24.42 hum: 0 pres: 99873.91
+[2025-04-25 18:21:56] : Medicion creado con éxito id:680bfcf4ba02c0f9120acb53
+[2025-04-25 18:22:07] : Ingreso: device_id: 1 temp: 24.42 hum: 0 pres: 99877.56
+[2025-04-25 18:22:07] : Medicion creado con éxito id:680bfcffba02c0f9120acb55
+[2025-04-25 18:22:18] : Ingreso: device_id: 1 temp: 24.41 hum: 0 pres: 99876.31
+[2025-04-25 18:22:18] : Medicion creado con éxito id:680bfd0aba02c0f9120acb57
+[2025-04-25 18:22:29] : Ingreso: device_id: 1 temp: 24.41 hum: 0 pres: 99879.45
+[2025-04-25 18:22:29] : Medicion creado con éxito id:680bfd15ba02c0f9120acb59
+[2025-04-25 18:22:41] : Ingreso: device_id: 1 temp: 24.38 hum: 0 pres: 99880.48
+[2025-04-25 18:22:41] : Medicion creado con éxito id:680bfd21ba02c0f9120acb5b
+[2025-04-25 18:22:52] : Ingreso: device_id: 1 temp: 24.39 hum: 0 pres: 99879.56
+[2025-04-25 18:22:52] : Medicion creado con éxito id:680bfd2cba02c0f9120acb5d
+[2025-04-25 18:23:03] : Ingreso: device_id: 1 temp: 24.44 hum: 0 pres: 99879.64
+[2025-04-25 18:23:03] : Medicion creado con éxito id:680bfd37ba02c0f9120acb5f
+[2025-04-25 18:23:14] : Ingreso: device_id: 1 temp: 24.46 hum: 0 pres: 99880.5
+[2025-04-25 18:23:14] : Medicion creado con éxito id:680bfd42ba02c0f9120acb61
+[2025-04-25 18:23:25] : Ingreso: device_id: 1 temp: 24.46 hum: 0 pres: 99881.56
+[2025-04-25 18:23:25] : Medicion creado con éxito id:680bfd4dba02c0f9120acb63
+[2025-04-25 18:23:36] : Ingreso: device_id: 1 temp: 24.44 hum: 0 pres: 99879.64
+[2025-04-25 18:23:36] : Medicion creado con éxito id:680bfd58ba02c0f9120acb65
+[2025-04-25 18:23:47] : Ingreso: device_id: 1 temp: 24.52 hum: 0 pres: 99882.36
+[2025-04-25 18:23:47] : Medicion creado con éxito id:680bfd63ba02c0f9120acb67
+[2025-04-25 18:23:58] : Ingreso: device_id: 1 temp: 24.53 hum: 0 pres: 99882.8
+[2025-04-25 18:23:58] : Medicion creado con éxito id:680bfd6eba02c0f9120acb69
+[2025-04-25 18:24:09] : Ingreso: device_id: 1 temp: 24.52 hum: 0 pres: 99884.78
+[2025-04-25 18:24:09] : Medicion creado con éxito id:680bfd79ba02c0f9120acb6b
+[2025-04-25 18:24:20] : Ingreso: device_id: 1 temp: 24.5 hum: 0 pres: 99882.72
+[2025-04-25 18:24:21] : Medicion creado con éxito id:680bfd85ba02c0f9120acb6d
+[2025-04-25 18:24:25] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 18:24:25] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 18:24:32] : Ingreso: device_id: 1 temp: 24.52 hum: 0 pres: 99881.55
+[2025-04-25 18:24:32] : Medicion creado con éxito id:680bfd90ba02c0f9120acb6f
+[2025-04-25 18:24:43] : Ingreso: device_id: 1 temp: 24.49 hum: 0 pres: 99885.16
+[2025-04-25 18:24:43] : Medicion creado con éxito id:680bfd9bba02c0f9120acb71
+[2025-04-25 18:24:54] : Ingreso: device_id: 1 temp: 24.45 hum: 0 pres: 99881.42
+[2025-04-25 18:24:54] : Medicion creado con éxito id:680bfda6ba02c0f9120acb73
+[2025-04-25 18:25:05] : Ingreso: device_id: 1 temp: 24.43 hum: 0 pres: 99884.8
+[2025-04-25 18:25:05] : Medicion creado con éxito id:680bfdb1ba02c0f9120acb75
+[2025-04-25 18:25:16] : Ingreso: device_id: 1 temp: 24.4 hum: 0 pres: 99884.86
+[2025-04-25 18:25:16] : Medicion creado con éxito id:680bfdbcba02c0f9120acb77
+[2025-04-25 18:25:27] : Ingreso: device_id: 1 temp: 24.37 hum: 0 pres: 99879.91
+[2025-04-25 18:25:27] : Medicion creado con éxito id:680bfdc7ba02c0f9120acb79
+[2025-04-25 18:25:38] : Ingreso: device_id: 1 temp: 24.41 hum: 0 pres: 99884.46
+[2025-04-25 18:25:38] : Medicion creado con éxito id:680bfdd2ba02c0f9120acb7b
+[2025-04-25 18:25:49] : Ingreso: device_id: 1 temp: 24.37 hum: 0 pres: 99882.62
+[2025-04-25 18:25:49] : Medicion creado con éxito id:680bfdddba02c0f9120acb7d
+[2025-04-25 18:26:00] : Ingreso: device_id: 1 temp: 24.35 hum: 0 pres: 99883.42
+[2025-04-25 18:26:00] : Medicion creado con éxito id:680bfde8ba02c0f9120acb7f
+[2025-04-25 18:26:11] : Ingreso: device_id: 1 temp: 24.35 hum: 0 pres: 99883.27
+[2025-04-25 18:26:11] : Medicion creado con éxito id:680bfdf3ba02c0f9120acb81
+[2025-04-25 18:26:23] : Ingreso: device_id: 1 temp: 24.33 hum: 0 pres: 99878.48
+[2025-04-25 18:26:23] : Medicion creado con éxito id:680bfdffba02c0f9120acb83
+[2025-04-25 18:26:34] : Ingreso: device_id: 1 temp: 24.35 hum: 0 pres: 99877.05
+[2025-04-25 18:26:34] : Medicion creado con éxito id:680bfe0aba02c0f9120acb85
+[2025-04-25 18:26:45] : Ingreso: device_id: 1 temp: 24.34 hum: 0 pres: 99880.27
+[2025-04-25 18:26:45] : Medicion creado con éxito id:680bfe15ba02c0f9120acb87
+[2025-04-25 18:26:56] : Ingreso: device_id: 1 temp: 24.29 hum: 0 pres: 99875.58
+[2025-04-25 18:26:56] : Medicion creado con éxito id:680bfe20ba02c0f9120acb89
+[2025-04-25 18:27:07] : Ingreso: device_id: 1 temp: 24.35 hum: 0 pres: 99879.19
+[2025-04-25 18:27:07] : Medicion creado con éxito id:680bfe2bba02c0f9120acb8b
+[2025-04-25 18:27:18] : Ingreso: device_id: 1 temp: 24.45 hum: 0 pres: 99877.34
+[2025-04-25 18:27:18] : Medicion creado con éxito id:680bfe36ba02c0f9120acb8d
+[2025-04-25 18:27:25] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 18:27:25] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 18:27:29] : Ingreso: device_id: 1 temp: 24.52 hum: 0 pres: 99889.02
+[2025-04-25 18:27:29] : Medicion creado con éxito id:680bfe41ba02c0f9120acb8f
+[2025-04-25 18:27:40] : Ingreso: device_id: 1 temp: 24.55 hum: 0 pres: 99882.67
+[2025-04-25 18:27:40] : Medicion creado con éxito id:680bfe4cba02c0f9120acb91
+[2025-04-25 18:27:51] : Ingreso: device_id: 1 temp: 24.52 hum: 0 pres: 99882.22
+[2025-04-25 18:27:51] : Medicion creado con éxito id:680bfe57ba02c0f9120acb93
+[2025-04-25 18:28:02] : Ingreso: device_id: 1 temp: 24.51 hum: 0 pres: 99884.66
+[2025-04-25 18:28:02] : Medicion creado con éxito id:680bfe62ba02c0f9120acb95
+[2025-04-25 18:28:14] : Ingreso: device_id: 1 temp: 24.49 hum: 0 pres: 99880.41
+[2025-04-25 18:28:14] : Medicion creado con éxito id:680bfe6eba02c0f9120acb97
+[2025-04-25 18:28:25] : Ingreso: device_id: 1 temp: 24.47 hum: 0 pres: 99881.98
+[2025-04-25 18:28:25] : Medicion creado con éxito id:680bfe79ba02c0f9120acb99
+[2025-04-25 18:28:36] : Ingreso: device_id: 1 temp: 24.44 hum: 0 pres: 99881.14
+[2025-04-25 18:28:36] : Medicion creado con éxito id:680bfe84ba02c0f9120acb9b
+[2025-04-25 18:28:47] : Ingreso: device_id: 1 temp: 24.42 hum: 0 pres: 99883.94
+[2025-04-25 18:28:47] : Medicion creado con éxito id:680bfe8fba02c0f9120acb9d
+[2025-04-25 18:28:58] : Ingreso: device_id: 1 temp: 24.44 hum: 0 pres: 99886.44
+[2025-04-25 18:28:58] : Medicion creado con éxito id:680bfe9aba02c0f9120acb9f
+[2025-04-25 18:29:09] : Ingreso: device_id: 1 temp: 24.43 hum: 0 pres: 99883.28
+[2025-04-25 18:29:09] : Medicion creado con éxito id:680bfea5ba02c0f9120acba1
+[2025-04-25 18:29:20] : Ingreso: device_id: 1 temp: 24.42 hum: 0 pres: 99880.41
+[2025-04-25 18:29:20] : Medicion creado con éxito id:680bfeb0ba02c0f9120acba3
+[2025-04-25 18:29:31] : Ingreso: device_id: 1 temp: 24.42 hum: 0 pres: 99881.77
+[2025-04-25 18:29:31] : Medicion creado con éxito id:680bfebbba02c0f9120acba5
+[2025-04-25 18:29:42] : Ingreso: device_id: 1 temp: 24.43 hum: 0 pres: 99883.28
+[2025-04-25 18:29:42] : Medicion creado con éxito id:680bfec6ba02c0f9120acba7
+[2025-04-25 18:29:53] : Ingreso: device_id: 1 temp: 24.45 hum: 0 pres: 99884.81
+[2025-04-25 18:29:53] : Medicion creado con éxito id:680bfed1ba02c0f9120acba9
+[2025-04-25 18:30:05] : Ingreso: device_id: 1 temp: 24.45 hum: 0 pres: 99883.45
+[2025-04-25 18:30:05] : Medicion creado con éxito id:680bfeddba02c0f9120acbab
+[2025-04-25 18:30:16] : Ingreso: device_id: 1 temp: 24.46 hum: 0 pres: 99883.22
+[2025-04-25 18:30:16] : Medicion creado con éxito id:680bfee8ba02c0f9120acbad
+[2025-04-25 18:30:25] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 18:30:25] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 18:30:27] : Ingreso: device_id: 1 temp: 24.96 hum: 0 pres: 99883.91
+[2025-04-25 18:30:27] : Medicion creado con éxito id:680bfef3ba02c0f9120acbaf
+[2025-04-25 18:30:38] : Ingreso: device_id: 1 temp: 26.16 hum: 0 pres: 99883.07
+[2025-04-25 18:30:38] : Medicion creado con éxito id:680bfefeba02c0f9120acbb1
+[2025-04-25 18:30:49] : Ingreso: device_id: 1 temp: 27.21 hum: 0 pres: 99882.36
+[2025-04-25 18:30:49] : Medicion creado con éxito id:680bff09ba02c0f9120acbb3
+[2025-04-25 18:31:00] : Ingreso: device_id: 1 temp: 27.74 hum: 0 pres: 99884.13
+[2025-04-25 18:31:00] : Medicion creado con éxito id:680bff14ba02c0f9120acbb5
+[2025-04-25 18:31:11] : Ingreso: device_id: 1 temp: 27.32 hum: 0 pres: 99881.34
+[2025-04-25 18:31:11] : Medicion creado con éxito id:680bff1fba02c0f9120acbb7
+[2025-04-25 18:31:22] : Ingreso: device_id: 1 temp: 26.56 hum: 0 pres: 99879.23
+[2025-04-25 18:31:22] : Medicion creado con éxito id:680bff2aba02c0f9120acbb9
+[2025-04-25 18:31:33] : Ingreso: device_id: 1 temp: 26.11 hum: 0 pres: 99882.76
+[2025-04-25 18:31:33] : Medicion creado con éxito id:680bff35ba02c0f9120acbbb
+[2025-04-25 18:31:45] : Ingreso: device_id: 1 temp: 25.78 hum: 0 pres: 99879.49
+[2025-04-25 18:31:45] : Medicion creado con éxito id:680bff41ba02c0f9120acbbd
+[2025-04-25 18:31:56] : Ingreso: device_id: 1 temp: 25.52 hum: 0 pres: 99882.95
+[2025-04-25 18:31:56] : Medicion creado con éxito id:680bff4cba02c0f9120acbbf
+[2025-04-25 18:32:07] : Ingreso: device_id: 1 temp: 25.37 hum: 0 pres: 99885.76
+[2025-04-25 18:32:07] : Medicion creado con éxito id:680bff57ba02c0f9120acbc1
+[2025-04-25 18:32:18] : Ingreso: device_id: 1 temp: 25.31 hum: 0 pres: 99888.81
+[2025-04-25 18:32:18] : Medicion creado con éxito id:680bff62ba02c0f9120acbc3
+[2025-04-25 18:32:29] : Ingreso: device_id: 1 temp: 25.21 hum: 0 pres: 99882.92
+[2025-04-25 18:32:29] : Medicion creado con éxito id:680bff6dba02c0f9120acbc5
+[2025-04-25 18:32:40] : Ingreso: device_id: 1 temp: 25.08 hum: 0 pres: 99884.22
+[2025-04-25 18:32:40] : Medicion creado con éxito id:680bff78ba02c0f9120acbc7
+[2025-04-25 18:32:51] : Ingreso: device_id: 1 temp: 25.01 hum: 0 pres: 99883.56
+[2025-04-25 18:32:51] : Medicion creado con éxito id:680bff83ba02c0f9120acbc9
+[2025-04-25 18:33:02] : Ingreso: device_id: 1 temp: 24.95 hum: 0 pres: 99889.33
+[2025-04-25 18:33:02] : Medicion creado con éxito id:680bff8eba02c0f9120acbcb
+[2025-04-25 18:33:13] : Ingreso: device_id: 1 temp: 24.87 hum: 0 pres: 99889.91
+[2025-04-25 18:33:13] : Medicion creado con éxito id:680bff99ba02c0f9120acbcd
+[2025-04-25 18:33:24] : Ingreso: device_id: 1 temp: 24.8 hum: 0 pres: 99888.55
+[2025-04-25 18:33:24] : Medicion creado con éxito id:680bffa4ba02c0f9120acbcf
+[2025-04-25 18:33:25] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 18:33:25] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 18:33:36] : Ingreso: device_id: 1 temp: 24.76 hum: 0 pres: 99884.27
+[2025-04-25 18:33:36] : Medicion creado con éxito id:680bffb0ba02c0f9120acbd1
+[2025-04-25 18:33:47] : Ingreso: device_id: 1 temp: 24.71 hum: 0 pres: 99885.97
+[2025-04-25 18:33:47] : Medicion creado con éxito id:680bffbbba02c0f9120acbd3
+[2025-04-25 18:33:58] : Ingreso: device_id: 1 temp: 24.7 hum: 0 pres: 99884.72
+[2025-04-25 18:33:58] : Medicion creado con éxito id:680bffc6ba02c0f9120acbd5
+[2025-04-25 18:34:09] : Ingreso: device_id: 1 temp: 24.69 hum: 0 pres: 99884.99
+[2025-04-25 18:34:09] : Medicion creado con éxito id:680bffd1ba02c0f9120acbd7
+[2025-04-25 18:34:20] : Ingreso: device_id: 1 temp: 24.66 hum: 0 pres: 99881.4
+[2025-04-25 18:34:20] : Medicion creado con éxito id:680bffdcba02c0f9120acbd9
+[2025-04-25 18:34:31] : Ingreso: device_id: 1 temp: 24.61 hum: 0 pres: 99879.41
+[2025-04-25 18:34:31] : Medicion creado con éxito id:680bffe7ba02c0f9120acbdb
+[2025-04-25 18:34:42] : Ingreso: device_id: 1 temp: 24.57 hum: 0 pres: 99878.36
+[2025-04-25 18:34:42] : Medicion creado con éxito id:680bfff2ba02c0f9120acbdd
+[2025-04-25 18:34:53] : Ingreso: device_id: 1 temp: 24.52 hum: 0 pres: 99882.89
+[2025-04-25 18:34:53] : Medicion creado con éxito id:680bfffdba02c0f9120acbdf
+[2025-04-25 18:35:04] : Ingreso: device_id: 1 temp: 24.45 hum: 0 pres: 99876.41
+[2025-04-25 18:35:04] : Medicion creado con éxito id:680c0008ba02c0f9120acbe1
+[2025-04-25 18:35:15] : Ingreso: device_id: 1 temp: 24.44 hum: 0 pres: 99882.5
+[2025-04-25 18:35:15] : Medicion creado con éxito id:680c0013ba02c0f9120acbe3
+[2025-04-25 18:35:27] : Ingreso: device_id: 1 temp: 24.41 hum: 0 pres: 99877.67
+[2025-04-25 18:35:27] : Medicion creado con éxito id:680c001fba02c0f9120acbe5
+[2025-04-25 18:35:38] : Ingreso: device_id: 1 temp: 24.4 hum: 0 pres: 99882.7
+[2025-04-25 18:35:38] : Medicion creado con éxito id:680c002aba02c0f9120acbe7
+[2025-04-25 18:35:49] : Ingreso: device_id: 1 temp: 24.41 hum: 0 pres: 99881.62
+[2025-04-25 18:35:49] : Medicion creado con éxito id:680c0035ba02c0f9120acbe9
+[2025-04-25 18:36:00] : Ingreso: device_id: 1 temp: 24.4 hum: 0 pres: 99883.77
+[2025-04-25 18:36:00] : Medicion creado con éxito id:680c0040ba02c0f9120acbeb
+[2025-04-25 18:36:11] : Ingreso: device_id: 1 temp: 24.4 hum: 0 pres: 99883.08
+[2025-04-25 18:36:11] : Medicion creado con éxito id:680c004bba02c0f9120acbed
+[2025-04-25 18:36:23] : Ingreso: device_id: 1 temp: 24.39 hum: 0 pres: 99879.83
+[2025-04-25 18:36:23] : Medicion creado con éxito id:680c0057ba02c0f9120acbef
+[2025-04-25 18:36:25] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 18:36:25] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 18:36:34] : Ingreso: device_id: 1 temp: 24.4 hum: 0 pres: 99879.3
+[2025-04-25 18:36:34] : Medicion creado con éxito id:680c0062ba02c0f9120acbf1
+[2025-04-25 18:36:45] : Ingreso: device_id: 1 temp: 24.42 hum: 0 pres: 99883
+[2025-04-25 18:36:45] : Medicion creado con éxito id:680c006dba02c0f9120acbf3
+[2025-04-25 18:36:56] : Ingreso: device_id: 1 temp: 24.44 hum: 0 pres: 99878.28
+[2025-04-25 18:36:56] : Medicion creado con éxito id:680c0078ba02c0f9120acbf5
+[2025-04-25 18:37:07] : Ingreso: device_id: 1 temp: 24.48 hum: 0 pres: 99880.38
+[2025-04-25 18:37:07] : Medicion creado con éxito id:680c0083ba02c0f9120acbf7
+[2025-04-25 18:37:10] : SIGINT guardando los backups...
+[2025-04-25 18:37:10] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 18:37:10] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 18:37:16] : Restauración de datos completada en sql
+[2025-04-25 18:37:16] : El api está inicializado en el puerto: 8080
+[2025-04-25 18:37:17] : La conexion se ha realizado correctamente a MongoDB
+[2025-04-25 18:37:17] : La conexión se ha realizado correctamente en sql.
+[2025-04-25 18:37:18] : Restauración de datos completada de Mongo.
+[2025-04-25 18:37:18] : Ingreso: device_id: 1 temp: 24.48 hum: 0 pres: 99880.64
+[2025-04-25 18:37:18] : Medicion creado con éxito id:680c008e5dd8266069562960
+[2025-04-25 18:37:30] : Ingreso: device_id: 1 temp: 24.5 hum: 0 pres: 99880.69
+[2025-04-25 18:37:30] : Medicion creado con éxito id:680c009a5dd8266069562962
+[2025-04-25 18:37:41] : Ingreso: device_id: 1 temp: 24.49 hum: 0 pres: 99875.65
+[2025-04-25 18:37:41] : Medicion creado con éxito id:680c00a55dd8266069562964
+[2025-04-25 18:37:52] : Ingreso: device_id: 1 temp: 24.44 hum: 0 pres: 99882.36
+[2025-04-25 18:37:52] : Medicion creado con éxito id:680c00b05dd8266069562966
+[2025-04-25 18:38:03] : Ingreso: device_id: 1 temp: 24.42 hum: 0 pres: 99877.15
+[2025-04-25 18:38:03] : Medicion creado con éxito id:680c00bb5dd8266069562968
+[2025-04-25 18:38:14] : Ingreso: device_id: 1 temp: 24.39 hum: 0 pres: 99880.23
+[2025-04-25 18:38:14] : Medicion creado con éxito id:680c00c65dd826606956296a
+[2025-04-25 18:38:25] : Ingreso: device_id: 1 temp: 24.39 hum: 0 pres: 99879.56
+[2025-04-25 18:38:25] : Medicion creado con éxito id:680c00d15dd826606956296c
+[2025-04-25 18:38:37] : Ingreso: device_id: 1 temp: 24.39 hum: 0 pres: 99880.34
+[2025-04-25 18:38:37] : Medicion creado con éxito id:680c00dd5dd826606956296e
+[2025-04-25 18:38:48] : Ingreso: device_id: 1 temp: 24.37 hum: 0 pres: 99878.42
+[2025-04-25 18:38:48] : Medicion creado con éxito id:680c00e85dd8266069562970
+[2025-04-25 18:38:59] : Ingreso: device_id: 1 temp: 24.35 hum: 0 pres: 99873.5
+[2025-04-25 18:38:59] : Medicion creado con éxito id:680c00f35dd8266069562972
+[2025-04-25 18:39:04] : El User ya existe. Elige un User_id distinto.
+[2025-04-25 18:39:10] : Ingreso: device_id: 1 temp: 24.35 hum: 0 pres: 99869.58
+[2025-04-25 18:39:10] : Medicion creado con éxito id:680c00fe5dd8266069562974
+[2025-04-25 18:39:14] : User creado con éxito.
+[2025-04-25 18:39:21] : Ingreso: device_id: 1 temp: 24.34 hum: 0 pres: 99872.53
+[2025-04-25 18:39:21] : Medicion creado con éxito id:680c01095dd8266069562976
+[2025-04-25 18:39:32] : Ingreso: device_id: 1 temp: 24.38 hum: 0 pres: 99879.12
+[2025-04-25 18:39:32] : Medicion creado con éxito id:680c01145dd8266069562978
+[2025-04-25 18:39:43] : Ingreso: device_id: 1 temp: 24.41 hum: 0 pres: 99873.33
+[2025-04-25 18:39:43] : Medicion creado con éxito id:680c011f5dd826606956297a
+[2025-04-25 18:39:54] : Ingreso: device_id: 1 temp: 24.44 hum: 0 pres: 99876.77
+[2025-04-25 18:39:54] : Medicion creado con éxito id:680c012a5dd826606956297c
+[2025-04-25 18:40:05] : Ingreso: device_id: 1 temp: 24.42 hum: 0 pres: 99877.3
+[2025-04-25 18:40:05] : Medicion creado con éxito id:680c01355dd826606956297e
+[2025-04-25 18:40:16] : Ingreso: device_id: 1 temp: 24.41 hum: 0 pres: 99877.67
+[2025-04-25 18:40:16] : Medicion creado con éxito id:680c01405dd8266069562980
+[2025-04-25 18:40:17] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 18:40:17] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 18:40:28] : Ingreso: device_id: 1 temp: 24.41 hum: 0 pres: 99880.68
+[2025-04-25 18:40:28] : Medicion creado con éxito id:680c014c5dd8266069562982
+[2025-04-25 18:40:39] : Ingreso: device_id: 1 temp: 24.41 hum: 0 pres: 99879.03
+[2025-04-25 18:40:39] : Medicion creado con éxito id:680c01575dd8266069562984
+[2025-04-25 18:40:50] : Ingreso: device_id: 1 temp: 24.36 hum: 0 pres: 99876.1
+[2025-04-25 18:40:50] : Medicion creado con éxito id:680c01625dd8266069562986
+[2025-04-25 18:41:01] : Ingreso: device_id: 1 temp: 24.32 hum: 0 pres: 99873.71
+[2025-04-25 18:41:01] : Medicion creado con éxito id:680c016d5dd8266069562988
+[2025-04-25 18:41:12] : Ingreso: device_id: 1 temp: 24.31 hum: 0 pres: 99876.83
+[2025-04-25 18:41:12] : Medicion creado con éxito id:680c01785dd826606956298a
+[2025-04-25 18:41:23] : Ingreso: device_id: 1 temp: 24.33 hum: 0 pres: 99879.84
+[2025-04-25 18:41:23] : Medicion creado con éxito id:680c01835dd826606956298c
+[2025-04-25 18:41:34] : Ingreso: device_id: 1 temp: 24.35 hum: 0 pres: 99878.41
+[2025-04-25 18:41:34] : Medicion creado con éxito id:680c018e5dd826606956298e
+[2025-04-25 18:41:45] : Ingreso: device_id: 1 temp: 24.38 hum: 0 pres: 99876.56
+[2025-04-25 18:41:45] : Medicion creado con éxito id:680c01995dd8266069562990
+[2025-04-25 18:41:57] : Ingreso: device_id: 1 temp: 24.41 hum: 0 pres: 99878.64
+[2025-04-25 18:41:57] : Medicion creado con éxito id:680c01a55dd8266069562992
+[2025-04-25 18:42:08] : Ingreso: device_id: 1 temp: 24.41 hum: 0 pres: 99879.7
+[2025-04-25 18:42:08] : Medicion creado con éxito id:680c01b05dd8266069562994
+[2025-04-25 18:42:19] : Ingreso: device_id: 1 temp: 24.39 hum: 0 pres: 99873.45
+[2025-04-25 18:42:19] : Medicion creado con éxito id:680c01bb5dd8266069562996
+[2025-04-25 18:42:26] : Device id: 1 para borrar
+[2025-04-25 18:42:26] : Device id: 1 se borro correctamente
+[2025-04-25 18:42:26] : Obtengo todos los dispotivos 
+[2025-04-25 18:42:30] : Ingreso: device_id: 1 temp: 24.39 hum: 0 pres: 99876.17
+[2025-04-25 18:42:30] : El device_id no es correcto.
+[2025-04-25 18:42:36] : Device id: id_04 name: nombre_04 key: 
+[2025-04-25 18:42:36] : Device id: id_04 se actualizo correctamente
+[2025-04-25 18:42:36] : Obtengo todos los dispotivos 
+[2025-04-25 18:42:41] : Ingreso: device_id: 1 temp: 24.4 hum: 0 pres: 99883.08
+[2025-04-25 18:42:41] : El device_id no es correcto.
+[2025-04-25 18:42:52] : Ingreso: device_id: 1 temp: 24.46 hum: 0 pres: 99881.02
+[2025-04-25 18:42:52] : El device_id no es correcto.
+[2025-04-25 18:43:03] : Ingreso: device_id: 1 temp: 24.48 hum: 0 pres: 99878.48
+[2025-04-25 18:43:03] : El device_id no es correcto.
+[2025-04-25 18:43:14] : Ingreso: device_id: 1 temp: 24.49 hum: 0 pres: 99879.59
+[2025-04-25 18:43:14] : El device_id no es correcto.
+[2025-04-25 18:43:17] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 18:43:17] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 18:43:26] : Ingreso: device_id: 1 temp: 24.51 hum: 0 pres: 99879.06
+[2025-04-25 18:43:26] : El device_id no es correcto.
+[2025-04-25 18:43:37] : Ingreso: device_id: 1 temp: 24.52 hum: 0 pres: 99877.05
+[2025-04-25 18:43:37] : El device_id no es correcto.
+[2025-04-25 18:43:48] : Ingreso: device_id: 1 temp: 24.51 hum: 0 pres: 99877.86
+[2025-04-25 18:43:48] : El device_id no es correcto.
+[2025-04-25 18:43:57] : Obtengo todas las mediciones del device_id: 00
+[2025-04-25 18:43:57] : Device id: 00 encontrado 
+[2025-04-25 18:43:57] : Se encontraron mediciones.
+[2025-04-25 18:43:59] : Ingreso: device_id: 1 temp: 24.49 hum: 0 pres: 99873.06
+[2025-04-25 18:43:59] : El device_id no es correcto.
+[2025-04-25 18:44:00] : Obtengo todos los dispositivos 
+[2025-04-25 18:44:02] : Obtengo todas las mediciones del device_id: 00
+[2025-04-25 18:44:02] : Device id: 00 encontrado 
+[2025-04-25 18:44:02] : Se encontraron mediciones.
+[2025-04-25 18:44:03] : Obtengo todos los dispositivos 
+[2025-04-25 18:44:10] : Ingreso: device_id: 1 temp: 24.52 hum: 0 pres: 99881.55
+[2025-04-25 18:44:10] : El device_id no es correcto.
+[2025-04-25 18:44:10] : Obtengo todas las mediciones del device_id: 01
+[2025-04-25 18:44:10] : Device id: 01 encontrado 
+[2025-04-25 18:44:10] : Se encontraron mediciones.
+[2025-04-25 18:44:15] : Obtengo todas las mediciones del device_id: 00
+[2025-04-25 18:44:15] : Device id: 00 encontrado 
+[2025-04-25 18:44:15] : Se encontraron mediciones.
+[2025-04-25 18:44:16] : Obtengo todos los dispositivos 
+[2025-04-25 18:44:21] : Ingreso: device_id: 1 temp: 24.55 hum: 0 pres: 99877.23
+[2025-04-25 18:44:21] : El device_id no es correcto.
+[2025-04-25 18:44:23] : Obtengo todos los dispositivos 
+[2025-04-25 18:44:26] : Obtengo todas las mediciones del device_id: 01
+[2025-04-25 18:44:26] : Device id: 01 encontrado 
+[2025-04-25 18:44:26] : Se encontraron mediciones.
+[2025-04-25 18:44:27] : Obtengo todos los dispositivos 
+[2025-04-25 18:44:30] : Obtengo todas las mediciones del device_id: id_04
+[2025-04-25 18:44:30] : Device id: id_04 encontrado 
+[2025-04-25 18:44:30] : No se encontraron mediciones.
+[2025-04-25 18:44:30] : Obtengo todos los dispositivos 
+[2025-04-25 18:44:32] : Obtengo todas las mediciones del device_id: 02
+[2025-04-25 18:44:32] : Device id: 02 encontrado 
+[2025-04-25 18:44:32] : No se encontraron mediciones.
+[2025-04-25 18:44:32] : Obtengo todos los dispositivos 
+[2025-04-25 18:44:32] : Ingreso: device_id: 1 temp: 24.54 hum: 0 pres: 99878.73
+[2025-04-25 18:44:32] : El device_id no es correcto.
+[2025-04-25 18:44:33] : Obtengo todas las mediciones del device_id: 01
+[2025-04-25 18:44:33] : Device id: 01 encontrado 
+[2025-04-25 18:44:33] : Se encontraron mediciones.
+[2025-04-25 18:44:43] : Ingreso: device_id: 1 temp: 24.53 hum: 0 pres: 99877.48
+[2025-04-25 18:44:43] : El device_id no es correcto.
+[2025-04-25 18:44:54] : Ingreso: device_id: 1 temp: 24.52 hum: 0 pres: 99878.95
+[2025-04-25 18:44:54] : El device_id no es correcto.
+[2025-04-25 18:45:06] : Ingreso: device_id: 1 temp: 24.55 hum: 0 pres: 99875.62
+[2025-04-25 18:45:06] : El device_id no es correcto.
+[2025-04-25 18:45:17] : Ingreso: device_id: 1 temp: 24.56 hum: 0 pres: 99877.52
+[2025-04-25 18:45:17] : El device_id no es correcto.
+[2025-04-25 18:45:28] : Ingreso: device_id: 1 temp: 24.53 hum: 0 pres: 99880.46
+[2025-04-25 18:45:28] : El device_id no es correcto.
+[2025-04-25 18:45:39] : Ingreso: device_id: 1 temp: 24.54 hum: 0 pres: 99875.6
+[2025-04-25 18:45:39] : El device_id no es correcto.
+[2025-04-25 18:45:50] : Ingreso: device_id: 1 temp: 24.55 hum: 0 pres: 99876.83
+[2025-04-25 18:45:50] : El device_id no es correcto.
+[2025-04-25 18:46:01] : Ingreso: device_id: 1 temp: 24.56 hum: 0 pres: 99876.72
+[2025-04-25 18:46:01] : El device_id no es correcto.
+[2025-04-25 18:46:12] : Ingreso: device_id: 1 temp: 24.56 hum: 0 pres: 99875.36
+[2025-04-25 18:46:12] : El device_id no es correcto.
+[2025-04-25 18:46:17] : Estado de la base de datos guardado en: backup/backup_db_2.json
+[2025-04-25 18:46:17] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 18:46:23] : Ingreso: device_id: 1 temp: 24.56 hum: 0 pres: 99876.72
+[2025-04-25 18:46:23] : El device_id no es correcto.
+[2025-04-25 18:46:34] : Ingreso: device_id: 1 temp: 24.58 hum: 0 pres: 99875.66
+[2025-04-25 18:46:34] : El device_id no es correcto.
+[2025-04-25 18:46:46] : Ingreso: device_id: 1 temp: 24.63 hum: 0 pres: 99874.67
+[2025-04-25 18:46:46] : El device_id no es correcto.
+[2025-04-25 18:46:50] : SIGINT guardando los backups...
+[2025-04-25 18:46:50] : Estado de la base de datos guardado en: backup/backup_db_1.sql
+[2025-04-25 18:46:50] : Estado de la base de datos guardado en: backup/backup_db_2.json
