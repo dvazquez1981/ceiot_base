@@ -1,15 +1,10 @@
 # Ejercicio CiberKillChain - Ataque
 
+ # Alumno Diego Anibal Vazquez
 
-## Enunciado
+ # Sistema víctima (https://siper.vialidad.gob.ar/go/login) sistema de control de asistencia
 
-Armar una cyberkillchain usando técnicas de la matriz de Att&ck para un escenario relacionado al trabajo práctico de la carrera.
-
- ## Alumno Diego Anibal Vazquez
-
- ## Sistema víctima (https://siper.vialidad.gob.ar/go/login) sistema de control de asistencia
-
- ## Objetivo obtener información de la base de datos de los empleados: info privada y de indole laboral
+ # Objetivo obtener información de la base de datos de los empleados: info privada y de indole laboral
 
 (# Resolución)
 (## Reconnaissance)
