@@ -7,7 +7,7 @@ Diego Anibal Vazquez
 https://siper.vialidad.gob.ar/go/login sistema de control de asistencia
 
 ## Objetivo
-obtener información de la base de datos de los empleados: info privada y de indole laboral
+Obtener información de la base de datos de los empleados: info privada y de indole laboral
 
 (# Resolución)
 (## Reconnaissance)
