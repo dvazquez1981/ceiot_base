@@ -28,4 +28,10 @@ https://siper.vialidad.gob.ar/go/login sistema de control de asistencia
 - T1190 – Exploit Public-Facing Application
 - T1078 – Valid Accounts
 
+## Exploitation
+- T1190 – Exploit Public-Facing Application
+
+## Command & Control
+- T1071 – Application Layer Protocol
+
 
