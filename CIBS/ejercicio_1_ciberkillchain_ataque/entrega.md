@@ -16,17 +16,16 @@ https://siper.vialidad.gob.ar/go/login sistema de control de asistencia
 
 ## Reconnaissance
 
-T1595 – Active Scanning
-T1592 – Gather Victim Identity Information
+- T1595 – Active Scanning
+- T1592 – Gather Victim Identity Information
 
 ## Weaponization
-T1059 – Command and Scripting Interpreter
-WE-89 – SQL Injection
+- T1059 – Command and Scripting Interpreter
+- WE-89 – SQL Injection
 
 
 ## Delivery
-
-T1190 – Exploit Public-Facing Application
-T1078 – Valid Accounts
+- T1190 – Exploit Public-Facing Application
+- T1078 – Valid Accounts
 
 
