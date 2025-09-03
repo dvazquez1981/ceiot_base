@@ -14,14 +14,12 @@ https://siper.vialidad.gob.ar/go/login sistema de control de asistencia
 - Si se puede incidir sobre el sistema de haberes, direccionar todos los haberes a una sola cuenta.
   
 
-(# Resolución)
-(## Reconnaissance)
+## Reconnaissance
  ATT&CK:
 
 T1595 – Active Scanning
 T1592 – Gather Victim Identity Information
 
-
-(## Weaponization)
+## Weaponization
 T1059 – Command and Scripting Interpreter
 WE-89 – SQL Injection
