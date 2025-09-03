@@ -7,15 +7,21 @@ Diego Anibal Vazquez
 https://siper.vialidad.gob.ar/go/login sistema de control de asistencia
 
 ## Objetivo
-Obtener información de la base de datos de los empleados: info privada y de indole laboral
+- Obtener información de la base de datos de los empleados: info privada y de indole laboral
+- Posibilidad de insertar mas dias de licencia ordinaria
+- Agregar dias de licencia médica
+- Cambiar categoría de empleado
+- Si se puede incidir sobre el sistema de haberes, direccionar todos los haberes a una sola cuenta.
+  
 
 (# Resolución)
 (## Reconnaissance)
-Shodan/Censys:
+ ATT&CK:
 
-
-
+T1595 – Active Scanning
+T1592 – Gather Victim Identity Information
 
 
 (## Weaponization)
-
+T1059 – Command and Scripting Interpreter
+WE-89 – SQL Injection
