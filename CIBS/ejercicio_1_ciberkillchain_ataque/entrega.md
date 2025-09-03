@@ -10,7 +10,7 @@ Diego Anibal Vazquez
 - Obtener información de la base de datos de los empleados: info privada y de indole laboral
 - Posibilidad de insertar mas dias de licencia ordinaria
 - Agregar dias de licencia médica
-- Cambiar categoría de empleado
+- Cambiar categoría del empleado
 - Si se puede incidir sobre el sistema de haberes, direccionar todos los haberes a una sola cuenta.
   
 
