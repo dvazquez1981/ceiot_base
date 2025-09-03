@@ -33,5 +33,8 @@ https://siper.vialidad.gob.ar/go/login sistema de control de asistencia
 
 ## Command & Control
 - T1071 – Application Layer Protocol
+## Actions on Objectives
+- TA0009 – Collection
+- TA0010 – Exfiltration
 
 
