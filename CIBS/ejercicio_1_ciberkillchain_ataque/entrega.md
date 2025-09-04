@@ -16,8 +16,11 @@ Diego Anibal Vazquez
 
 ## Reconnaissance
 
-- T1595 – Active Scanning
-- T1592 – Gather Victim Identity Information
+### T1595 – Active Scanning
+- objetivo: identificar el rango de direcciones IP, dominios o subdominios de la organización.
+
+
+### T1592 – Gather Victim Identity Information
 
 ## Weaponization
 - T1059 – Command and Scripting Interpreter
