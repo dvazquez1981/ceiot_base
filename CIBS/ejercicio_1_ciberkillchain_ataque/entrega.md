@@ -17,7 +17,8 @@ Diego Anibal Vazquez
 ## Reconnaissance
 
 ### T1595 – Active Scanning
-- objetivo: identificar el rango de direcciones IP, dominios o subdominios de la organización.
+- Objetivo: identificar el rango de direcciones IP, dominios o subdominios de la organización.
+    nmap -sS -p- https://siper.vialidad.gob.ar
 
 
 ### T1592 – Gather Victim Identity Information
