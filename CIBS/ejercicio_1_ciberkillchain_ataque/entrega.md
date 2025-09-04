@@ -7,11 +7,11 @@ Diego Anibal Vazquez
 - Sistema de control de asistencia https://siper.vialidad.gob.ar/go/login 
 
 ## Objetivo
-- Obtener información de la base de datos de los empleados: info privada y de indole laboral
-- Posibilidad de insertar mas dias de licencia ordinaria
-- Agregar dias de licencia médica
-- Cambiar categoría del empleado
-- Si se puede incidir sobre el sistema de haberes, direccionar todos los haberes a una sola cuenta.
+- Exfiltración de información sensible de empleados (datos personales y laborales) con valor económico en el mercado clandestino y riesgo de uso para fraudes financieros - Alteración de registros de licencias ordinarias, incrementando días para tomar licencias y vender esta posibilidad.
+- Inyección de licencias médicas falsas, con impacto directo en la liquidación de haberes y aumento de gastos laborales injustificados.
+- Cambio de categoría del empleado, afectando la escala salarial y ocasionando un desbalance económico en la nómina.
+- Manipulación del sistema de haberes, redireccionando pagos hacia una única cuenta para apropiación ilícita de fondos.
+
   
 
 ## Reconnaissance
