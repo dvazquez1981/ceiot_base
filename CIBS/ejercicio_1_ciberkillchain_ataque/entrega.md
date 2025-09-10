@@ -83,7 +83,8 @@ Diego Anibal Vazquez
    OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
    Nmap done: 1 IP address (1 host up) scanned in 20.72 seconds
    ```
-  -Análisis de los Resultados del Escaneo
+  -Análisis de los Resultados del Escaneo:
+  
      Puerto 22/tcp (SSH): OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux). Esta versión de OpenSSH es relativamente reciente y bien mantenida, pero se deben buscar vulnerabilidades específicas (ej. CVE-2020-15778)      o probar fuerza bruta si hay credenciales débiles.
 
      Puerto 80/tcp (HTTP): Servicio OpenResty que redirige a HTTPS. Esto indica que el tráfico HTTP se fuerza a HTTPS, por lo que el enfoque debe estar en el puerto 443.
