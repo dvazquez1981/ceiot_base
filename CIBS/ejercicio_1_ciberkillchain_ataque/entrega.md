@@ -20,9 +20,22 @@ Diego Anibal Vazquez
     nmap -sS -p- siper.vialidad.gob.ar
 
 - Resultado scaneo:
-     22/tcp  open  ssh
-     80/tcp  open  http
-     443/tcp open  https
+  
+
+    ```text
+        sudo nmap -sS -p- siper.vialidad.gob.ar
+
+        Starting Nmap 7.93 ( https://nmap.org ) at 2025-09-10 10:35 -03
+        Nmap scan report for siper.vialidad.gob.ar (10.8.34.189)
+        Host is up (0.031s latency).
+        Not shown: 65532 closed tcp ports (reset)
+        PORT    STATE SERVICE
+        22/tcp  open  ssh
+        80/tcp  open  http
+        443/tcp open  https
+
+        Nmap done: 1 IP address (1 host up) scanned in 90.90 seconds
+
 
 
 ### T1592 – Gather Victim Identity Information
