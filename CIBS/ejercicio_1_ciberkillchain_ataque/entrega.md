@@ -62,10 +62,10 @@ Diego Anibal Vazquez
   |   3072 56be6a235c4080e3c5c0e8750198778c (RSA)  
   |   256 a2f031bb3a2a6a347d4f3a8eab47976a (ECDSA)
   |_  256 0106c66debd94365064032e9c64c8503 (ED25519)  
-   80/tcp  open  http     OpenResty web app server
+  80/tcp  open  http     OpenResty web app server
   |_http-server-header: openresty
   |_http-title: Did not follow redirect to https://siper.vialidad.gob.ar/
-   443/tcp open  ssl/http OpenResty web app server
+  443/tcp open  ssl/http OpenResty web app server
   |_http-server-header: openresty
   |_http-title: Site doesn't have a title (text/html; charset=UTF-8).
   | ssl-cert: Subject: commonName=exp-e.vialidad.gob.ar/organizationName=DIRECCION NACIONAL DE VIALIDAD/stateOrProvinceName=Ciudad Aut\xC3\xB3noma de Buenos Aires/countryName=AR
