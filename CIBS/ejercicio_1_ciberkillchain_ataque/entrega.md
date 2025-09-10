@@ -47,6 +47,7 @@ Diego Anibal Vazquez
 
     Con esta información, determino que el ataque puede orientarse al servicio web de login (80/443) mediante inyección SQL, y dejo como alternativa probar credenciales débiles en SSH.
   
+  
 - Escaneo activo detallado:
 
   ```text
@@ -84,7 +85,8 @@ Diego Anibal Vazquez
    OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
    Nmap done: 1 IP address (1 host up) scanned in 20.72 seconds
    ```
-  - Análisis de los Resultados del Escaneo:
+
+  Análisis de los Resultados del Escaneo:
   
      Puerto 22/tcp (SSH): OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux). Esta versión de OpenSSH es relativamente reciente y bien mantenida, buscar vulnerabilidades específicas (CVE-2020-15778) o probar fuerza bruta si hay credenciales débiles.
 
@@ -96,7 +98,7 @@ Diego Anibal Vazquez
 
      rDNS: La IP 10.8.34.189 resuelve a desa-backend-redeterminacion.vialidad.gob.ar, lo que sugiere que podría ser un entorno de desarrollo o testing, lo que podría implicar medidas de seguridad más laxas
 
- - Uso Gobuster para realizar escaneo de directorios y archivos en servidores web mediante fuerza bruta
+- Uso Gobuster para realizar escaneo de directorios y archivos en servidores web mediante fuerza bruta
    gobuster dir -u https://siper.vialidad.gob.ar -w /snap/seclists/1214/Discovery/Web-Content/common.txt -t 50 -k
    ```text
    ===============================================================
