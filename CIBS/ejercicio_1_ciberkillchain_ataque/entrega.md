@@ -46,7 +46,7 @@ Diego Anibal Vazquez
     443/tcp (HTTPS): servicio web principal con cifrado TLS.
 
     Con esta información, determino que el ataque puede orientarse al servicio web de login (80/443) mediante inyección SQL, y dejo como alternativa probar credenciales débiles en SSH.
-- escaneo activo detallado:
+- Escaneo activo detallado:
 
   ```text
   nmap -sV -sC -O -p 22,80,443 siper.vialidad.gob.ar
@@ -85,9 +85,9 @@ Diego Anibal Vazquez
    ```
   -Análisis de los Resultados del Escaneo:
   
-     Puerto 22/tcp (SSH): OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux). Esta versión de OpenSSH es relativamente reciente y bien mantenida, pero se deben buscar vulnerabilidades específicas (ej. CVE-2020-15778)      o probar fuerza bruta si hay credenciales débiles.
+     Puerto 22/tcp (SSH): OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux). Esta versión de OpenSSH es relativamente reciente y bien mantenida, buscar vulnerabilidades específicas (CVE-2020-15778) o probar fuerza bruta si hay credenciales débiles.
 
-     Puerto 80/tcp (HTTP): Servicio OpenResty que redirige a HTTPS. Esto indica que el tráfico HTTP se fuerza a HTTPS, por lo que el enfoque debe estar en el puerto 443.
+     Puerto 80/tcp (HTTP): Servicio OpenResty que redirige a HTTPS. Indica que el tráfico HTTP se fuerza a HTTPS, por lo que el enfoque debe estar en el puerto 443.
 
      Puerto 443/tcp (HTTPS): Servicio OpenResty con un certificado SSL válido para exp-e.vialidad.gob.ar y *.vialidad.gob.ar. La aplicación web principal parece estar aquí.
 
