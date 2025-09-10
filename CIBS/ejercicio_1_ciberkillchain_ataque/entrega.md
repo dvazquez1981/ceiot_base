@@ -46,6 +46,7 @@ Diego Anibal Vazquez
     443/tcp (HTTPS): servicio web principal con cifrado TLS.
 
     Con esta información, determino que el ataque puede orientarse al servicio web de login (80/443) mediante inyección SQL, y dejo como alternativa probar credenciales débiles en SSH.
+  
 - Escaneo activo detallado:
 
   ```text
