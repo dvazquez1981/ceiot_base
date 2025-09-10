@@ -83,7 +83,16 @@ Diego Anibal Vazquez
    OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
    Nmap done: 1 IP address (1 host up) scanned in 20.72 seconds
    ```
-  
+  -Análisis de los Resultados del Escaneo
+     Puerto 22/tcp (SSH): OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux). Esta versión de OpenSSH es relativamente reciente y bien mantenida, pero se deben buscar vulnerabilidades específicas (ej. CVE-2020-15778)      o probar fuerza bruta si hay credenciales débiles.
+
+     Puerto 80/tcp (HTTP): Servicio OpenResty que redirige a HTTPS. Esto indica que el tráfico HTTP se fuerza a HTTPS, por lo que el enfoque debe estar en el puerto 443.
+
+     Puerto 443/tcp (HTTPS): Servicio OpenResty con un certificado SSL válido para exp-e.vialidad.gob.ar y *.vialidad.gob.ar. La aplicación web principal parece estar aquí.
+
+     Sistema Operativo: Linux 4.15 - 5.6 (basado en la detección de OS).
+
+     rDNS: La IP 10.8.34.189 resuelve a desa-backend-redeterminacion.vialidad.gob.ar, lo que sugiere que podría ser un entorno de desarrollo o testing, lo que podría implicar medidas de seguridad más laxas
 
 ### T1592 – Gather Victim Identity Information
 
