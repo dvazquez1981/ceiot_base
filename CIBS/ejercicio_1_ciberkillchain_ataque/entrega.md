@@ -35,6 +35,15 @@ Diego Anibal Vazquez
         443/tcp open  https
 
         Nmap done: 1 IP address (1 host up) scanned in 90.90 seconds
+    ```
+
+    El resultado muestra los siguientes puertos abiertos:
+
+    22/tcp (SSH): acceso remoto al servidor.
+
+    80/tcp (HTTP): servicio web sin cifrar.
+
+    443/tcp (HTTPS): servicio web principal con cifrado TLS.
 
 
 
