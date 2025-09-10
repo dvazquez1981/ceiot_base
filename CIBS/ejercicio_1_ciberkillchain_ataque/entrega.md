@@ -83,7 +83,7 @@ Diego Anibal Vazquez
    OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
    Nmap done: 1 IP address (1 host up) scanned in 20.72 seconds
    ```
-  -Análisis de los Resultados del Escaneo:
+  - Análisis de los Resultados del Escaneo:
   
      Puerto 22/tcp (SSH): OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux). Esta versión de OpenSSH es relativamente reciente y bien mantenida, buscar vulnerabilidades específicas (CVE-2020-15778) o probar fuerza bruta si hay credenciales débiles.
 
@@ -94,6 +94,49 @@ Diego Anibal Vazquez
      Sistema Operativo: Linux 4.15 - 5.6 (basado en la detección de OS).
 
      rDNS: La IP 10.8.34.189 resuelve a desa-backend-redeterminacion.vialidad.gob.ar, lo que sugiere que podría ser un entorno de desarrollo o testing, lo que podría implicar medidas de seguridad más laxas
+
+ - Uso Gobuster para realizar escaneo de directorios y archivos en servidores web mediante fuerza bruta
+   gobuster dir -u https://siper.vialidad.gob.ar -w /snap/seclists/1214/Discovery/Web-Content/common.txt -t 50 -k
+   ```text
+   ===============================================================
+    Gobuster v3.5
+    by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+    ===============================================================
+    [+] Url:                     https://siper.vialidad.gob.ar
+    [+] Method:                  GET
+    [+] Threads:                 50
+    [+] Wordlist:                /snap/seclists/1214/Discovery/Web-Content/common.txt
+    [+] Negative Status codes:   404
+    [+] User Agent:              gobuster/3.5
+    [+] Timeout:                 10s
+    ===============================================================
+    2025/09/10 14:34:12 Starting gobuster in directory enumeration mode
+    ===============================================================
+    /.git/HEAD            (Status: 403) [Size: 349]
+    /.git/config          (Status: 403) [Size: 349]
+    /.git/index           (Status: 403) [Size: 349]
+    /.hta                 (Status: 403) [Size: 287]
+    /.gitignore           (Status: 403) [Size: 287]
+    /.git                 (Status: 403) [Size: 349]
+    /.git/logs/           (Status: 403) [Size: 349]
+    /.htaccess            (Status: 403) [Size: 287]
+    /.htpasswd            (Status: 403) [Size: 287]
+    /app                  (Status: 301) [Size: 330] [--> https://siper.vialidad.gob.ar/app/]
+    /cgi-bin/             (Status: 403) [Size: 287]
+    /go                   (Status: 301) [Size: 329] [--> https://siper.vialidad.gob.ar/go/]
+    /index.php            (Status: 200) [Size: 384]
+    /javascript           (Status: 301) [Size: 337] [--> https://siper.vialidad.gob.ar/javascript/]
+    /manifest             (Status: 200) [Size: 495]
+    /manual               (Status: 301) [Size: 333] [--> https://siper.vialidad.gob.ar/manual/]
+    /server-status        (Status: 403) [Size: 287]
+    /sw                   (Status: 200) [Size: 2292]
+    /tmp                  (Status: 301) [Size: 330] [--> https://siper.vialidad.gob.ar/tmp/]
+    Progress: 4595 / 4750 (96.74%)
+    ===============================================================
+    2025/09/10 14:34:23 Finished
+    ===============================================================
+   ```
+ 
 
 ### T1592 – Gather Victim Identity Information
 
