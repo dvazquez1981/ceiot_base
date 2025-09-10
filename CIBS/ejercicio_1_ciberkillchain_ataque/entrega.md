@@ -139,6 +139,40 @@ Diego Anibal Vazquez
     2025/09/10 14:34:23 Finished
     ===============================================================
    ```
+
+   Escaneo ha revelado varios recursos en el servidor web:
+
+    Recursos con Estado 403 (Prohibido):
+
+    /.git/HEAD, /.git/config, /.git/index, /.git, /.git/logs/: Indican que existe un directorio .git en el servidor, pero el acceso está restringido. Si se pudiera acceder, podría revelar código fuente y información sensible (como historial de commits y configuraciones).
+
+    /.hta, /.htaccess, /.htpasswd: Archivos de configuración de Apache, usualmente restringidos.
+
+    /cgi-bin/: Directorio común para scripts CGI, a menudo objetivo de ataques.
+
+    /server-status: Página de estado del servidor Apache, que puede filtrar información sensible.
+
+    Recursos con Estado 301 (Redirección):
+
+    /app  /app/: Podría ser un directorio de aplicaciones.
+
+    /go  /go/: Confirmamos que este es el directorio principal de la aplicación, ya que el login está en /go/login.
+
+    /javascript  /javascript/: Directorio de scripts JavaScript.
+
+    /manual /manual/: Documentación de Apache (común en servidores web).
+
+    /tmp  /tmp/: Directorio temporal, que podría ser interesante si permite escritura.
+
+    Recursos con Estado 200 (Éxito):
+
+    /index.php: Página principal del sitio.
+
+    /manifest: Podría ser un archivo de manifiesto para aplicaciones web (PWA).
+
+    /sw: Posiblemente relacionado con un service worker o una API.
+
+
  
 
 ### T1592 – Gather Victim Identity Information
