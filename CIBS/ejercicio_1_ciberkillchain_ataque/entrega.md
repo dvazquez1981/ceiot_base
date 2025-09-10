@@ -12,14 +12,17 @@ Diego Anibal Vazquez
 - Cambio de categoría del empleado, afectando la escala salarial y ocasionando un desbalance económico en la nómina.
 - Manipulación del sistema de haberes, redireccionando pagos hacia una única cuenta para apropiación ilícita de fondos.
 
-  
-
 ## Reconnaissance
 
 ### T1595 – Active Scanning
 - Objetivo: identificar el rango de direcciones IP, dominios o subdominios de la organización.
 
     nmap -sS -p- siper.vialidad.gob.ar
+
+- Resultado scaneo:
+     22/tcp  open  ssh
+     80/tcp  open  http
+     443/tcp open  https
 
 
 ### T1592 – Gather Victim Identity Information
