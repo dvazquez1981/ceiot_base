@@ -222,9 +222,173 @@ Diego Anibal Vazquez
   ```
     
 
+   - Analizar el formulario de login: curl -k https://siper.vialidad.gob.ar/go/login
+     ```text
+<!DOCTYPE html>
+<html lang="en">
 
+    <head>
+        <meta charset="utf-8">
+        <title>Login: SiPer</title>
+        <link rel="icon" href="img/logo.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="expires" content="Sun, 01 Jan 2014 00:00:00 GMT" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta name="description" content="">
+        <meta name="author" content="DNV">
+        <link href="css/bootstrap.min.css?v=1758039615" rel="stylesheet">
+        <link href="css/all.css?v=1758039615" rel="stylesheet">
+        <link href="css/style.css?v=1758039615" rel="stylesheet">
+        <script src="js/vex.combined.js"></script>
+        <link rel="stylesheet" href="css/vex.css?v=1758039615" />
+        <link rel="stylesheet" href="css/vex-theme-wireframe.css?v=1758039615"  />
+        <script>
+        vex.defaultOptions.className = 'vex-theme-wireframe';
+        </script>
+        <script src="js/jquery.min.js"></script>
+        <!-- google recaptcha 3: SOLO SE HABILITA EN PRODUCCION  -->
+     <script src="https://www.google.com/recaptcha/api.js?render=6LcmXEwpAAAAADFkE0paKZ7y-xLYG9rSv_PJ5A8j"></script> 
+    </head>
+
+    <body style="background-color:#1670b8!important;overflow:hidden;" oncontextmenu="return false">
+        <div id="divMain">
+            <!-- logo -->
+            <div class="row" style="background-color:#FFF;">
+                <table class="table  table-borderless" style="background-color:#FFF;margin-left:0%;width:100%;margin-top:-10px!important;">
+                    <tr>
+                        <td class="text-right" valign="top"><img class="responsive" src="img/logo.png?v=1758039615" width="5%" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+            <!--  cuadro login -->
+            <br>
+            <div class="container ">
+                <div class="card card-container ">
+                    <table class="table  table-borderless ">
+                        <tr>
+                            <td colspan="2" class="text-right"><span style="letter-spacing: 2px;text-shadow: rgba(255,255,255,.1) -1px -1px 1px,rgba(0,0,0,.5) 1px 1px 1px;">SiPer_2.0 v1.3.0</span></td>
+                        </tr>
+                        <tr>
+                            <td width="%30">
+                                <img id="fotoUsuario" src="img/sin-foto.png" class=' profile-img-card ' style="opacity:0.4;  border: 4px solid  rgba(255,255,255,0.4); box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2)" />
+                                <p id="spnNombreUsuario" class="profile-name-card"></p>
+                            </td>
+                            <td>
+                                <form id="frmLogin" class="form ">
+                                    <div class="control-group">
+                                        <div class="form-group">
+                                            <input type="text" id="txtUsuario" name="txtUsuario" class="form-control input-lg" placeholder="ingresá tu usuario" required autofocus>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" id="txtPassword" name="txtPassword" class="form-control input-lg" placeholder="ingresá tu contraseña" required autofocus>
+                                        </div>
+                                        <button id="btnLogin" class="btn btn-lg btn-primary btn-block" type="submit" style=" padding: 10px 20px;font-size:1.4em!important "><span class="fa fa-check"></span>&nbsp;&nbsp;Acceder</button>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- google recaptcha 3: SOLO SE HABILITA EN PRODUCCION  -->
+          
+                    <div class="form-group">
+                        <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+                    </div> 
+                
+
+            </div>
+
+            <footer class="fixedBottom">
+
+                <div class="text-center text-light" style="padding:10px;font-size:0.8em;z-index:1;width:100%">
+                    Presidencia de la Nación | Ministerio de Transporte<br>
+                    Dirección Nacional de Vialidad<br>
+                    Todos los derechos reservados - 2025                </div>
+            </footer>
+        </div>
+
+        <script src="js/bootstrap.min.js?v=1758039615"></script>
+        <script src="js/lib.js?v=1758039615"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+  
+            //--
+            $.ajaxSetup({
+                timeout: 10000,
+                error: function(xhr) {}
+            });
+            //-- submit login
+            $("#frmLogin").submit(function(e) {
+                $.showLoading();
+                e.preventDefault();
+                localStorage.removeItem("nombreUsuario");
+                localStorage.removeItem("fotoUsuario");
+                $.post("app-index-x.php", {
+                        accion: "login",
+                        //-- google recaptcha 3: SOLO SE HABILITA EN PRODUCCION
+                        recaptcha_response: $("#recaptchaResponse").val(),
+                        datastring: $("#frmLogin").serialize()
+                    })
+                    .done(function(response) {
+                        $.hideLoading();
+                       // console.log("##",response);
+                        let json = $.parseJSON(response);
+                        if (json["res"] == 1) {
+                            localStorage.setItem("nombreUsuario", json["nombre"]);
+                            localStorage.setItem("fotoUsuario", json["foto"]);
+                          //###### 
+                          //localStorage.setItem("fotoUsuario", "img/sin-foto.png");
+                         //######
+                            location.href = "inicio"; 
+                        } else if (json["res"] == "0") {
+                            $.hideLoading();
+                            vex.dialog.alert({
+                                unsafeMessage: "<big><b><i class='fa fa-exclamation-circle'></i>&nbsp;UPS...</b></big><br><br>" + json["msg"] + "</span>",
+                                callback: function(value) {
+                                    location.reload();
+                                }
+                            });
+                        }
+                    })
+                    .fail(function(xhr, textStatus, errorThrown) {
+                        $.hideLoading();
+                        console.log(textStatus);
+                        vex.dialog.alert({
+                            unsafeMessage: "<big><b><i class='fa fa-exclamation-circle'></i>&nbsp;UPS...</b></big><br><br>Por favor, volvé a intentar.</span>"
+                        });
+                    });
+            });
+            //-- guardo foto y nombre en el local storage
+            var nombreUsuario = localStorage.getItem("nombreUsuario");
+            if (localStorage.getItem("nombreUsuario") != null) {
+             //  $("#fotoUsuario").attr("src", "data:images/jpeg;base64," + localStorage.getItem("fotoUsuario"));
+                $("#spnNombreUsuario").html(localStorage.getItem("nombreUsuario"));
+            } else {
+                $("#fotoUsuario").attr("src", "img/sin-foto.png");
+            }
+            //##### OJO
+            //$("#fotoUsuario").attr("src", "img/sin-foto.png?v=1758039615");
+            $("#spnNombreUsuario").html("");
+            //#####
+            $("input:visible:enabled:first").focus();
+            //-- google recaptcha 3: SOLO SE HABILITA EN PRODUCCION
+              grecaptcha.ready(function() {
+                   grecaptcha.execute('6LcmXEwpAAAAADFkE0paKZ7y-xLYG9rSv_PJ5A8j', {
+                       action: 'contact'
+                   }).then(function(token) {
+                       var recaptchaResponse = document.getElementById('recaptchaResponse');
+                       recaptchaResponse.value = token;
+                   });
+               });
+        });
+        </script>
+    </body>
+
+</html>
       
-
+```
 
 
 
