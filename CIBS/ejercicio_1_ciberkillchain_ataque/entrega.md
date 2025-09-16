@@ -399,8 +399,27 @@ Diego Anibal Vazquez
       if(isiOS){var constraints={audio:!1,video:!0,};navigator.mediaDevices.getUserMedia(constraints).then(()=>navigator.mediaDevices.enumerateDevices()).then(devices=>{let hasMultipleCameras=devices.some(device=>device.kind==='videoinput');return hasMultipleCameras}).catch(err=>{console.error("Device access checks failed:",err);return!1})}else{if(navigator.mediaDevices&&navigator.mediaDevices.enumerateDevices){navigator.mediaDevices.enumerateDevices().then(devices=>{let hasMultipleCameras=devices.some(device=>device.kind==='videoinput');return hasMultipleCameras}).catch(err=>{console.error("Device access checks failed:",err);return!1})}}}
       window.addEventListener('load',function(ev){_flutter.loader.loadEntrypoint({entrypointUrl:'/app/main.dart.js?v='+Math.floor(Math.random()*10)+1,serviceWorker:{serviceWorkerUrl:'/app/flutter_service_worker.js?v='+Math.floor(Math.random()*10)+1,serviceWorkerVersion:serviceWorkerVersion,},onEntrypointLoaded:async function(engineInitializer){let appRunner=await engineInit
     ```
+- hasta ahora:
 
- 
+Frontend: HTML5, CSS, Bootstrap, JavaScript (con jQuery).
+Backend: PHP (inferido por el endpoint app-index-x.php).
+Framework: Aplicación móvil construida con Flutter Web (PWA en /app/).
+Endpoints Críticos:
+
+/go/login: Formulario de autenticación principal con reCAPTCHA v3.
+
+/app/: Aplicación Flutter que reemplaza la versión móvil tradicional.
+
+/.git/: Directorio Git expuesto (aceso restringido por ahora, pero potencialmente explotable).
+
+Seguridad Observada:
+
+reCAPTCHA v3 implementado en el login, lo que dificulta ataques automatizados.
+Configuración de headers básica (no se observaron headers de seguridad avanzados como CSP o HSTS).
+
+
+-acceso a .git está bloqueado
+
 
 ### T1592 – Gather Victim Identity Information
 
