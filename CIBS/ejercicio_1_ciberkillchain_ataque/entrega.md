@@ -172,6 +172,51 @@ Diego Anibal Vazquez
 
     /sw: Posiblemente relacionado con un service worker o una API.
 
+- Realizo curl  recopilar información inicial
+  - curl -k https://siper.vialidad.gob.ar/go/
+  ```text
+      <script>
+     var isiOS = navigator.userAgent.match('iPad') || navigator.userAgent.match('iPhone') || navigator.userAgent.match('iPod');
+            var isAndroid = navigator.userAgent.match('Android');
+            if (isiOS || isAndroid) {
+                location.href = "https://siper.vialidad.gob.ar/app/";
+            } else {
+                location.href = "login";
+            }
+
+
+    </script>
+  ```
+  - curl -k https://siper.vialidad.gob.ar/manifest
+  ```text
+  {
+    "id":"/go/mobile/login",
+    "name": "SiPer Móvil",
+    "short_name": "SiPer Móvil",
+    "start_url": "https://siper.vialidad.gob.ar/go/mobile/login",
+    "lang": "es-ES",
+    "display": "fullscreen",
+    "theme_color": "#FAFAFA",
+    "background_color": "#1570b8",
+    "icons": [{
+            "src": "https://siper.vialidad.gob.ar/go/mobile/img/maskable_icon.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any maskable"
+        }
+
+    ]
+}
+ ```
+
+    
+
+
+      
+
+
+
+
 
  
 
