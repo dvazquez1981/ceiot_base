@@ -418,7 +418,34 @@ reCAPTCHA v3 implementado en el login, lo que dificulta ataques automatizados.
 Configuración de headers básica (no se observaron headers de seguridad avanzados como CSP o HSTS).
 
 
--acceso a .git está bloqueado
+- Acceso a .git está bloqueado
+
+- Análisis de la Aplicación Flutter y Descubrimiento de Endpoints Críticos
+  - Archivo flutter_service_worker.js
+    Archivos críticos como assets/AssetManifest.json y assets/NOTICES
+  - Código compilado de Flutter (main.dart.js)
+
+    Endpoint principal: https://siper.vialidad.gob.ar/app/api/presentte-api.php
+        Método: POST (envía datos en formato JSON).
+        
+        Parámetros críticos identificados:
+        
+        usuario_ad y password_ad: Credenciales de autenticación.
+        
+        dni: Documento Nacional de Identidad.
+        
+        token y token_ficho: Tokens de sesión o autenticación.
+        
+        foto y pdf: Posibles imágenes o documentos en base64.
+        
+        latlon y gps_exactitud: Ubicación GPS del usuario.
+        
+        gerencia, subgerencia, division, seccion: Estructura organizacional interna.
+
+    Endpoint secundario: https://siper.vialidad.gob.ar/app/event/event.php
+
+    Propósito: Gestión de eventos o logs, con parámetros como token, latlon, uniqueid, etc.
+
 
 
 ### T1592 – Gather Victim Identity Information
