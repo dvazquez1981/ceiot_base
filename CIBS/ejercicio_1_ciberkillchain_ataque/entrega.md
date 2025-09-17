@@ -449,6 +449,17 @@ Configuración de headers básica (no se observaron headers de seguridad avanzad
 
 
 ### T1592 – Gather Victim Identity Information
+Recopilar información
+- Enumeración de Usuarios Mediante Login:
+  Endpoint: https://siper.vialidad.gob.ar/go/app-index-x.php
+  Método: POST
+      
+  Parámetros: accion=login, recaptcha_response=dummy, datastring=txtUsuario=...&txtPassword=...
+
+  ```text
+   curl -k -X POST "https://siper.vialidad.gob.ar/go/app-index-x.php" \
+     -d "accion=login&recaptcha_response=dummy&datastring=txtUsuario=admin&txtPassword=wrongpass"
+  ```
 
 ## Weaponization
 - T1059 – Command and Scripting Interpreter
