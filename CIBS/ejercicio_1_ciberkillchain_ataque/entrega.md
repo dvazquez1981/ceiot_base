@@ -645,7 +645,7 @@ Todos los payloads de SQLi fueron aceptados sin filtering
     }
   ```
 - T1078 – Valid Accounts
-# El bypass funciona, pero probamos fuerza bruta
+El bypass funciona, pero probamos fuerza bruta
 ```text
   hydra -L usuarios.txt -P passwords.txt
 ```
@@ -656,11 +656,22 @@ resultado:
 
 ## Exploitation
 - T1190 – Exploit Public-Facing Application
+ ```text
+
+
+
+
+ ```
+  
 
 ## Command & Control
 - T1071 – Application Layer Protocol
+
+
 ## Actions on Objectives
 - TA0009 – Collection
+
+
 - TA0010 – Exfiltration
 
 
