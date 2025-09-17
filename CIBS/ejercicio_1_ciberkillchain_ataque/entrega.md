@@ -477,6 +477,7 @@ Recopilar información
       - Parámetros: usuario_ad, password_ad, dni, token, token_ficho, foto, pdf, latlon, gerencia, subgerencia, division, seccion.
       - Endpoints: https://siper.vialidad.gob.ar/app/api/presentte-api.php, https://siper.vialidad.gob.ar/app/event/event.php. 
         - Endpoint Principal: https://siper.vialidad.gob.ar/app/api/presentte-api.php
+
           Parámetros críticos:
           usuario_ad, password_ad: Credenciales de autenticación.
           dni: Documento Nacional de Identidad.
@@ -490,6 +491,7 @@ Recopilar información
             -d '{"accion":"login","usuario_ad":"admin","password_ad":"password_invalida","dni":"12345678"}'
           ```
         - Endpoint Secundario: https://siper.vialidad.gob.ar/app/event/event.php
+
           Parámetros: token, latlon, uniqueid, evento.
           ```text
           curl -k -X POST "https://siper.vialidad.gob.ar/app/event/event.php" \
