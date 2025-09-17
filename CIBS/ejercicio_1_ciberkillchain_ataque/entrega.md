@@ -476,19 +476,19 @@ Recopilar información
  - Strings relevantes encontradas en main.dart.js:
       - Parámetros: usuario_ad, password_ad, dni, token, token_ficho, foto, pdf, latlon, gerencia, subgerencia, division, seccion.
       - Endpoints: https://siper.vialidad.gob.ar/app/api/presentte-api.php, https://siper.vialidad.gob.ar/app/event/event.php. 
-      - Endpoint Principal: https://siper.vialidad.gob.ar/app/api/presentte-api.php
-        Parámetros críticos:
-        usuario_ad, password_ad: Credenciales de autenticación.
-        dni: Documento Nacional de Identidad.
-        token, token_ficho: Tokens de sesión.
-        foto, pdf: Imágenes/documentos en base64.
-        latlon, gps_exactitud: Ubicación GPS.
-        gerencia, subgerencia, division, seccion: Estructura organizacional.
-        ```text
-        curl -k -X POST "https://siper.vialidad.gob.ar/app/api/presentte-api.php" \
-          -H "Content-Type: application/json" \
-          -d '{"accion":"login","usuario_ad":"admin","password_ad":"password_invalida","dni":"12345678"}'
-        ```
+        - Endpoint Principal: https://siper.vialidad.gob.ar/app/api/presentte-api.php
+          Parámetros críticos:
+          usuario_ad, password_ad: Credenciales de autenticación.
+          dni: Documento Nacional de Identidad.
+          token, token_ficho: Tokens de sesión.
+          foto, pdf: Imágenes/documentos en base64.
+          latlon, gps_exactitud: Ubicación GPS.
+          gerencia, subgerencia, division, seccion: Estructura organizacional.
+          ```text
+          curl -k -X POST "https://siper.vialidad.gob.ar/app/api/presentte-api.php" \
+            -H "Content-Type: application/json" \
+            -d '{"accion":"login","usuario_ad":"admin","password_ad":"password_invalida","dni":"12345678"}'
+          ```
     
 
 
