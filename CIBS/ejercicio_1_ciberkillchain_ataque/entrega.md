@@ -490,6 +490,16 @@ Recopilar información
             -H "Content-Type: application/json" \
             -d '{"accion":"login","usuario_ad":"admin","password_ad":"password_invalida","dni":"12345678"}'
           ```
+          respuesta:
+          ```text
+          []
+          ```
+          La solicitud fue aceptada técnicamente (no hubo errores HTTP 4xx/5xx)
+          El endpoint respondió con un array vacío, lo que sugiere que:
+                 -No se generaron datos de evento con los parámetros proporcionados
+                 -El token "test" probablemente no es válido para generar eventos reales
+
+          
         - Endpoint Secundario: https://siper.vialidad.gob.ar/app/event/event.php
 
           Parámetros: token, latlon, uniqueid, evento.
@@ -498,6 +508,12 @@ Recopilar información
           -H "Content-Type: application/json" \
           -d '{"token":"test","latlon":"-34.6037,-58.3816","uniqueid":"12345abcde","evento":"test_event"}'
           ```
+           respuesta:
+          ```text
+          []
+          ```
+          El endpoint aceptó la solicitud sin errores HTTP
+              - La respuesta con array vacío.
     
 
 
