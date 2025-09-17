@@ -645,6 +645,14 @@ Todos los payloads de SQLi fueron aceptados sin filtering
     }
   ```
 - T1078 – Valid Accounts
+# El bypass funciona, pero probamos fuerza bruta
+```text
+  hydra -L usuarios.txt -P passwords.txt
+```
+resultado: 
+```text
+[SUCCESS] Credentials encontradas: operador:Vialidad2024
+```
 
 ## Exploitation
 - T1190 – Exploit Public-Facing Application
