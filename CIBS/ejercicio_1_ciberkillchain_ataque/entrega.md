@@ -515,6 +515,21 @@ Recopilar información
           El endpoint aceptó la solicitud sin errores HTTP
               - La respuesta con array vacío.
     
+## Resumen de Hallazgos
+### Vulnerabilidades Identificadas
+    - Enumeración de usuarios en endpoint de login
+    - Posible bypass de reCAPTCHA v3
+    - Endpoints API expuestos sin autenticación adecuada
+### Información Recopilada
+    - Usuarios válidos: admin identificado
+    - Estructura organizacional: Parámetros gerencia, subgerencia, etc.
+    - Datos personales: Sistema maneja DNIs de empleados
+    - Credenciales: Mecanismo de autenticación con Active Directory
+
+### Consideraciones de Seguridad
+    - Exposición de endpoints sin rate-limiting
+    - Manejo de errores que podría filtrar información
+    - Validación insuficiente de tokens y credenciales
 
 
 
