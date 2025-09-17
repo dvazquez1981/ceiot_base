@@ -489,6 +489,13 @@ Recopilar información
             -H "Content-Type: application/json" \
             -d '{"accion":"login","usuario_ad":"admin","password_ad":"password_invalida","dni":"12345678"}'
           ```
+        - Endpoint Secundario: https://siper.vialidad.gob.ar/app/event/event.php
+          Parámetros: token, latlon, uniqueid, evento.
+          ```text
+          curl -k -X POST "https://siper.vialidad.gob.ar/app/event/event.php" \
+          -H "Content-Type: application/json" \
+          -d '{"token":"test","latlon":"-34.6037,-58.3816","uniqueid":"12345abcde","evento":"test_event"}'
+          ```
     
 
 
