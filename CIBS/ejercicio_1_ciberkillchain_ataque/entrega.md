@@ -622,7 +622,7 @@ mucho tiempo...
         - La aplicación responde consistentemente con el mismo formato JSON para todos los payloads
         - El código de error 363 se mantiene en todas las respuestas, indicando un comportamiento predecible
 
-## vulnerabilidad encontrada: SQL Injection en endpoint de login
+- vulnerabilidad encontrada: SQL Injection en endpoint de login
    Payloads exitosos: admin'--, ' OR '1'='1'-- -, ' UNION SELECT NULL-- -
 
 Todos los payloads de SQLi fueron aceptados sin filtering
