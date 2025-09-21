@@ -626,7 +626,7 @@ mucho tiempo...
    Payloads exitosos: admin'--, ' OR '1'='1'-- -, ' UNION SELECT NULL-- -
 
 Todos los payloads de SQLi fueron aceptados sin filtering
-## Delivery
+## Delivery & Exploitation
 - T1190 – Exploit Public-Facing Application
   Intentamos explotar la vulnerabilidad
   ```text
