@@ -894,7 +894,7 @@ resultado:
         configuracion
         ```
     
-- TA0009 – Collection  
+     - TA0009 – Collection  
       Recolección de información sensible mediante cifrado:
     
       ```text
@@ -903,7 +903,7 @@ resultado:
       ```
       Resultado descifrado: 5342
      
-   - T1484 – Domain Policy Modification
+     - T1484 – Domain Policy Modification
       Modificación de licencias mediante canal seguro:
       ```text
        # Modificar licencias usando MySQL a través del canal cifrado
@@ -918,7 +918,7 @@ resultado:
       
       Resultado descifrado: 247
      
-   - T1482 – Domain Trust Discovery
+      - T1482 – Domain Trust Discovery
       Alteración salarial mediante canal seguro:
 
 
