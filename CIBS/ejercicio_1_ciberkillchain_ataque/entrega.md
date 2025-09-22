@@ -19,7 +19,8 @@ Ing. Diego Anibal Vazquez
 > El servidor se encuentra ejecutando sobre una infraestructura Linux Ubuntu con servicio web OpenResty. El análisis de vulnerabilidades demostró que el formulario de autenticación responde con mensajes específicos que permiten identificar cuentas existentes en el
 > sistema, habiendo confirmado la existencia del usuario "admin" durante las pruebas de reconocimiento.
 
-> La exploración adicional detectó múltiples servicios expuestos, incluyendo un servidor SSH en el puerto 22 y una aplicación móvil desarrollada en Flutter ubicada en el directorio /app/, los cuales representan vectores alternativos de explotación. Asimismo, se >identificaron endpoints API sin controles de autenticación robustos que gestionan información sensible del organismo.
+> La exploración adicional detectó múltiples servicios expuestos, incluyendo un servidor SSH en el puerto 22 y una aplicación móvil desarrollada en Flutter ubicada en el directorio /app/, los cuales representan vectores alternativos de explotación. Asimismo, se
+> identificaron endpoints API sin controles de autenticación robustos que gestionan información sensible del organismo.
 
 ### T1595 – Active Scanning
 - Objetivo: identificar el rango de direcciones IP, dominios o subdominios de la organización.
