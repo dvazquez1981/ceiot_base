@@ -879,7 +879,7 @@ resultado:
        -rw-r--r-- 1 www-data www-data 2457600 Sep 10 14:30 empleados.db
        /var/www/html/siper/database/empleados.db: SQLite 3.x database
        ```
-    - T1213 – Data from Information Repositories
+   - T1213 – Data from Information Repositories
         Análisis de estructura de tablas cifrado:
         ```text
         # Examinar tablas mediante canal seguro
