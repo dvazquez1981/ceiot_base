@@ -543,6 +543,16 @@ Recopilar información
 
 
 ## Weaponization
+> Se desarrollaron scripts de explotación para aprovechar las vulnerabilidades identificadas durante la fase de reconocimiento. La principal arma creada fue un script de inyección SQL automatizado que explota la vulnerabilidad crítica descubierta en el endpoint de
+>  autenticación del sistema.
+
+> El análisis de respuestas demostró que la aplicación es vulnerable a inyección SQL, aceptando todos los payloads probados sin filtrado de caracteres especiales. Los payloads exitosos incluyen admin'--, ' OR '1'='1'-- - y ' UNION SELECT NULL-- -, todos los cuales
+> fueron procesados por el backend sin generar errores de sintaxis SQL.
+
+> Adicionalmente, se preparó un script de fuerza bruta con Hydra para el servicio SSH como vector de ataque secundario, utilizando la lista de usuarios válidos identificados previamente, incluyendo el usuario "admin" confirmado durante el reconocimiento.
+
+> La weaponización se focalizó en el endpoint /go/app-index-x.php como objetivo principal, dado que presentó la mayor superficie de ataque con respuestas predecibles y ausencia de mecanismos efectivos de sanitización de entrada.
+
 - T1059 – Command and Scripting Interpreter
    - Script de Fuerza Bruta con Hydra
    ```text
