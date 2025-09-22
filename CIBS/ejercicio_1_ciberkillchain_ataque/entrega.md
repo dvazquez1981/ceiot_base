@@ -754,6 +754,13 @@ resultado:
    ```
 
 ## Command & Control
+> Se estableció un canal de comando y control cifrado utilizando el protocolo HTTPS para evadir mecanismos de detección. La comunicación se implementó mediante un Web Shell avanzado que incorpora cifrado AES-256-CBC con clave simétrica generada específicamente para
+> esta operación.
+> El sistema permite la ejecución remota de comandos a través de un canal encubierto que cifra tanto las solicitudes como las respuestas. Se implementó una lista blanca de comandos permitidos para mantener un perfil discreto y evitar actividades sospechosas.
+> La infraestructura  demostró su efectividad al ejecutar exitosamente comandos de reconocimiento del sistema, obteniendo información detallada del kernel Linux, procesos activos y estructura de archivos de configuración, todo transmitido de forma segura através del
+> canal cifrado establecido.
+> El canal opera completamente sobre HTTPS, mimetizando el tráfico legítimo del servidor web y proporcionando una conexión persistente y segura para operaciones continuas en el entorno comprometido.
+
 - T1071.001 – Application Layer Protocol: Web ProtocolsT1573 – Encrypted Channel: Configuración de Comunicaciones Encubiertas
   Establecimiento de Canal de Comando y Control via HTTPS
 
