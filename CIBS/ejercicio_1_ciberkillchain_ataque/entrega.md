@@ -875,11 +875,11 @@ resultado:
 
        ```
        Respuesta descifrada:
-
        ```text
        -rw-r--r-- 1 www-data www-data 2457600 Sep 10 14:30 empleados.db
        /var/www/html/siper/database/empleados.db: SQLite 3.x database
        ```
+    
     - T1213 – Data from Information Repositories
         Análisis de estructura de tablas cifrado:
         ```text
@@ -894,8 +894,10 @@ resultado:
         usuarios
         configuracion
         ```
+    
     - TA0009 – Collection  
       Recolección de información sensible mediante cifrado:
+    
       ```text
       # Contar registros de empleados por canal seguro
       ejecutar_comando_cifrado 'sqlite3 /var/www/html/siper/database/empleados.db "SELECT COUNT(*) FROM empleados"'
