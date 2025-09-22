@@ -894,7 +894,7 @@ resultado:
         usuarios
         configuracion
         ```
-     - TA0009 – Collection  
+    - TA0009 – Collection  
       Recolección de información sensible mediante cifrado:
       ```text
       # Contar registros de empleados por canal seguro
@@ -902,7 +902,7 @@ resultado:
       ```
       Resultado descifrado: 5342
      
-     - T1484 – Domain Policy Modification
+    - T1484 – Domain Policy Modification
       Modificación de licencias mediante canal seguro:
       ```text
        # Modificar licencias usando MySQL a través del canal cifrado
@@ -917,7 +917,7 @@ resultado:
       
       Resultado descifrado: 247
      
-     - T1482 – Domain Trust Discovery
+    - T1482 – Domain Trust Discovery
       Alteración salarial mediante canal seguro:
 
 
@@ -935,7 +935,7 @@ resultado:
 
 
       
-     - TA0010 – Exfiltration
+    - TA0010 – Exfiltration
 
       Desvío de fondos mediante canal seguro:
       ```text
