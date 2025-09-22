@@ -701,6 +701,7 @@ resultado:
    
    
    Resultado exitoso:
+   
     ```text
      www-data
     ```
@@ -715,6 +716,7 @@ resultado:
     repuesta: 
     
     ```text
+    
         2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
         link/ether 52:54:00:12:34:56 brd ff:ff:ff:ff:ff:ff
         inet 10.8.34.189/24 brd 10.8.34.255 scope global eth0
