@@ -678,6 +678,15 @@ resultado:
   ```
 
 ## Exploitation & Installation
+> Se estableció acceso SSH al sistema utilizando las credenciales comprometidas operador:Vialidad2024, logrando una conexión remota directa al servidor objetivo. Una vez dentro del entorno, se procedió a la instalación de un componente persistente mediante la
+> implementación de una Web Shell en el directorio /tmp/uploads/.
+
+> La Web Shell fue creada exitosamente con permisos de ejecución y permitió la ejecución remota de comandos a través del protocolo HTTP. La verificación del shell confirmó su funcionalidad al ejecutar el comando whoami, que retornó la identidad del usuario www-data del
+> servidor web.
+
+> Adicionalmente, se validó la conectividad de red interna mediante el comando ip addr show eth0, identificando la dirección IP interna del servidor (10.8.34.189/24) y confirmando la correcta instalación del componente malicioso que garantiza el acceso persistente al
+> sistema comprometido.
+
 - T1505.003 – Server Software Component: Web Shell
 
   ```text
