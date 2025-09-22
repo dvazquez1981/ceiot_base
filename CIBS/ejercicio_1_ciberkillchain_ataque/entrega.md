@@ -852,21 +852,21 @@ resultado:
                 
 
 ## Actions on Objectives
-     Recopilación de Información mediante Canal Cifrado
-     - T1082 – System Information Discovery
-      Descubrimiento de estructura mediante canal cifrado:
+   Recopilación de Información mediante Canal Cifrado
+   - T1082 – System Information Discovery
+   Descubrimiento de estructura mediante canal cifrado:
       ```text
-
       # Explorar estructura de directorios usando el canal seguro
       ejecutar_comando_cifrado 'find /var/www -name "*.db" -o -name "*.sql" -o -name "*database*" 2>/dev/null'
       ```
-      Respuesta:
-      ```text
+
+     Respuesta:
+     ```text
       /var/www/html/siper/database/
       /var/www/html/siper/database/empleados.db
       /var/www/html/siper/config/database.conf
       /var/www/html/siper/backups/backup_20240901.sql
-      ```
+     ```
     - T1005 – Data from Local System
        Análisis de la base de datos mediante cifrado:
        ```text
