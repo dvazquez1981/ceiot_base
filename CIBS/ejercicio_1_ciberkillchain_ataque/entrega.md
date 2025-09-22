@@ -13,6 +13,13 @@ Ing. Diego Anibal Vazquez
 - Manipulación del sistema de haberes, redireccionando pagos hacia una única cuenta para apropiación ilícita de fondos.
 
 ## Reconnaissance
+> Se identificó un servidor web activo en el dominio siper.vialidad.gob.ar perteneciente a la Dirección Nacional de Vialidad. Un escaneo de puertos exhaustivo mediante la herramienta Nmap reveló la exposición crítica: un endpoint de autenticación en el puerto 443 que
+> presenta una vulnerabilidad de enumeración de usuarios válidos mediante el análisis de mensajes de error diferenciales en el sistema de login.
+
+> El servidor se encuentra ejecutando sobre una infraestructura Linux Ubuntu con servicio web OpenResty. El análisis de vulnerabilidades demostró que el formulario de autenticación responde con mensajes específicos que permiten identificar cuentas existentes en el
+> sistema, habiendo confirmado la existencia del usuario "admin" durante las pruebas de reconocimiento.
+
+> La exploración adicional detectó múltiples servicios expuestos, incluyendo un servidor SSH en el puerto 22 y una aplicación móvil desarrollada en Flutter ubicada en el directorio /app/, los cuales representan vectores alternativos de explotación. Asimismo, se >identificaron endpoints API sin controles de autenticación robustos que gestionan información sensible del organismo.
 
 ### T1595 – Active Scanning
 - Objetivo: identificar el rango de direcciones IP, dominios o subdominios de la organización.
