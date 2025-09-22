@@ -409,10 +409,10 @@ Ing. Diego Anibal Vazquez
     ```
 - hasta ahora:
 
-Frontend: HTML5, CSS, Bootstrap, JavaScript (con jQuery).
-Backend: PHP (inferido por el endpoint app-index-x.php).
-Framework: Aplicación móvil construida con Flutter Web (PWA en /app/).
-Endpoints Críticos:
+  - Frontend: HTML5, CSS, Bootstrap, JavaScript (con jQuery).
+  - Backend: PHP (inferido por el endpoint app-index-x.php).
+  - Framework: Aplicación móvil construida con Flutter Web (PWA en /app/).
+  - Endpoints Críticos:
 
 /go/login: Formulario de autenticación principal con reCAPTCHA v3.
 
