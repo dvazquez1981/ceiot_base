@@ -894,7 +894,7 @@ resultado:
         configuracion
         ```
     
-   - TA0009 – Collection  
+- TA0009 – Collection  
       Recolección de información sensible mediante cifrado:
     
       ```text
