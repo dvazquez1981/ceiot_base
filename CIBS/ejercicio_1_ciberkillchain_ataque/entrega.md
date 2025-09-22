@@ -867,19 +867,20 @@ resultado:
       /var/www/html/siper/config/database.conf
       /var/www/html/siper/backups/backup_20240901.sql
      ```
-    - T1005 – Data from Local System
-       Análisis de la base de datos mediante cifrado:
+   - T1005 – Data from Local System
+    Análisis de la base de datos mediante cifrado:
        ```text
        # Verificar base de datos usando canal seguro
        ejecutar_comando_cifrado 'ls -la /var/www/html/siper/database/ && file /var/www/html/siper/database/empleados.db'
 
        ```
        Respuesta descifrada:
+
        ```text
        -rw-r--r-- 1 www-data www-data 2457600 Sep 10 14:30 empleados.db
        /var/www/html/siper/database/empleados.db: SQLite 3.x database
        ```
-     - T1213 – Data from Information Repositories
+    - T1213 – Data from Information Repositories
         Análisis de estructura de tablas cifrado:
         ```text
         # Examinar tablas mediante canal seguro
