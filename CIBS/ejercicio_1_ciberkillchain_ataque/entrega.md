@@ -822,7 +822,7 @@ resultado:
      ```
 
     
-    - Ejecución de Comandos Cifrados:
+     - Ejecución de Comandos Cifrados:
     
       ```text
                         #!/bin/bash
@@ -851,7 +851,7 @@ resultado:
       ```
                         
 
-           - Ejemplos de uso
+     - Ejemplos de uso
               ```text
            
                echo "=== TESTEO CANAL CIFRADO ==="
@@ -863,7 +863,7 @@ resultado:
                echo "5. Configuraciones:"
                         ejecutar_comando_cifrado 'find / -type f -name "*.conf" 2>/dev/null | head -3'
                                
-              ```
+             ```
                 
 
 ## Actions on Objectives
