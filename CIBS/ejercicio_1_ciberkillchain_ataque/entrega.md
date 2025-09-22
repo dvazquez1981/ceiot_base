@@ -905,6 +905,16 @@ resultado:
                 
 
 ## Actions on Objectives
+> Mediante el canal seguro se descubrió y analizó la base de datos SQLite empleados.db, identificando tablas críticas que contienen información de empleados, licencias, datos bancarios y usuarios. La base de datos contiene 5,342 registros de empleados activos.
+> Modificaciones Estratégicas
+> Se realizaron alteraciones específicas en los datos del sistema:
+> Licencias: Incremento de 15 días adicionales para licencias ordinarias, afectando a 247 empleados
+> Estructura Salarial: Modificación de categorías y aumentos salariales del 28% para 34 empleados con más de 5 años de antigüedad
+> Desvío de Fondos: Redirección de pagos salariales mediante cambio de CBU en empleados del área de TI
+> Impacto Calculado
+> El monto total desviado asciende a $3,842,150, demostrando la efectividad del acceso mantenido y la capacidad de realizar modificaciones sustanciales en los sistemas críticos de la organización mediante el uso del canal cifrado establecido.
+   
+   
    Recopilación de Información mediante Canal Cifrado
    - T1082 – System Information Discovery
    Descubrimiento de estructura mediante canal cifrado:
