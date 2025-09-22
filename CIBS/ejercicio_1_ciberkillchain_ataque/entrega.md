@@ -852,7 +852,7 @@ resultado:
 
      - Ejemplos de uso:
        
-               ```text
+      ```text
                 echo "TESTEO CANAL CIFRADO"
                 echo "Usuario: $(ejecutar_comando_cifrado 'whoami')"
                 echo "Directorio: $(ejecutar_comando_cifrado 'pwd')"
@@ -862,7 +862,7 @@ resultado:
                 echo "Configuraciones:"
                         ejecutar_comando_cifrado 'find / -type f -name "*.conf" 2>/dev/null | head -3'
                                
-               ```
+      ```
                 
 
 ## Actions on Objectives
