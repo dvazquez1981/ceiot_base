@@ -854,13 +854,13 @@ resultado:
      - Ejemplos de uso:
        
                ```text
-               echo "TESTEO CANAL CIFRADO"
-               echo "Usuario: $(ejecutar_comando_cifrado 'whoami')"
-               echo "Directorio: $(ejecutar_comando_cifrado 'pwd')"
-               echo "Sistema: $(ejecutar_comando_cifrado 'uname -a')"
-               echo "4. Procesos:"
+                echo "TESTEO CANAL CIFRADO"
+                echo "Usuario: $(ejecutar_comando_cifrado 'whoami')"
+                echo "Directorio: $(ejecutar_comando_cifrado 'pwd')"
+                echo "Sistema: $(ejecutar_comando_cifrado 'uname -a')"
+                echo "Procesos:"
                         ejecutar_comando_cifrado 'ps aux | head -5'
-               echo "5. Configuraciones:"
+                echo "Configuraciones:"
                         ejecutar_comando_cifrado 'find / -type f -name "*.conf" 2>/dev/null | head -3'
                                
                ```
