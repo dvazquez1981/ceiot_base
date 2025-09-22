@@ -544,7 +544,7 @@ Recopilar información
 
 ## Weaponization
 > Se desarrollaron scripts de explotación para aprovechar las vulnerabilidades identificadas durante la fase de reconocimiento. La principal arma creada fue un script de inyección SQL automatizado que explota la vulnerabilidad crítica descubierta en el endpoint de
->  autenticación del sistema.
+> autenticación del sistema.
 
 > El análisis de respuestas demostró que la aplicación es vulnerable a inyección SQL, aceptando todos los payloads probados sin filtrado de caracteres especiales. Los payloads exitosos incluyen admin'--, ' OR '1'='1'-- - y ' UNION SELECT NULL-- -, todos los cuales
 > fueron procesados por el backend sin generar errores de sintaxis SQL.
@@ -645,6 +645,11 @@ mucho tiempo...
 
 Todos los payloads de SQLi fueron aceptados sin filtering
 ## Delivery & Exploitation
+> Se ejecutó con éxito la explotación de la vulnerabilidad de inyección SQL identificada previamente. Mediante el payload admin'/* se logró el bypass completo del sistema de autenticación, obteniendo acceso al sistema con privilegios de administrador.
+> La explotación devolvió un token JWT válido y credenciales de sesión completas, incluyendo información del usuario "Administrador del Sistema" y datos de imagen en base64. El sistema redirigió correctamente a la página de inicio, confirmando el acceso no autorizado.
+> Paralelamente, el ataque de fuerza bruta contra el servicio SSH mediante Hydra resultó en el descubrimiento de credenciales válidas para el usuario operador con contraseña Vialidad2024, estableciendo un segundo vector de acceso al sistema.
+> Ambas explotaciones demostraron la efectividad de los vectores de ataque identificados durante las fases anteriores, comprometiendo completamente los mecanismos de autenticación del sistema SiPer.
+
 - T1190 – Exploit Public-Facing Application
   Intentamos explotar la vulnerabilidad
   ```text
