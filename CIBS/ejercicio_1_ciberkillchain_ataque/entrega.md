@@ -851,10 +851,10 @@ resultado:
       ```
                         
 
-     - Ejemplos de uso
-              ```text
-           
-               echo "=== TESTEO CANAL CIFRADO ==="
+     - Ejemplos de uso:
+       
+               ```text
+               echo "TESTEO CANAL CIFRADO"
                echo "Usuario: $(ejecutar_comando_cifrado 'whoami')"
                echo "Directorio: $(ejecutar_comando_cifrado 'pwd')"
                echo "Sistema: $(ejecutar_comando_cifrado 'uname -a')"
@@ -863,7 +863,7 @@ resultado:
                echo "5. Configuraciones:"
                         ejecutar_comando_cifrado 'find / -type f -name "*.conf" 2>/dev/null | head -3'
                                
-             ```
+               ```
                 
 
 ## Actions on Objectives
