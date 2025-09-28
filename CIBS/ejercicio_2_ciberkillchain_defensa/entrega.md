@@ -9,13 +9,13 @@ Desarrollar la defensa en función del ataque planteado en orden inverso, mencio
 
 ## Resolución
 7. Actions on Objectives - Defensa
-Detección:
+> Detección:
+> Monitoreo de consultas SQL inusuales en la base de datos que realicen UPDATE masivos, cambios en CBU o modificaciones de salarios. Alertas por transacciones bancarias
+> que modifican múltiples CBU simultáneamente desde la misma sesión.
 
-Monitoreo de consultas SQL inusuales en la base de datos que realicen UPDATE masivos, cambios en CBU o modificaciones de salarios. Alertas por transacciones bancarias que modifican múltiples CBU simultáneamente desde la misma sesión.
-
-Mitigación:
-
-Implementar el principio de mínimo privilegio en la base de datos, donde el usuario de aplicación solo tenga permisos SELECT/INSERT. Requerir aprobación dual mediante workflow separado para modificaciones salariales y cambios de datos bancarios críticos.
+> Mitigación:
+> Implementar el principio de mínimo privilegio en la base de datos, donde el usuario de aplicación solo tenga permisos SELECT/INSERT. Requerir aprobación dual mediante
+> workflow separado para modificaciones salariales y cambios de datos bancarios críticos.
 
 6. Command & Control - Defensa
 Detección:
