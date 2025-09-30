@@ -2,8 +2,6 @@
 
 ## Alumno
 Ing. Diego Anibal Vazquez
-## Enunciado
-
 
 ## Resolución
 
