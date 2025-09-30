@@ -67,16 +67,14 @@ Se configuran alertas para:
      - Auditoría continua de permisos y configuraciones de seguridad
      - Configurar SELinux/AppArmor para restringir ejecución en directorios temporales.
        
-4. Exploitation - Defensa
-Detección:
+### 4. Exploitation - Defensa
+> Detección:
+> Logs de autenticación que muestren patrones de SQL injection en el campo de usuario. Alertas por bypass de reCAPTCHA y autenticaciones exitosas inmediatamente después de intentos con payloads SQL.
 
-Logs de autenticación que muestren patrones de SQL injection en el campo de usuario. Alertas por bypass de reCAPTCHA y autenticaciones exitosas inmediatamente después de intentos con payloads SQL.
+> Mitigación:
+> Implementar prepared statements con parámetros bindeados en todo el código de autenticación. Rate limiting agresivo (bloqueo por 30 minutos) después de 5 intentos fallidos de login desde misma IP.
 
-Mitigación:
-
-Implementar prepared statements con parámetros bindeados en todo el código de autenticación. Rate limiting agresivo (bloqueo por 30 minutos) después de 5 intentos fallidos de login desde misma IP.
-
-3. Delivery - Defensa
+### 3. Delivery - Defensa
 Detección:
 
 Análisis en tiempo real de payloads SQL en parámetros de login mediante WAF. Detección de herramientas de automatización como Hydra por patrones de intentos secuenciales rápidos.
