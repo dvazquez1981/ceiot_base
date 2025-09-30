@@ -57,23 +57,17 @@ Se configuran alertas para:
     - Implementación de WAF con reglas específicas para detección de web shells
 
 
-  - Monitoreo de Integridad
+5. Installation - Defensa
+> Detección:
+> Monitoreo de integridad de archivos mediante checksums para detectar creación/modificación en directorios como /tmp/uploads/. Alertas por creación de archivos PHP en directorios no autorizados.
+
+> Mitigación:
+ - Monitoreo de Integridad
      - Sistemas de detección de cambios en archivos del servidor web
      - Alertas por creación de nuevos archivos PHP en ubicaciones no autorizadas
      - Auditoría continua de permisos y configuraciones de seguridad
-
-
-
-
-5. Installation - Defensa
-Detección:
-
-Monitoreo de integridad de archivos mediante checksums para detectar creación/modificación en directorios como /tmp/uploads/. Alertas por creación de archivos PHP en directorios no autorizados.
-
-Mitigación:
-
-Configurar SELinux/AppArmor para restringir ejecución en directorios temporales. Implementar WAF con firmas específicas para detección de webshells conocidos.
-
+     - Configurar SELinux/AppArmor para restringir ejecución en directorios temporales.
+       
 4. Exploitation - Defensa
 Detección:
 
