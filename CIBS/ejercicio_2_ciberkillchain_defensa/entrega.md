@@ -4,18 +4,38 @@
 Ing. Diego Anibal Vazquez
 ## Enunciado
 
-Desarrollar la defensa en función del ataque planteado en orden inverso, mencionar una medida de detección y una de mitigación, sólo lo más importante, considerar recursos limitados. No es una respuesta a un incidente, hay que detectar el ataque independientemente de la etapa.
-
 
 ## Resolución
-7. Actions on Objectives - Defensa
+
+### 7. Actions on Objectives - Defensa
 > Detección:
 > Monitoreo de consultas SQL inusuales en la base de datos que realicen UPDATE masivos, cambios en CBU o modificaciones de salarios. Alertas por transacciones bancarias
 > que modifican múltiples CBU simultáneamente desde la misma sesión.
 
+Se configuran alertas para:
+- Consultas UPDATE que afecten más de 10 registros simultáneamente
+- Modificaciones en campos críticos: CBU, salario, categoría_laboral, dias_licencia
+- Transacciones que combinen múltiples tablas (empleados + datos_bancarios + licencias)
+- Cambios realizados fuera del horario laboral estándar (8:00-18:00 hs)
+- Sesiones de base de datos que ejecuten consultas con sintaxis inusual o procedimientos almacenados no autorizados
+
 > Mitigación:
 > Implementar el principio de mínimo privilegio en la base de datos, donde el usuario de aplicación solo tenga permisos SELECT/INSERT. Requerir aprobación dual mediante
 > workflow separado para modificaciones salariales y cambios de datos bancarios críticos.
+
+- Usuario de aplicación web: solo permisos SELECT e INSERT en tablas específicas
+- Usuario de reporting: solo permisos SELECT
+- Creación de stored procedures aprobados para modificaciones.
+- Workflow de aprobación dual para cambios críticos:
+    - Modificaciones salariales > 10% requieren aprobación de RRHH + Finanzas
+    - Cambios de CBU requieren verificación por sistema externo (email)
+    - justes masivos de licencias necesitan autorización del área de Personal.
+- Implementación de tablas de auditoría independientes que registren: usuario, IP, query completa, timestamp y resultado
+
+
+
+
+
 
 6. Command & Control - Defensa
 Detección:
