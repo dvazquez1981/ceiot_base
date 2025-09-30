@@ -36,11 +36,41 @@ Se configuran alertas para:
 ### 6. Command & Control - Defensa
 
 > Detección:
-> Análisis de tráfico HTTPS inusual hacia rutas no estándar (/tmp/uploads/). Detección de patrones de comunicación cifrada con timing consistente (beaconing cada 60 segundos) y tamaños de respuesta similares.
+> En esta fase, los atacantes establecen un canal de comunicación encubierto con el sistema comprometido para mantener el acceso, robar datos y ejecutar comandos de forma remota . La defensa se centra en detectar estas comunicaciones anómalas y bloquear los mecanismos utilizados.
+ - Análisis de Rutas y Comportamientos Web Anómalos
+   - Monitoreo de requests HTTP a directorios no-web como /tmp/uploads/, /var/tmp/
+   - Detección de archivos PHP ejecutándose fuera de directorios de aplicación legítimos
+ - Detección de Ejecución de Comandos Remotos
+   - Monitoreo de funciones system(), exec(), shell_exec() desde contexto web
+   - Análisis de procesos que ejecuten comandos del sistema iniciados desde servidor web
+   - Detección de web shells
+ - Análisis de Cifrado Personalizado
+   - Identificación de patrones de comunicación con cifrado AES detectable en tráfico HTTP
 
 Mitigación:
 
 Lista blanca estricta de rutas y archivos ejecutables en el servidor web. Implementar inspección SSL/TLS con DLP para detectar exfiltración de datos sensibles en respuestas HTTP.
+
+Mitigación
+
+ - Listas Blancas Estrictas de Aplicaciones
+    - Control de ejecución en servidores web mediante listas blancas de directorios permitidos
+    - Restricción de funciones PHP peligrosas: system(), exec(), shell_exec(), passthru()
+    - Configuración de permisos que impidan escritura y ejecución en /tmp/, /uploads/
+
+ - Hardening de Servicios Web
+
+    - Configuración de servidores web para bloquear ejecución en directorios temporales
+    - Implementación de WAF con reglas específicas para detección de web shells
+
+
+  - Monitoreo de Integridad
+     - Sistemas de detección de cambios en archivos del servidor web
+     - Alertas por creación de nuevos archivos PHP en ubicaciones no autorizadas
+     - Auditoría continua de permisos y configuraciones de seguridad
+
+
+
 
 5. Installation - Defensa
 Detección:
