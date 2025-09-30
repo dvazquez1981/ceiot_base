@@ -47,12 +47,7 @@ Se configuran alertas para:
  - Análisis de Cifrado Personalizado
    - Identificación de patrones de comunicación con cifrado AES detectable en tráfico HTTP
 
-Mitigación:
-
-Lista blanca estricta de rutas y archivos ejecutables en el servidor web. Implementar inspección SSL/TLS con DLP para detectar exfiltración de datos sensibles en respuestas HTTP.
-
-Mitigación
-
+> Mitigación:
  - Listas Blancas Estrictas de Aplicaciones
     - Control de ejecución en servidores web mediante listas blancas de directorios permitidos
     - Restricción de funciones PHP peligrosas: system(), exec(), shell_exec(), passthru()
