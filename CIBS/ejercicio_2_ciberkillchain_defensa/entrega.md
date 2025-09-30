@@ -52,12 +52,11 @@ Se configuran alertas para:
     - Configuración de permisos que impidan escritura y ejecución en /tmp/, /uploads/
 
  - Hardening de Servicios Web
-
     - Configuración de servidores web para bloquear ejecución en directorios temporales
     - Implementación de WAF con reglas específicas para detección de web shells
 
 
-5. Installation - Defensa
+### 5. Installation - Defensa
 > Detección:
 > Monitoreo de integridad de archivos mediante checksums para detectar creación/modificación en directorios como /tmp/uploads/. Alertas por creación de archivos PHP en directorios no autorizados.
 
