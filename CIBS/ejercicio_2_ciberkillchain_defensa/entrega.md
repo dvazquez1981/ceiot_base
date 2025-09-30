@@ -33,14 +33,10 @@ Se configuran alertas para:
 - Implementación de tablas de auditoría independientes que registren: usuario, IP, query completa, timestamp y resultado
 
 
+### 6. Command & Control - Defensa
 
-
-
-
-6. Command & Control - Defensa
-Detección:
-
-Análisis de tráfico HTTPS inusual hacia rutas no estándar (/tmp/uploads/). Detección de patrones de comunicación cifrada con timing consistente (beaconing cada 60 segundos) y tamaños de respuesta similares.
+> Detección:
+> Análisis de tráfico HTTPS inusual hacia rutas no estándar (/tmp/uploads/). Detección de patrones de comunicación cifrada con timing consistente (beaconing cada 60 segundos) y tamaños de respuesta similares.
 
 Mitigación:
 
