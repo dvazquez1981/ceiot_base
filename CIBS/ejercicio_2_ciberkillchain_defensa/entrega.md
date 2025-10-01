@@ -79,11 +79,7 @@ Se configuran alertas para:
 > Análisis en tiempo real de payloads SQL en parámetros de login mediante WAF. Detección de herramientas de automatización como Hydra por patrones de intentos secuenciales rápidos.
 
 
-
-
-
 > Mitigación:
-
 > WAF con reglas específicas para SQL injection que bloqueen caracteres especiales en campos de login. Bloqueo automático de IPs después de 10 intentos fallidos de autenticación en 5 minutos.
 
 2. Weaponization - Defensa
