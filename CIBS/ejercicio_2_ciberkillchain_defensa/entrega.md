@@ -82,38 +82,22 @@ Se configuran alertas para:
 > Mitigación:
 > WAF con reglas específicas para SQL injection que bloqueen caracteres especiales en campos de login. Bloqueo automático de IPs después de 10 intentos fallidos de autenticación en 5 minutos.
 
-2. Weaponization - Defensa
-Detección:
+### 2. Weaponization - Defensa
+> Detección:
 
-Análisis de tráfico de red para detectar escaneo de puertos mediante Nmap y enumeración de directorios con Gobuster. Monitoreo de requests a rutas sensibles (.git/, /app/, /tmp/) desde mismas IPs.
+> Análisis de tráfico de red para detectar escaneo de puertos mediante Nmap y enumeración de directorios con Gobuster. Monitoreo de requests a rutas sensibles (.git/, /app/, /tmp/) desde mismas IPs.
 
-Mitigación:
+> Mitigación:
 
-Configuración segura de servidor web para ocultar información de banners y versiones. Restricción de acceso a directorios sensibles via .htaccess con denegación explícita.
+>Configuración segura de servidor web para ocultar información de banners y versiones. Restricción de acceso a directorios sensibles via .htaccess con denegación explícita.
 
-1. Reconnaissance - Defensa
-Detección:
+### 1. Reconnaissance - Defensa
+> Detección:
+> Logs de escaneos Nmap/Gobuster identificados por volumen de requests y patrones de User-Agent específicos. Monitoreo de acceso a archivos de configuración y directorios ocultos desde IPs externas.
 
-Logs de escaneos Nmap/Gobuster identificados por volumen de requests y patrones de User-Agent específicos. Monitoreo de acceso a archivos de configuración y directorios ocultos desde IPs externas.
+> Mitigación:
 
-Mitigación:
+> Rate limiting estricto por IP (max 100 requests/minuto) para prevenir escaneos automatizados. Configuración de servidor para no revelar información de versión en headers HTTP.
 
-Rate limiting estricto por IP (max 100 requests/minuto) para prevenir escaneos automatizados. Configuración de servidor para no revelar información de versión en headers HTTP.
 
-Medidas de Defensa Prioritarias (Recursos Limitados)
-1. Crítica - SQL Injection
-Detección: Reglas WAF para patrones SQL en parámetros de login como ' OR '1'='1
-Mitigación: Migración inmediata a prepared statements en endpoint app-index-x.php
-
-2. Alta - Autenticación Débil
-Detección: Monitoreo de intentos fallidos de login con usuarios válidos como 'admin'
-Mitigación: Implementación de MFA y bloqueo temporal de IPs tras 5 intentos fallidos
-
-3. Media - Exposición de Información
-Detección: Alertas por acceso a rutas sensibles como /.git/HEAD o /app/api/
-Mitigación: Hardening de configuración web con directivas de denegación explícita
-
-4. Baja - Comando y Control
-Detección: Análisis de tráfico a rutas no estándar como /tmp/uploads/shell.php
-Mitigación: Lista blanca de directorios ejecutables en configuración de servidor web
 
