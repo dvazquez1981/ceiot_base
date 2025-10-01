@@ -93,10 +93,9 @@ Se configuran alertas para:
 
 ### 1. Reconnaissance - Defensa
 > Detección:
-> Logs de escaneos Nmap/Gobuster identificados por volumen de requests y patrones de User-Agent específicos. Monitoreo de acceso a archivos de configuración y directorios ocultos desde IPs externas.
+>  Logs de escaneos Nmap/Gobuster identificados por volumen de requests y patrones de User-Agent específicos. Monitoreo de acceso a archivos de configuración y directorios ocultos desde IPs externas.
 
 > Mitigación:
-
 > Rate limiting estricto por IP (max 100 requests/minuto) para prevenir escaneos automatizados. Configuración de servidor para no revelar información de versión en headers HTTP.
 
 
