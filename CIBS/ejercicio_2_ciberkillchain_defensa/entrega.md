@@ -65,7 +65,6 @@ Se configuran alertas para:
      - Sistemas de detección de cambios en archivos del servidor web
      - Alertas por creación de nuevos archivos PHP en ubicaciones no autorizadas
      - Auditoría continua de permisos y configuraciones de seguridad
-     - Configurar SELinux/AppArmor para restringir ejecución en directorios temporales.
        
 ### 4. Exploitation - Defensa
 > Detección:
@@ -73,6 +72,8 @@ Se configuran alertas para:
 
 > Mitigación:
 > Implementar prepared statements con parámetros bindeados en todo el código de autenticación. Rate limiting agresivo (bloqueo por 30 minutos) después de 5 intentos fallidos de login desde misma IP.
+
+
 
 ### 3. Delivery - Defensa
 > Detección:
@@ -90,13 +91,4 @@ Se configuran alertas para:
 > Mitigación:
 
 >Configuración segura de servidor web para ocultar información de banners y versiones. Restricción de acceso a directorios sensibles via .htaccess con denegación explícita.
-
-### 1. Reconnaissance - Defensa
-> Detección:
->  Logs de escaneos Nmap/Gobuster identificados por volumen de requests y patrones de User-Agent específicos. Monitoreo de acceso a archivos de configuración y directorios ocultos desde IPs externas.
-
-> Mitigación:
-> Rate limiting estricto por IP (max 100 requests/minuto) para prevenir escaneos automatizados. Configuración de servidor para no revelar información de versión en headers HTTP.
-
-
 
