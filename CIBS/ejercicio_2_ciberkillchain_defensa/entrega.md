@@ -16,6 +16,7 @@ Se configuran alertas para:
 - Transacciones que combinen múltiples tablas (empleados + datos_bancarios + licencias)
 - Cambios realizados fuera del horario laboral estándar (8:00-18:00 hs)
 - Sesiones de base de datos que ejecuten consultas con sintaxis inusual o procedimientos almacenados no autorizados
+- UEBA (User and Entity Behavior Analytics) para establecer una línea base de lo que es "normal" para cada usuario de la BD. Un contador que normalmente actualiza 5 registros/día un usuario y de repente actualiza 500 es una alerta más precisa
 
 > Mitigación:
 > Implementar el principio de mínimo privilegio en la base de datos, donde el usuario de aplicación solo tenga permisos SELECT/INSERT. Requerir aprobación dual mediante
@@ -23,13 +24,14 @@ Se configuran alertas para:
 
 - Usuario de aplicación web: solo permisos SELECT e INSERT en tablas específicas
 - Usuario de reporting: solo permisos SELECT
+- Segregación de Entornos: El usuario de la aplicación web no debería tener acceso directo a las tablas de producción. Un patrón seguro es utilizar una capa de API o servicios web que abstraigan las operaciones de base de datos.
 - Creación de stored procedures aprobados para modificaciones.
 - Workflow de aprobación dual para cambios críticos:
     - Modificaciones salariales > 10% requieren aprobación de RRHH + Finanzas
     - Cambios de CBU requieren verificación por sistema externo (email)
     - justes masivos de licencias necesitan autorización del área de Personal.
 - Implementación de tablas de auditoría independientes que registren: usuario, IP, query completa, timestamp y resultado
-
+- Las tablas de auditoría deben escribirse en una base de datos separada y configurarse como inmutables para que un atacante no pueda borrar sus huellas
 
 ### 6. Command & Control - Defensa
 
