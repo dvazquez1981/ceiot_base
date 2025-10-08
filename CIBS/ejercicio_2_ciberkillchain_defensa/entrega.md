@@ -56,7 +56,8 @@ Se configuran alertas para:
  - Hardening de Servicios Web
     - Configuración de servidores web para bloquear ejecución en directorios temporales
     - Implementación de WAF con reglas específicas para detección de web shells
-
+ 
+ - Segmentación de Red: Aísle los servidores web en una DMZ (Zona Desmilitarizada) con reglas de firewall estrictas que limiten la comunicación con la red interna, especialmente con la base de datos.
 
 ### 5. Installation - Defensa
 > Detección:
@@ -67,15 +68,16 @@ Se configuran alertas para:
      - Sistemas de detección de cambios en archivos del servidor web
      - Alertas por creación de nuevos archivos PHP en ubicaciones no autorizadas
      - Auditoría continua de permisos y configuraciones de seguridad
-       
+ - Directorios de Subida Seguros: Si se permiten uploads, almacénelos en un directorio fuera del root del servidor web.
+   
 ### 4. Exploitation - Defensa
 > Detección:
 > Logs de autenticación que muestren patrones de SQL injection en el campo de usuario. Alertas por bypass de reCAPTCHA y autenticaciones exitosas inmediatamente después de intentos con payloads SQL.
 
 > Mitigación:
-> Implementar prepared statements con parámetros bindeados en todo el código de autenticación. Rate limiting agresivo (bloqueo por 30 minutos) después de 5 intentos fallidos de login desde misma IP.
+- Implementar prepared statements con parámetros bindeados en todo el código de autenticación. Rate limiting agresivo (bloqueo por 30 minutos) después de 5 intentos fallidos de login desde misma IP.
 
-
+- Control de Versiones y Parches: explotación aprovecha vulnerabilidades conocidas. Gestión de parches para el sistema operativo, el servidor web (Apache) y el lenguaje (PHP)  para cerrar ventanas de explotación.
 
 ### 3. Delivery - Defensa
 > Detección:
