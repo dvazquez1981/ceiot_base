@@ -88,17 +88,28 @@ Se configuran alertas para:
 - Configuración para SQL Injection en Parámetros:
 
 Reglas de Detección:
-    
     - Palabras clave SQL:
-    ```text
-    SecRule ARGS:username "@pm SELECT UNION DROP INSERT UPDATE DELETE" \
-        "phase:2,deny,id:1001,status:403,msg:'SQLi detected in username'"
+        ```text
+          SecRule ARGS:username "@pm SELECT UNION DROP INSERT UPDATE DELETE" \
+          "phase:2,deny,id:1001,status:403,msg:'SQLi detected in username'"
     
-    SecRule ARGS:password "@pm SELECT UNION DROP INSERT UPDATE DELETE" \
-        "phase:2,deny,id:1002,status:403,msg:'SQLi detected in password'"
-    ```       
+          SecRule ARGS:password "@pm SELECT UNION DROP INSERT UPDATE DELETE" \
+          "phase:2,deny,id:1002,status:403,msg:'SQLi detected in password'"
+        ```       
+    - Detección de Caracteres Especiales:
+        ```text
+          SecRule ARGS:username "@rx [';\\-\\-]" \
+          "phase:2,deny,id:1003,status:403,msg:'SQLi special characters in username'"
 
-
+          SecRule ARGS:password "@rx [';\\-\\-]" \
+          "phase:2,deny,id:1004,status:403,msg:'SQLi special characters in password'"
+        ```
+     - Patrones de Comentarios SQL (--, #, / */):
+        ```text
+          SecRule ARGS "@rx (--|#|\\/\\*|\\*\\/)" \
+          "phase:2,deny,id:1005,status:403,msg:'SQL comment pattern detected'"
+        ```
+        
 
 
 > Mitigación:
