@@ -105,7 +105,7 @@ Se configuran alertas para:
                 SecRule ARGS "@rx (--|#|\\/\\*|\\*\\/)" \
                 "phase:2,deny,id:1005,status:403,msg:'SQL comment pattern detected'"
          ```
-   - Detección de Herramientas Automatizadas:
+  - Detección de Herramientas Automatizadas:
       ```text
              SecRule REQUEST_HEADERS:User-Agent "@pm sqlmap" \
              "phase:1,deny,id:1006,status:403,msg:'SQLMap User-Agent detected'"
@@ -113,7 +113,7 @@ Se configuran alertas para:
              SecRule ARGS "@rx (benchmark|sleep|pg_sleep|waitfor delay)" \
             "phase:2,deny,id:1007,status:403,msg:'Time-based SQLi detected'"
       ```
-    - Reglas de Umbral (Rate Limiting): para prevenir fuerza bruta y ataques de automatización
+  - Reglas de Umbral (Rate Limiting): para prevenir fuerza bruta y ataques de automatización
       ```text
        SecRule IP:FAILED_LOGIN_COUNT "@gt 10" \
        "phase:2,deny,id:1008,status:403,msg:'Too many failed logins'"
