@@ -82,9 +82,9 @@ Se configuran alertas para:
 ### 3. Delivery - Defensa
 > Detección:
 > Análisis en tiempo real de payloads SQL en parámetros de login mediante WAF. Detección de herramientas de automatización como Hydra por patrones de intentos secuenciales rápidos.
-  - Configuración para SQL Injection en Parámetros de Login:
-       - Reglas de Detección de Palabras Clave SQL:
-         En login:
+  - Configuración para SQL Injection en Parámetros:
+       - Reglas de Detección:
+         - Palabras clave SQL:
          ```text
                   # reglas en ModSecurity
                   SecRule ARGS:username "@pm SELECT UNION DROP INSERT UPDATE DELETE" \
@@ -92,6 +92,29 @@ Se configuran alertas para:
                   SecRule ARGS:password "@pm SELECT UNION DROP INSERT UPDATE DELETE" \
                   "phase:2,deny,id:1002,status:403,msg:'SQLi detected in password'"
          ```
+         - Detección de Caracteres Especiales:
+         ```text
+                 SecRule ARGS:username "@rx [';\\-\\-]" \
+                 "phase:2,deny,id:1003,status:403,msg:'SQLi special characters in username'"
+
+                 SecRule ARGS:password "@rx [';\\-\\-]" \
+                 "phase:2,deny,id:1004,status:403,msg:'SQLi special characters in password'""
+         ```
+         - Patrones de Comentarios SQL  ( --, #, /* */)
+         ```text
+                SecRule ARGS "@rx (--|#|\\/\\*|\\*\\/)" \
+                "phase:2,deny,id:1005,status:403,msg:'SQL comment pattern detected'"
+         ```
+   - Detección de Herramientas Automatizadas:
+      ```text
+             SecRule REQUEST_HEADERS:User-Agent "@pm sqlmap" \
+             "phase:1,deny,id:1006,status:403,msg:'SQLMap User-Agent detected'"
+        
+             SecRule ARGS "@rx (benchmark|sleep|pg_sleep|waitfor delay)" \
+            "phase:2,deny,id:1007,status:403,msg:'Time-based SQLi detected'"
+      ```
+                   
+           
 
 > Mitigación:
 > WAF con reglas específicas para SQL injection que bloqueen caracteres especiales en campos de login. Bloqueo automático de IPs después de 10 intentos fallidos de autenticación en 5 minutos.
