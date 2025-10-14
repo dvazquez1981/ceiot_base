@@ -89,7 +89,7 @@ Se configuran alertas para:
 
 Reglas de Detección:
 
-    - Palabras clave SQL:
+      - Palabras clave SQL:
        
         ```text
           SecRule ARGS:username "@pm SELECT UNION DROP INSERT UPDATE DELETE" \
@@ -99,7 +99,7 @@ Reglas de Detección:
           "phase:2,deny,id:1002,status:403,msg:'SQLi detected in password'"
         ```
         
-    - Detección de Caracteres Especiales:
+      - Detección de Caracteres Especiales:
         
         ```text
           SecRule ARGS:username "@rx [';\\-\\-]" \
@@ -109,7 +109,7 @@ Reglas de Detección:
           "phase:2,deny,id:1004,status:403,msg:'SQLi special characters in password'"
         ```
         
-     - Patrones de Comentarios SQL (--, #, / */):
+      - Patrones de Comentarios SQL (--, #, / */):
         
         ```text
           SecRule ARGS "@rx (--|#|\\/\\*|\\*\\/)" \
