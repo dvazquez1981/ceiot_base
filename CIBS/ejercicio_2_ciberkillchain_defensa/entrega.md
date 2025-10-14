@@ -85,18 +85,18 @@ Se configuran alertas para:
 
 >Análisis en tiempo real de payloads SQL en parámetros de login mediante WAF. Detección de herramientas de automatización como Hydra por patrones de intentos secuenciales rápidos.**
 
-#### Configuración para SQL Injection en Parámetros:
+- Configuración para SQL Injection en Parámetros:
 
-**Reglas de Detección:**
-
-- **Palabras clave SQL:**
-```apache
-SecRule ARGS:username "@pm SELECT UNION DROP INSERT UPDATE DELETE" \
-    "phase:2,deny,id:1001,status:403,msg:'SQLi detected in username'"
-
-SecRule ARGS:password "@pm SELECT UNION DROP INSERT UPDATE DELETE" \
-    "phase:2,deny,id:1002,status:403,msg:'SQLi detected in password'"
-           
+Reglas de Detección:
+    
+    - Palabras clave SQL:
+    ```text
+    SecRule ARGS:username "@pm SELECT UNION DROP INSERT UPDATE DELETE" \
+        "phase:2,deny,id:1001,status:403,msg:'SQLi detected in username'"
+    
+    SecRule ARGS:password "@pm SELECT UNION DROP INSERT UPDATE DELETE" \
+        "phase:2,deny,id:1002,status:403,msg:'SQLi detected in password'"
+    ```       
 
 
 
