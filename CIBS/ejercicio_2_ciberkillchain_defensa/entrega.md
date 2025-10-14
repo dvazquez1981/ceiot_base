@@ -96,3 +96,23 @@ Se configuran alertas para:
 
 >Configuración segura de servidor web para ocultar información de banners y versiones. Restricción de acceso a directorios sensibles via .htaccess con denegación explícita.
 
+### 1. Reconnaissance - Defensa
+> Detección:
+>  Monitoreo de intentos de recolección de información sobre la infraestructura mediante:
+> Detección de crawling automatizado en el sitio web corporativo
+> Alertas por escaneos de servicios expuestos (HTTP, SSH, FTP)
+> Monitoreo de consultas WHOIS desde múltiples direcciones IP
+> Análisis de user-agents de herramientas de OSINT en logs web
+
+
+> Mitigación:
+> Red Team Interno: Contratar equipos éticos para realizar reconnaissance EXTERNO realista y descubrir qué información está expuesta
+> Penetration Testing Autorizado: Realizar escaneos de puertos y enumeración de servicios DESDE INTERNET para identificar puntos ciegos
+> OSINT Activo: Realizar tu propia investigación pública para encontrar información corporativa expuesta
+> Bug Bounty Programs: Pagar por vulnerabilidades descubiertas éticamente por terceros
+> Configuración de rate limiting en servidores DNS y web
+> Ocultación de información sensible en registros WHOIS
+> Hardening de banners HTTP para ocultar versiones de software
+
+
+
