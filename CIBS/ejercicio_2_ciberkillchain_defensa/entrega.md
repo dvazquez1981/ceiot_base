@@ -164,22 +164,32 @@ Reglas de Detección:
 >Configuración segura de servidor web para ocultar información de banners y versiones. Restricción de acceso a directorios sensibles via .htaccess con denegación explícita.
 
 ### 1. Reconnaissance - Defensa
-> Detección:
->  Monitoreo de intentos de recolección de información sobre la infraestructura mediante:
-> Detección de crawling automatizado en el sitio web corporativo
-> Alertas por escaneos de servicios expuestos (HTTP, SSH, FTP)
-> Monitoreo de consultas WHOIS desde múltiples direcciones IP
-> Análisis de user-agents de herramientas de OSINT en logs web
+1. Reconnaissance - Defensa
+Detección
+Monitoreo de intentos de recolección de información sobre la infraestructura mediante:
 
+Detección de crawling automatizado en el sitio web corporativo mediante análisis de patrones de requests y user-agents sospechosos
 
-> Mitigación:
-> Red Team Interno: Contratar equipos éticos para realizar reconnaissance EXTERNO realista y descubrir qué información está expuesta
-> Penetration Testing Autorizado: Realizar escaneos de puertos y enumeración de servicios DESDE INTERNET para identificar puntos ciegos
-> OSINT Activo: Realizar tu propia investigación pública para encontrar información corporativa expuesta
-> Bug Bounty Programs: Pagar por vulnerabilidades descubiertas éticamente por terceros
-> Configuración de rate limiting en servidores DNS y web
-> Ocultación de información sensible en registros WHOIS
-> Hardening de banners HTTP para ocultar versiones de software
+Alertas por escaneos de servicios expuestos (HTTP, SSH, FTP) mediante monitoreo de conexiones a puertos no habituales
+
+Monitoreo de consultas WHOIS desde múltiples direcciones IP para detectar recolección de información de dominio
+
+Análisis de user-agents de herramientas de OSINT en logs web como theHarvester, Maltego y Shodan
+
+Mitigación
+Red Team Interno: Contratar equipos éticos para realizar reconnaissance EXTERNO realista y descubrir qué información está expuesta antes que los atacantes
+
+Penetration Testing Autorizado: Realizar escaneos de puertos y enumeración de servicios DESDE INTERNET para identificar puntos ciegos en la infraestructura
+
+OSINT Activo: Realizar tu propia investigación pública periódica para encontrar información corporativa expuesta en internet
+
+Bug Bounty Programs: Pagar por vulnerabilidades descubiertas éticamente por terceros, incentivando la reportación responsable
+
+Configuración de rate limiting en servidores DNS y web para bloquear escaneos automatizados
+
+Ocultación de información sensible en registros WHOIS mediante servicios de privacidad de dominio
+
+Hardening de banners HTTP para ocultar versiones de software y reducir el fingerprinting de tecnologías
 
 
 
