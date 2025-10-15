@@ -137,13 +137,27 @@ Se configuran alertas para:
    flow:established; detection_filter:track by_src, count 50, seconds 60;)
   ```
 - Detección de Enumeración de Directorios
-  ModSecurity con OWASP CR, bloquea intentos de enumeración con Gobuster/Dirb en patrones de fuerza bruta en URLs y acceso a rutas sensibles (.git/, /app/, /tmp/)
+  ModSecurity con OWASP CR, detecta intentos de enumeración con Gobuster/Dirb en patrones de fuerza bruta en URLs y acceso a rutas sensibles (.git/, /app/, /tmp/)
 
-Detección automática: Patrones de fuerza bruta en URLs y acceso a rutas sensibles (.git/, /app/, /tmp/)
+
 > Mitigación:
 
 > Configuración segura de servidor web para ocultar información de banners y versiones. Restricción de acceso a directorios sensibles via .htaccess con denegación explícita.
 
+
+- Restricción de Acceso a Directorios Sensibles
+  en .htaccess (Apache):
+  ```text
+         # Bloquear acceso a directorios sensibles
+        <FilesMatch "^\.git">
+            Order allow,deny
+            Deny from all
+        </FilesMatch>
+        
+        <Directory "/app">
+            Require all denied
+         </Directory>
+  ```
 ### 1. Reconnaissance - Defensa
 1. Reconnaissance - Defensa
 Detección
