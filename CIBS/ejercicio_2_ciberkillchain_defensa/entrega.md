@@ -96,24 +96,23 @@ Se configuran alertas para:
         - --, #, / */
     - Detección de Herramientas Automatizadas:
          ```text
-              SecRule REQUEST_HEADERS:User-Agent "@pm sqlmap hydra" \
-                "phase:1,deny,id:1006,status:403,msg:'Automated tool detected'"
+         SecRule REQUEST_HEADERS:User-Agent "@pm sqlmap hydra" \
+         "phase:1,deny,id:1006,status:403,msg:'Automated tool detected'"
             
-            SecRule ARGS "@rx (benchmark|sleep|pg_sleep|waitfor delay)" \
-                "phase:2,deny,id:1007,status:403,msg:'Time-based SQLi detected'"
+         SecRule ARGS "@rx (benchmark|sleep|pg_sleep|waitfor delay)" \
+         "phase:2,deny,id:1007,status:403,msg:'Time-based SQLi detected'"
       
          ```
   - Reglas de Umbral (Rate Limiting):
           ```text
-             SecRule IP:FAILED_LOGIN_COUNT "@gt 10" \
-              "phase:2,deny,id:1008,status:403,msg:'Too many failed logins'"
+          SecRule IP:FAILED_LOGIN_COUNT "@gt 10" \
+          "phase:2,deny,id:1008,status:403,msg:'Too many failed logins'"
           ```
 > Mitigación:
 > WAF con reglas específicas para SQL injection que bloqueen caracteres especiales en campos de login. Bloqueo automático de IPs después de 10 intentos fallidos de autenticación en 5 minutos.
-
           ```text
-             # Bloqueo de caracteres SQL en login
-            SecRule ARGS:username "!@rx ^[a-zA-Z0-9_@.-]+$" \
+              # Bloqueo de caracteres SQL en login
+              SecRule ARGS:username "!@rx ^[a-zA-Z0-9_@.-]+$" \
                 "phase:2,deny,id:2001,status:403,msg:'Invalid characters in username'"
             
             SecRule ARGS:password "!@rx ^[\\x20-\\x7E]+$" \
@@ -125,7 +124,7 @@ Se configuran alertas para:
             
             SecRule IP:FAILED_LOGIN_COUNT "@gt 10" \
                 "phase:2,deny,id:2004,status:403,msg:'IP blocked for excessive failed logins',setvar:ip.blocked=1,expirevar:ip.blocked=1800"
-         ```
+          ```
          
 ### 2. Weaponization - Defensa
 > Detección:
