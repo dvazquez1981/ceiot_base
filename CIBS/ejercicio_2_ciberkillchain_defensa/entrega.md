@@ -198,9 +198,9 @@ Se configuran alertas para:
 - con recursos monetarios:
    - Red Team Interno, contratar equipos éticos para realizar reconnaissance EXTERNO realista y descubrir qué información está expuesta antes que los atacantes
    - Bug Bounty Programs: pagar por vulnerabilidades descubiertas éticamente por terceros, incentivando la reportación responsable
-- Penetration Testing Autorizado: Realizar escaneos de puertos y enumeración de servicios DESDE INTERNET para identificar puntos ciegos en la infraestructura  
+- Penetration Testing Autorizado: realizar escaneos de puertos y enumeración de servicios DESDE INTERNET para identificar puntos ciegos en la infraestructura  
 
-- OSINT Activo: realizar tu propia investigación pública periódica para encontrar información corporativa expuesta en internet
+- OSINT Activo: realizar  propia investigación pública periódica para encontrar información corporativa expuesta en internet
 
 
 
