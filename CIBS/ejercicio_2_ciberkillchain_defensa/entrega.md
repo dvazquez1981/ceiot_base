@@ -190,9 +190,9 @@ Se configuran alertas para:
 > Mitigación:
 > 
 > Con herramientas: 
-- Rate limiting: Bloqueo de escaneos automatizados
-- Ocultación de información: Modificación de banners HTTP
-- Protección contra crawling: Reglas avanzadas contra bots
+- Rate limiting: bloqueo de escaneos automatizados
+- Ocultación de información: modificación de banners HTTP
+- Protección contra crawling: reglas avanzadas contra bots
 
 > Programas Complementarios:
 - con recursos monetarios:
