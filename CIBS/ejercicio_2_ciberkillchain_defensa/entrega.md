@@ -92,7 +92,7 @@ Se configuran alertas para:
          - SELECT UNION DROP INSERT UPDATE DELETE
     - Detección de Caracteres Especiales en login :
          - ;\\-\\
-    - Patrones de Comentarios SQL:
+    - Patrones de comentarios SQL:
         - --, #, / */
     - Detección de Herramientas Automatizadas:
      ```text
@@ -103,11 +103,11 @@ Se configuran alertas para:
       "phase:2,deny,id:1007,status:403,msg:'Time-based SQLi detected'"
       
      ```
-  - Reglas de Umbral (Rate Limiting):
-    ```text
-    SecRule IP:FAILED_LOGIN_COUNT "@gt 10" \
-    "phase:2,deny,id:1008,status:403,msg:'Too many failed logins'"
-    ```
+    - Reglas de umbral (Rate Limiting):
+     ```text
+     SecRule IP:FAILED_LOGIN_COUNT "@gt 10" \
+     "phase:2,deny,id:1008,status:403,msg:'Too many failed logins'"
+     ```
        
 > Mitigación:
 > WAF con reglas específicas para SQL injection que bloqueen caracteres especiales en campos de login. Bloqueo automático de IPs después de 10 intentos fallidos de autenticación en 5 minutos.
