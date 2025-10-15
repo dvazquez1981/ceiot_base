@@ -159,7 +159,52 @@ Se configuran alertas para:
          </Directory>
   ```
 ### 1. Reconnaissance - Defensa
-1. Reconnaissance - Defensa
+> Detección:
+> Detección de crawling automatizado: Análisis de patrones de requests y user-agents
+ - Frecuencia y Volumen Anormal: múltiples requests por segundo desde una misma IP
+ - Patrones Secuenciales de URLs: crawling automatizado, acceso secuencial a páginas en corto tiempo.
+ - Cadena de texto que identifica el navegador, sistema operativo y herramienta utilizada para hacer la request (posible herramienta para hacer detección OSINT)
+     - legitimos:
+        ```text
+         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15"
+       ```
+     - sospechosos:
+        ```text
+            "theHarvester/3.2.0" → Herramienta de recolección de emails
+            "Maltego/4.3.0" → Software de inteligencia
+            "Shodan/1.0" → Scanner de servicios expuestos
+            "python-requests/2.25.1" → Script automatizado
+            "Go-http-client/1.1" → Cliente HTTP genérico
+        ```  
+     - bots:
+       ```text
+       "masscan/1.3" → Escáner de puertos
+       "nmap/7.80" → Herramienta de escaneo        
+       "Gobuster/3.1.0" → Enumerador de directorios
+      ```
+Monitoreo de escaneos de servicios: Alertas por conexiones a puertos no habituales
+
+Análisis de herramientas OSINT: Identificación de user-agents de theHarvester, Maltego, Shodan
+
+Correlación de eventos: Agregación de logs de múltiples fuentes para detectar reconnaissance
+
+Mitigación
+Herramienta: Cloudflare / WAF Empresarial
+Rate limiting: Bloqueo de escaneos automatizados
+
+Ocultación de información: Modificación de banners HTTP
+
+Protección WHOIS: Servicios de privacidad de dominio integrados
+
+Protección contra crawling: Reglas avanzadas contra bots
+
+Programas Complementarios:
+
+
+
+
+
 Detección
 Monitoreo de intentos de recolección de información sobre la infraestructura mediante:
 
