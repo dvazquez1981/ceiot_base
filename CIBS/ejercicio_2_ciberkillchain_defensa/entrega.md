@@ -83,7 +83,7 @@ Se configuran alertas para:
 
 > Detección
 
-> Análisis en tiempo real de payloads SQL en parámetros de login mediante WAF. Detección de herramientas de automatización como Hydra por patrones de intentos secuenciales rápidos.**
+> Análisis en tiempo real de payloads SQL en parámetros de login mediante WAF. Detección de herramientas de automatización como Hydra por patrones de intentos secuenciales rápidos.
 
 - Configuración para SQL Injection en Parámetros:
 
@@ -95,38 +95,39 @@ Se configuran alertas para:
     - Patrones de Comentarios SQL:
         - --, #, / */
     - Detección de Herramientas Automatizadas:
-         ```text
-         SecRule REQUEST_HEADERS:User-Agent "@pm sqlmap hydra" \
-         "phase:1,deny,id:1006,status:403,msg:'Automated tool detected'"
+     ```text
+      SecRule REQUEST_HEADERS:User-Agent "@pm sqlmap hydra" \
+     "phase:1,deny,id:1006,status:403,msg:'Automated tool detected'"
             
-         SecRule ARGS "@rx (benchmark|sleep|pg_sleep|waitfor delay)" \
-         "phase:2,deny,id:1007,status:403,msg:'Time-based SQLi detected'"
+     SecRule ARGS "@rx (benchmark|sleep|pg_sleep|waitfor delay)" \
+      "phase:2,deny,id:1007,status:403,msg:'Time-based SQLi detected'"
       
-         ```
+     ```
   - Reglas de Umbral (Rate Limiting):
-       ```text
-          SecRule IP:FAILED_LOGIN_COUNT "@gt 10" \
-          "phase:2,deny,id:1008,status:403,msg:'Too many failed logins'"
-       ```
+    ```text
+      SecRule IP:FAILED_LOGIN_COUNT "@gt 10" \
+      "phase:2,deny,id:1008,status:403,msg:'Too many failed logins'"
+    ```
        
 > Mitigación:
 > WAF con reglas específicas para SQL injection que bloqueen caracteres especiales en campos de login. Bloqueo automático de IPs después de 10 intentos fallidos de autenticación en 5 minutos.
-        ```text
+  ```text
+  # Bloqueo de caracteres SQL en login
+  SecRule ARGS:username "!@rx ^[a-zA-Z0-9_@.-]+$" \
+  "phase:2,deny,id:2001,status:403,msg:'Invalid characters in username'"
+            
+  SecRule ARGS:password "!@rx ^[\\x20-\\x7E]+$" \
+  "phase:2,deny,id:2002,status:403,msg:'Invalid characters in password'"
+            
 
-             Bloqueo de caracteres SQL en login
-             SecRule ARGS:username "!@rx ^[a-zA-Z0-9_@.-]+$" \
-                "phase:2,deny,id:2001,status:403,msg:'Invalid characters in username'"
-            
-            SecRule ARGS:password "!@rx ^[\\x20-\\x7E]+$" \
-                "phase:2,deny,id:2002,status:403,msg:'Invalid characters in password'"
-            
-            # Rate limiting y bloqueo automático
-            SecRule REQUEST_FILENAME "@streq /login" \
-                "phase:2,pass,id:2003,nolog,setvar:ip.failed_login_count=+1,expirevar:ip.failed_login_count=300"
-            
-            SecRule IP:FAILED_LOGIN_COUNT "@gt 10" \
+ # Rate limiting y bloqueo automático
+   SecRule REQUEST_FILENAME "@streq /login" \
+             "phase:2,pass,id:2003,nolog,setvar:ip.failed_login_count=+1,expirevar:ip.failed_login_count=300"
+           
+ SecRule IP:FAILED_LOGIN_COUNT "@gt 10" \
                 "phase:2,deny,id:2004,status:403,msg:'IP blocked for excessive failed logins',setvar:ip.blocked=1,expirevar:ip.blocked=1800"
-    ```
+             
+  ```
 ### 2. Weaponization - Defensa
 > Detección:
 
@@ -148,15 +149,15 @@ Se configuran alertas para:
 - Restricción de Acceso a Directorios Sensibles
   en .htaccess (Apache):
   ```text
-         # Bloquear acceso a directorios sensibles
-        <FilesMatch "^\.git">
-            Order allow,deny
+  # Bloquear acceso a directorios sensibles
+  <FilesMatch "^\.git">
+         Order allow,deny
             Deny from all
-        </FilesMatch>
+   </FilesMatch>
         
-        <Directory "/app">
+   <Directory "/app">
             Require all denied
-         </Directory>
+   </Directory>
   ```
 ### 1. Reconnaissance - Defensa
 > Detección:
@@ -198,7 +199,7 @@ Se configuran alertas para:
    - Bug Bounty Programs: pagar por vulnerabilidades descubiertas éticamente por terceros, incentivando la reportación responsable
 - Penetration Testing Autorizado: Realizar escaneos de puertos y enumeración de servicios DESDE INTERNET para identificar puntos ciegos en la infraestructura  
 
-- OSINT Activo: Realizar tu propia investigación pública periódica para encontrar información corporativa expuesta en internet
+- OSINT Activo: realizar tu propia investigación pública periódica para encontrar información corporativa expuesta en internet
 
 
 
