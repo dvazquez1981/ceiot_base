@@ -163,7 +163,7 @@ Se configuran alertas para:
 > Detección de crawling automatizado: Análisis de patrones de requests y user-agents
  - Frecuencia y Volumen Anormal: múltiples requests por segundo desde una misma IP
  - Patrones Secuenciales de URLs: crawling automatizado, acceso secuencial a páginas en corto tiempo.
- - Cadena de texto que identifica el navegador, sistema operativo y herramienta utilizada para hacer la request (posible herramienta para hacer detección OSINT)
+ - Cadena de texto que identifica el navegador, sistema operativo y herramienta utilizada para hacer la request
      - legitimos:
         ```text
          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
@@ -182,54 +182,27 @@ Se configuran alertas para:
        "masscan/1.3" → Escáner de puertos
        "nmap/7.80" → Herramienta de escaneo        
        "Gobuster/3.1.0" → Enumerador de directorios
-      ```
-Monitoreo de escaneos de servicios: Alertas por conexiones a puertos no habituales
+       ```
 
-Análisis de herramientas OSINT: Identificación de user-agents de theHarvester, Maltego, Shodan
+ - Correlación de eventos: agregación de logs de múltiples fuentes para detectar reconnaissance
 
-Correlación de eventos: Agregación de logs de múltiples fuentes para detectar reconnaissance
+> Mitigación:C
+> Con herramientas: 
+- Rate limiting: Bloqueo de escaneos automatizados
+- Ocultación de información: Modificación de banners HTTP
+- Protección contra crawling: Reglas avanzadas contra bots
 
-Mitigación
-Herramienta: Cloudflare / WAF Empresarial
-Rate limiting: Bloqueo de escaneos automatizados
+> Programas Complementarios:
+- con recursos monetarios:
+   - Red Team Interno, contratar equipos éticos para realizar reconnaissance EXTERNO realista y descubrir qué información está expuesta antes que los atacantes
+   - Bug Bounty Programs: pagar por vulnerabilidades descubiertas éticamente por terceros, incentivando la reportación responsable
+- Penetration Testing Autorizado: Realizar escaneos de puertos y enumeración de servicios DESDE INTERNET para identificar puntos ciegos en la infraestructura  
 
-Ocultación de información: Modificación de banners HTTP
-
-Protección WHOIS: Servicios de privacidad de dominio integrados
-
-Protección contra crawling: Reglas avanzadas contra bots
-
-Programas Complementarios:
-
+- OSINT Activo: Realizar tu propia investigación pública periódica para encontrar información corporativa expuesta en internet
 
 
 
 
-Detección
-Monitoreo de intentos de recolección de información sobre la infraestructura mediante:
-
-Detección de crawling automatizado en el sitio web corporativo mediante análisis de patrones de requests y user-agents sospechosos
-
-Alertas por escaneos de servicios expuestos (HTTP, SSH, FTP) mediante monitoreo de conexiones a puertos no habituales
-
-Monitoreo de consultas WHOIS desde múltiples direcciones IP para detectar recolección de información de dominio
-
-Análisis de user-agents de herramientas de OSINT en logs web como theHarvester, Maltego y Shodan
-
-Mitigación
-Red Team Interno: Contratar equipos éticos para realizar reconnaissance EXTERNO realista y descubrir qué información está expuesta antes que los atacantes
-
-Penetration Testing Autorizado: Realizar escaneos de puertos y enumeración de servicios DESDE INTERNET para identificar puntos ciegos en la infraestructura
-
-OSINT Activo: Realizar tu propia investigación pública periódica para encontrar información corporativa expuesta en internet
-
-Bug Bounty Programs: Pagar por vulnerabilidades descubiertas éticamente por terceros, incentivando la reportación responsable
-
-Configuración de rate limiting en servidores DNS y web para bloquear escaneos automatizados
-
-Ocultación de información sensible en registros WHOIS mediante servicios de privacidad de dominio
-
-Hardening de banners HTTP para ocultar versiones de software y reducir el fingerprinting de tecnologías
 
 
 
