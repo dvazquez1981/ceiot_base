@@ -187,7 +187,8 @@ Se configuran alertas para:
 
  - Correlación de eventos: agregación de logs de múltiples fuentes para detectar reconnaissance
 
-> Mitigación:C
+> Mitigación:
+> 
 > Con herramientas: 
 - Rate limiting: Bloqueo de escaneos automatizados
 - Ocultación de información: Modificación de banners HTTP
