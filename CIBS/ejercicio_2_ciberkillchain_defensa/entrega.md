@@ -131,6 +131,11 @@ Se configuran alertas para:
 > Detección:
 
 > Análisis de tráfico de red para detectar escaneo de puertos mediante Nmap y enumeración de directorios con Gobuster. Monitoreo de requests a rutas sensibles (.git/, /app/, /tmp/) desde mismas IPs.
+-  Detección de Escaneo de Puertos: uitlizando herramientas como Suricata. detecta patrones de escaneo de puertos con herramientas como Nmap
+ ```text
+   alert tcp any any -> any any (msg:"Nmap TCP Scan"; \
+   flow:established; detection_filter:track by_src, count 50, seconds 60;)
+  ```
 
 > Mitigación:
 
