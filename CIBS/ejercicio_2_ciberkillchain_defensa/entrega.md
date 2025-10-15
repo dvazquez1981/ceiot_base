@@ -129,25 +129,27 @@ Se configuran alertas para:
              
   ```
 ### 2. Weaponization - Defensa
-> Detección:
+> En la fase de Weaponization, el atacante prepara el arma pero no interactúa. Las defensas deben ser preventivas y proactivas.
 
-> Análisis de tráfico de red para detectar escaneo de puertos mediante Nmap y enumeración de directorios con Gobuster. Monitoreo de requests a rutas sensibles (.git/, /app/, /tmp/) desde mismas IPs.
--  Detección de Escaneo de Puertos: uitlizando herramientas como Suricata. detecta patrones de escaneo de puertos con herramientas como Nmap
- ```text
-   alert tcp any any -> any any (msg:"Nmap TCP Scan"; \
-   flow:established; detection_filter:track by_src, count 50, seconds 60;)
-  ```
-- Detección de Enumeración de Directorios
-  ModSecurity con OWASP CR, detecta intentos de enumeración con Gobuster/Dirb en patrones de fuerza bruta en URLs y acceso a rutas sensibles (.git/, /app/, /tmp/)
+
+> Detección:
+> No hay
 
 
 > Mitigación:
-
+> Configuración proactiva del entorno para dificultar la creación de armas efectivas.
 > Configuración segura de servidor web para ocultar información de banners y versiones. Restricción de acceso a directorios sensibles via .htaccess con denegación explícita.
+ - Hardening del Servidor Web
+  ```text
+     # En apache2.conf - Ocultar información
+     ServerTokens Prod
+     ServerSignature Off
+     TraceEnable Off
+  ```
 
-
-- Restricción de Acceso a Directorios Sensibles
-  en .htaccess (Apache):
+   
+ - Restricción Proactiva de Acceso
+   en .htaccess (Apache):
   ```text
   # Bloquear acceso a directorios sensibles
   <FilesMatch "^\.git">
@@ -159,6 +161,7 @@ Se configuran alertas para:
             Require all denied
    </Directory>
   ```
+
 ### 1. Reconnaissance - Defensa
 > Detección:
 > Detección de crawling automatizado: Análisis de patrones de requests y user-agents
