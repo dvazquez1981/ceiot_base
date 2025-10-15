@@ -105,8 +105,8 @@ Se configuran alertas para:
      ```
   - Reglas de Umbral (Rate Limiting):
     ```text
-      SecRule IP:FAILED_LOGIN_COUNT "@gt 10" \
-      "phase:2,deny,id:1008,status:403,msg:'Too many failed logins'"
+    SecRule IP:FAILED_LOGIN_COUNT "@gt 10" \
+    "phase:2,deny,id:1008,status:403,msg:'Too many failed logins'"
     ```
        
 > Mitigación:
