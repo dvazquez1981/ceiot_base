@@ -104,14 +104,13 @@ Se configuran alertas para:
       
          ```
   - Reglas de Umbral (Rate Limiting):
-          ```text
+       ```text
           SecRule IP:FAILED_LOGIN_COUNT "@gt 10" \
           "phase:2,deny,id:1008,status:403,msg:'Too many failed logins'"
-          ```
+       ```
 > Mitigación:
 > WAF con reglas específicas para SQL injection que bloqueen caracteres especiales en campos de login. Bloqueo automático de IPs después de 10 intentos fallidos de autenticación en 5 minutos.
-
-          ```text
+        ```text
 
              Bloqueo de caracteres SQL en login
              SecRule ARGS:username "!@rx ^[a-zA-Z0-9_@.-]+$" \
@@ -126,7 +125,7 @@ Se configuran alertas para:
             
             SecRule IP:FAILED_LOGIN_COUNT "@gt 10" \
                 "phase:2,deny,id:2004,status:403,msg:'IP blocked for excessive failed logins',setvar:ip.blocked=1,expirevar:ip.blocked=1800"
-        ```
+```
          
 ### 2. Weaponization - Defensa
 > Detección:
